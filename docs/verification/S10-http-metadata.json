@@ -1,0 +1,180 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "status": 200,
+      "title": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "description": "Sakshi Gupta is an aspiring Data Scientist and Information Technology student at RGIPT. Explore her projects, skills, experience and interests.",
+      "initialOgTitle": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "canonical": null
+    },
+    {
+      "path": "/about",
+      "status": 200,
+      "title": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "description": "Sakshi Gupta is an aspiring Data Scientist and Information Technology student at RGIPT. Explore her projects, skills, experience and interests.",
+      "initialOgTitle": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "canonical": null
+    },
+    {
+      "path": "/projects",
+      "status": 200,
+      "title": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "description": "Sakshi Gupta is an aspiring Data Scientist and Information Technology student at RGIPT. Explore her projects, skills, experience and interests.",
+      "initialOgTitle": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "canonical": null
+    },
+    {
+      "path": "/experiments",
+      "status": 200,
+      "title": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "description": "Sakshi Gupta is an aspiring Data Scientist and Information Technology student at RGIPT. Explore her projects, skills, experience and interests.",
+      "initialOgTitle": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "canonical": null
+    },
+    {
+      "path": "/skills",
+      "status": 200,
+      "title": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "description": "Sakshi Gupta is an aspiring Data Scientist and Information Technology student at RGIPT. Explore her projects, skills, experience and interests.",
+      "initialOgTitle": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "canonical": null
+    },
+    {
+      "path": "/education",
+      "status": 200,
+      "title": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "description": "Sakshi Gupta is an aspiring Data Scientist and Information Technology student at RGIPT. Explore her projects, skills, experience and interests.",
+      "initialOgTitle": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "canonical": null
+    },
+    {
+      "path": "/achievements",
+      "status": 200,
+      "title": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "description": "Sakshi Gupta is an aspiring Data Scientist and Information Technology student at RGIPT. Explore her projects, skills, experience and interests.",
+      "initialOgTitle": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "canonical": null
+    },
+    {
+      "path": "/contact",
+      "status": 200,
+      "title": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "description": "Sakshi Gupta is an aspiring Data Scientist and Information Technology student at RGIPT. Explore her projects, skills, experience and interests.",
+      "initialOgTitle": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "canonical": null
+    },
+    {
+      "path": "/projects/railway-track-tampering",
+      "status": 200,
+      "title": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "description": "Sakshi Gupta is an aspiring Data Scientist and Information Technology student at RGIPT. Explore her projects, skills, experience and interests.",
+      "initialOgTitle": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "canonical": null
+    },
+    {
+      "path": "/projects/emotionai-studio",
+      "status": 200,
+      "title": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "description": "Sakshi Gupta is an aspiring Data Scientist and Information Technology student at RGIPT. Explore her projects, skills, experience and interests.",
+      "initialOgTitle": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "canonical": null
+    },
+    {
+      "path": "/projects/reliance-nifty-analysis",
+      "status": 200,
+      "title": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "description": "Sakshi Gupta is an aspiring Data Scientist and Information Technology student at RGIPT. Explore her projects, skills, experience and interests.",
+      "initialOgTitle": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "canonical": null
+    },
+    {
+      "path": "/projects/loan-analysis-dashboard",
+      "status": 200,
+      "title": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "description": "Sakshi Gupta is an aspiring Data Scientist and Information Technology student at RGIPT. Explore her projects, skills, experience and interests.",
+      "initialOgTitle": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "canonical": null
+    },
+    {
+      "path": "/projects/agentic-sql-search",
+      "status": 200,
+      "title": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "description": "Sakshi Gupta is an aspiring Data Scientist and Information Technology student at RGIPT. Explore her projects, skills, experience and interests.",
+      "initialOgTitle": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "canonical": null
+    },
+    {
+      "path": "/projects/password-strength-prediction",
+      "status": 200,
+      "title": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "description": "Sakshi Gupta is an aspiring Data Scientist and Information Technology student at RGIPT. Explore her projects, skills, experience and interests.",
+      "initialOgTitle": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "canonical": null
+    },
+    {
+      "path": "/projects/air-quality-analysis",
+      "status": 200,
+      "title": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "description": "Sakshi Gupta is an aspiring Data Scientist and Information Technology student at RGIPT. Explore her projects, skills, experience and interests.",
+      "initialOgTitle": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "canonical": null
+    },
+    {
+      "path": "/projects/alexa-voice-assistant",
+      "status": 200,
+      "title": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "description": "Sakshi Gupta is an aspiring Data Scientist and Information Technology student at RGIPT. Explore her projects, skills, experience and interests.",
+      "initialOgTitle": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "canonical": null
+    },
+    {
+      "path": "/projects/metron-data-optimizer",
+      "status": 200,
+      "title": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "description": "Sakshi Gupta is an aspiring Data Scientist and Information Technology student at RGIPT. Explore her projects, skills, experience and interests.",
+      "initialOgTitle": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "canonical": null
+    },
+    {
+      "path": "/projects/credresolve-collections-dashboard",
+      "status": 200,
+      "title": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "description": "Sakshi Gupta is an aspiring Data Scientist and Information Technology student at RGIPT. Explore her projects, skills, experience and interests.",
+      "initialOgTitle": "Sakshi Gupta \u00b7 Aspiring Data Scientist \u00b7 SG",
+      "canonical": null
+    }
+  ],
+  "assets": [
+    {
+      "path": "/favicon.svg",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "bytes": 221,
+      "sha256": "0186459ca917588b3c72facb79d6c55e5e339426d72197d7996367ee11ebea06"
+    },
+    {
+      "path": "/og-image.svg",
+      "status": 200,
+      "mime": "image/svg+xml",
+      "bytes": 1432,
+      "sha256": "746b7c1eefb93915649b0c62798f0d87ffd5b37a7360983346e77a11750f4b04"
+    },
+    {
+      "path": "/og-image.png",
+      "status": 200,
+      "mime": "image/png",
+      "bytes": 48742,
+      "sha256": "092f88b03c6bf2a177bd8b9fd9c2d203b128a39262f269fe1a57488d1e869a42"
+    },
+    {
+      "path": "/resume/sakshi-gupta-resume.pdf?v=2026-11-03-0eeadf37c6a1",
+      "status": 200,
+      "mime": "application/pdf",
+      "bytes": 166684,
+      "sha256": "0eeadf37c6a1fb4315648b10ebc5d2e02406425eaf04d5755c62c27cbc65204c"
+    }
+  ],
+  "origin": null,
+  "crawlFilesOmitted": true
+}

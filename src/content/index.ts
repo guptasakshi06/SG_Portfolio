@@ -1,4 +1,5 @@
 import profile from './profile.json'
+import contact from './contact.json'
 import projects from './projects.json'
 import skills from './skills.json'
 import achievements from './achievements.json'
@@ -13,6 +14,6 @@ import type { NotebookContent, Project } from './types'
 import type { PortfolioContent } from './types'
 import { validateContent } from '../lib/validate-content'
 
-export const content: PortfolioContent = { skillsPage, profilePages, home, profile, projects: projects as Project[], notebook: notebook as NotebookContent, skills, achievements, education, experience, experiments }
+export const content: PortfolioContent = { contact, skillsPage, profilePages, home, profile, projects: projects as Project[], notebook: notebook as NotebookContent, skills, achievements, education, experience, experiments }
 const errors = validateContent(content)
 if (errors.length) throw new Error(`Invalid portfolio content:\n${errors.join('\n')}`)

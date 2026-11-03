@@ -1,0 +1,262 @@
+[
+  {
+    "canonical": null,
+    "description": [
+      "Sakshi Gupta is an aspiring Data Scientist and Information Technology student at RGIPT. Explore her projects, skills, experience and interests."
+    ],
+    "h1": "Turning data into meaningful insights.",
+    "ogTitle": [
+      "Sakshi Gupta · Aspiring Data Scientist · SG"
+    ],
+    "path": "/",
+    "robots": "noindex, nofollow",
+    "title": "Sakshi Gupta · Aspiring Data Scientist · SG"
+  },
+  {
+    "canonical": null,
+    "description": [
+      "Meet Sakshi Gupta: Information Technology student at RGIPT with interests in data science, analytics and AI, and resume-backed internship experience."
+    ],
+    "h1": "About Me",
+    "ogTitle": [
+      "About Sakshi Gupta · SG"
+    ],
+    "path": "/about",
+    "robots": "noindex, nofollow",
+    "title": "About Sakshi Gupta · SG"
+  },
+  {
+    "canonical": null,
+    "description": [
+      "Explore Sakshi Gupta’s projects through plain-language overviews, documented tools, source notes and optional technical details."
+    ],
+    "h1": "My Projects",
+    "ogTitle": [
+      "Data Science & Analytics Projects · Sakshi Gupta · SG"
+    ],
+    "path": "/projects",
+    "robots": "noindex, nofollow",
+    "title": "Data Science & Analytics Projects · Sakshi Gupta · SG"
+  },
+  {
+    "canonical": null,
+    "description": [
+      "Explore an interactive machine learning teaching example with clearly synthetic data. Actual experiment results and research notes are still to be supplied."
+    ],
+    "h1": "Experiments & Research",
+    "ogTitle": [
+      "Experiments & Research · ML LAB · SG"
+    ],
+    "path": "/experiments",
+    "robots": "noindex, nofollow",
+    "title": "Experiments & Research · ML LAB · SG"
+  },
+  {
+    "canonical": null,
+    "description": [
+      "Explore Sakshi Gupta’s programming, data analysis, machine learning and development skill inventory, with source-backed project connections."
+    ],
+    "h1": "Skills & Technologies",
+    "ogTitle": [
+      "Skills & Technologies · Sakshi Gupta · SG"
+    ],
+    "path": "/skills",
+    "robots": "noindex, nofollow",
+    "title": "Skills & Technologies · Sakshi Gupta · SG"
+  },
+  {
+    "canonical": null,
+    "description": [
+      "Sakshi Gupta’s B.Tech in Information Technology at RGIPT, Jais, Amethi: August 2023 to expected May 2027."
+    ],
+    "h1": "Education",
+    "ogTitle": [
+      "Education · Sakshi Gupta · SG"
+    ],
+    "path": "/education",
+    "robots": "noindex, nofollow",
+    "title": "Education · Sakshi Gupta · SG"
+  },
+  {
+    "canonical": null,
+    "description": [
+      "Sakshi Gupta’s owner-supplied coding and hackathon achievements, with original qualifiers and clearly stated evidence availability."
+    ],
+    "h1": "Achievements",
+    "ogTitle": [
+      "Coding & Hackathon Achievements · Sakshi Gupta · SG"
+    ],
+    "path": "/achievements",
+    "robots": "noindex, nofollow",
+    "title": "Coding & Hackathon Achievements · Sakshi Gupta · SG"
+  },
+  {
+    "canonical": null,
+    "description": [
+      "Get in touch with Sakshi Gupta about internships and full-time opportunities. Find her email, GitHub, LinkedIn and PDF resume."
+    ],
+    "h1": "Let’s start a conversation.",
+    "ogTitle": [
+      "Contact Sakshi Gupta · Resume & Profiles · SG"
+    ],
+    "path": "/contact",
+    "robots": "noindex, nofollow",
+    "title": "Contact Sakshi Gupta · Resume & Profiles · SG"
+  },
+  {
+    "canonical": null,
+    "description": [
+      "Exploring how AI could help identify possible interference with railway tracks."
+    ],
+    "h1": "AI-powered Railway Track Tampering Detection System",
+    "ogTitle": [
+      "AI-powered Railway Track Tampering Detection System · Sakshi Gupta · SG"
+    ],
+    "path": "/projects/railway-track-tampering",
+    "robots": "noindex, nofollow",
+    "title": "AI-powered Railway Track Tampering Detection System · Sakshi Gupta · SG"
+  },
+  {
+    "canonical": null,
+    "description": [
+      "Exploring emotion-related patterns in speech."
+    ],
+    "h1": "EmotionAI Studio — Speech Emotion Analytics",
+    "ogTitle": [
+      "EmotionAI Studio — Speech Emotion Analytics · Sakshi Gupta · SG"
+    ],
+    "path": "/projects/emotionai-studio",
+    "robots": "noindex, nofollow",
+    "title": "EmotionAI Studio — Speech Emotion Analytics · Sakshi Gupta · SG"
+  },
+  {
+    "canonical": null,
+    "description": [
+      "Comparing a company's stock with a broader market benchmark."
+    ],
+    "h1": "Reliance vs NIFTY 50 Stock Analysis",
+    "ogTitle": [
+      "Reliance vs NIFTY 50 Stock Analysis · Sakshi Gupta · SG"
+    ],
+    "path": "/projects/reliance-nifty-analysis",
+    "robots": "noindex, nofollow",
+    "title": "Reliance vs NIFTY 50 Stock Analysis · Sakshi Gupta · SG"
+  },
+  {
+    "canonical": null,
+    "description": [
+      "A Power BI project for exploring loan distribution, applicant demographics and financial risk patterns."
+    ],
+    "h1": "End-to-End Loan Analysis Dashboard",
+    "ogTitle": [
+      "End-to-End Loan Analysis Dashboard · Sakshi Gupta · SG"
+    ],
+    "path": "/projects/loan-analysis-dashboard",
+    "robots": "noindex, nofollow",
+    "title": "End-to-End Loan Analysis Dashboard · Sakshi Gupta · SG"
+  },
+  {
+    "canonical": null,
+    "description": [
+      "Exploring ways to make information in databases easier to find."
+    ],
+    "h1": "Agentic SQL Search",
+    "ogTitle": [
+      "Agentic SQL Search · Sakshi Gupta · SG"
+    ],
+    "path": "/projects/agentic-sql-search",
+    "robots": "noindex, nofollow",
+    "title": "Agentic SQL Search · Sakshi Gupta · SG"
+  },
+  {
+    "canonical": null,
+    "description": [
+      "Exploring how patterns in text can help estimate password strength."
+    ],
+    "h1": "Password Strength Prediction using NLP and Machine Learning",
+    "ogTitle": [
+      "Password Strength Prediction using NLP and Machine Learning · Sakshi Gupta · SG"
+    ],
+    "path": "/projects/password-strength-prediction",
+    "robots": "noindex, nofollow",
+    "title": "Password Strength Prediction using NLP and Machine Learning · Sakshi Gupta · SG"
+  },
+  {
+    "canonical": null,
+    "description": [
+      "Exploring patterns in air quality readings through analysis and charts."
+    ],
+    "h1": "Air Quality Data Analysis and Visualization",
+    "ogTitle": [
+      "Air Quality Data Analysis and Visualization · Sakshi Gupta · SG"
+    ],
+    "path": "/projects/air-quality-analysis",
+    "robots": "noindex, nofollow",
+    "title": "Air Quality Data Analysis and Visualization · Sakshi Gupta · SG"
+  },
+  {
+    "canonical": null,
+    "description": [
+      "Exploring voice-based interaction using deep learning."
+    ],
+    "h1": "Alexa Voice Assistant using Deep Learning",
+    "ogTitle": [
+      "Alexa Voice Assistant using Deep Learning · Sakshi Gupta · SG"
+    ],
+    "path": "/projects/alexa-voice-assistant",
+    "robots": "noindex, nofollow",
+    "title": "Alexa Voice Assistant using Deep Learning · Sakshi Gupta · SG"
+  },
+  {
+    "canonical": null,
+    "description": [
+      "Compares ways to store analytical data for a stated workload, using measured local tests and data-integrity checks to explain a recommendation."
+    ],
+    "h1": "Metron — Data Optimizer",
+    "ogTitle": [
+      "Metron — Data Optimizer · Sakshi Gupta · SG"
+    ],
+    "path": "/projects/metron-data-optimizer",
+    "robots": "noindex, nofollow",
+    "title": "Metron — Data Optimizer · Sakshi Gupta · SG"
+  },
+  {
+    "canonical": null,
+    "description": [
+      "Brings collection performance, data-quality issues, recovery funnels and channel comparisons into one dashboard."
+    ],
+    "h1": "CredResolve — Collections Intelligence Dashboard",
+    "ogTitle": [
+      "CredResolve — Collections Intelligence Dashboard · Sakshi Gupta · SG"
+    ],
+    "path": "/projects/credresolve-collections-dashboard",
+    "robots": "noindex, nofollow",
+    "title": "CredResolve — Collections Intelligence Dashboard · Sakshi Gupta · SG"
+  },
+  {
+    "canonical": null,
+    "description": [
+      "This portfolio page could not be found. Explore Sakshi Gupta’s home page or browse available projects."
+    ],
+    "h1": "Project not found.",
+    "ogTitle": [
+      "Page not found · SG"
+    ],
+    "path": "/projects/not-a-project",
+    "robots": "noindex, nofollow",
+    "title": "Page not found · SG"
+  },
+  {
+    "canonical": null,
+    "description": [
+      "This portfolio page could not be found. Explore Sakshi Gupta’s home page or browse available projects."
+    ],
+    "h1": "This page isn’t here.",
+    "ogTitle": [
+      "Page not found · SG"
+    ],
+    "path": "/not-a-page",
+    "robots": "noindex, nofollow",
+    "title": "Page not found · SG"
+  }
+]

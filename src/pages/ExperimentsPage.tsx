@@ -11,7 +11,6 @@ export function ExperimentsPage() {
   const { experiments } = content
   const { page } = experiments
   return <div className="experiments-page">
-    <title>Experiments & Research · SG</title>
     <PageIntro eyebrow={page.eyebrow} title={page.title}><p>{page.introduction}</p></PageIntro>
     <section className="lab-actual content-panel" aria-labelledby="actual-title"><FlaskConical size={22} aria-hidden="true" /><div><h2 id="actual-title">{page.actualTitle}</h2>
       {experiments.actual.length ? experiments.actual.map(item => <article key={item.id}><h3>{item.title}</h3><p>{item.description}</p><p>{item.accessibleSummary}</p><DataTable sample={false} provenance={item.provenance} view={experimentView(item)} /></article>) : <><p>{experiments.emptyMessage}</p><Link className="text-link" to="/projects">Explore documented projects</Link></>}

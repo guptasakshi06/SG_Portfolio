@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import type { KeyboardEvent } from 'react'
 import { ArrowUpRight, Search, X } from 'lucide-react'
+import { ProfileAction } from '../../components/layout/ProfileAction'
 import { content } from '../../content'
 import { buildSearchIndex, nextResultIndex, searchGroups, searchPortfolio } from './search'
 import type { SearchEntry } from './search'
@@ -70,6 +71,7 @@ export function CommandPalette({ onClose, onChoose }: { onClose: () => void; onC
       })}
     </div>
     {!results.length ? <div className="search-empty"><h3>No matches yet</h3><p>Try a shorter word, a project topic or a skill such as Python. Clear search to browse all pages.</p><button type="button" className="text-link" onClick={() => { updateQuery(''); inputRef.current?.focus() }}>Browse pages</button></div> : null}
+    <div className="search-quick-actions" aria-label="Contact and resume"><ProfileAction kind="email" label="Email Sakshi" /><ProfileAction kind="resume" label="Download resume" /></div>
     <p id="search-help" className="search-help"><span><kbd>↑</kbd> <kbd>↓</kbd> move</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span></p>
   </dialog>
 }

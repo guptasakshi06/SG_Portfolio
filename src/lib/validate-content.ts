@@ -55,6 +55,7 @@ export function validateContent(content: PortfolioContent): string[] {
   if (!content.notebook.example.blocks.length || content.notebook.example.blocks.some(block => !block.sample)) errors.push('notebook example: every block must be marked illustrative')
   notebookBlocks(content.notebook.example.blocks, 'notebook example')
   const { profile, projects, skills } = content
+  Object.entries(content.contact).forEach(([key, value]) => required(value, `contact.${key}`))
   Object.entries(content.skillsPage).forEach(([key, value]) => required(value, `skillsPage.${key}`))
   Object.entries(content.profilePages).forEach(([section, copy]) => {
     Object.entries(copy).forEach(([key, value]) => {

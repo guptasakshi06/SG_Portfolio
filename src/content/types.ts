@@ -58,6 +58,7 @@ export interface ProfilePages {
   nextSteps: { title: string; description: string; projectsLabel: string; contactLabel: string }
 }
 export interface PortfolioContent {
+  contact: Record<'eyebrow' | 'title' | 'introduction' | 'emailTitle' | 'emailDescription' | 'emailLabel' | 'emailNote' | 'profilesTitle' | 'githubDescription' | 'linkedinDescription' | 'resumeTitle' | 'resumeDescription' | 'resumeNote' | 'resumeMissing' | 'nextTitle' | 'nextDescription' | 'projectsLabel', string>
   skillsPage: Record<'eyebrow' | 'title' | 'introduction' | 'groupsTitle' | 'instructions' | 'inventoryNote' | 'chooseTitle' | 'chooseDescription' | 'unknownTitle' | 'unknownDescription' | 'clearLabel' | 'detailEyebrow' | 'sourceLabel' | 'relatedTitle' | 'relatedNote' | 'emptyTitle' | 'emptyDescription' | 'allProjectsLabel' | 'browseLabel' | 'contextLabel', string>
   profilePages: ProfilePages
   notebook: NotebookContent

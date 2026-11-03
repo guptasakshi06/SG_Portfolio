@@ -1,0 +1,236 @@
+[
+  {
+    "actions": [
+      {
+        "height": 44,
+        "text": "Send an email",
+        "width": 157.60000610351562
+      },
+      {
+        "height": 44,
+        "text": "GitHub",
+        "width": 68.67500305175781
+      },
+      {
+        "height": 44,
+        "text": "LinkedIn",
+        "width": 78.7249984741211
+      },
+      {
+        "height": 44.70000076293945,
+        "text": "Read resume",
+        "width": 147.375
+      },
+      {
+        "height": 44,
+        "text": "Download PDF",
+        "width": 124.5875015258789
+      },
+      {
+        "height": 44,
+        "text": "Explore projects",
+        "width": 106.95000457763672
+      }
+    ],
+    "contactWidth": 264.8000183105469,
+    "pageOverflow": false,
+    "scrollWidth": 305,
+    "sidebar": "Collapse sidebar",
+    "width": 320
+  },
+  {
+    "actions": [
+      {
+        "height": 44,
+        "text": "Send an email",
+        "width": 157.60000610351562
+      },
+      {
+        "height": 44,
+        "text": "GitHub",
+        "width": 68.67500305175781
+      },
+      {
+        "height": 44,
+        "text": "LinkedIn",
+        "width": 78.7249984741211
+      },
+      {
+        "height": 44.70000076293945,
+        "text": "Read resume",
+        "width": 147.375
+      },
+      {
+        "height": 44,
+        "text": "Download PDF",
+        "width": 124.5875015258789
+      },
+      {
+        "height": 44,
+        "text": "Explore projects",
+        "width": 106.95000457763672
+      }
+    ],
+    "contactWidth": 296.8000183105469,
+    "pageOverflow": false,
+    "scrollWidth": 345,
+    "sidebar": "Collapse sidebar",
+    "width": 360
+  },
+  {
+    "actions": [
+      {
+        "height": 44,
+        "text": "Send an email",
+        "width": 157.60000610351562
+      },
+      {
+        "height": 44,
+        "text": "GitHub",
+        "width": 68.67500305175781
+      },
+      {
+        "height": 44,
+        "text": "LinkedIn",
+        "width": 78.7249984741211
+      },
+      {
+        "height": 44.70000076293945,
+        "text": "Read resume",
+        "width": 147.375
+      },
+      {
+        "height": 44,
+        "text": "Download PDF",
+        "width": 124.5875015258789
+      },
+      {
+        "height": 44,
+        "text": "Explore projects",
+        "width": 106.95000457763672
+      }
+    ],
+    "contactWidth": 327.20001220703125,
+    "pageOverflow": false,
+    "scrollWidth": 375,
+    "sidebar": "Collapse sidebar",
+    "width": 390
+  },
+  {
+    "actions": [
+      {
+        "height": 44,
+        "text": "Send an email",
+        "width": 157.60000610351562
+      },
+      {
+        "height": 44,
+        "text": "GitHub",
+        "width": 68.67500305175781
+      },
+      {
+        "height": 44,
+        "text": "LinkedIn",
+        "width": 78.7249984741211
+      },
+      {
+        "height": 44.70000076293945,
+        "text": "Read resume",
+        "width": 147.375
+      },
+      {
+        "height": 44,
+        "text": "Download PDF",
+        "width": 124.5875015258789
+      },
+      {
+        "height": 44,
+        "text": "Explore projects",
+        "width": 106.95000457763672
+      }
+    ],
+    "contactWidth": 427.375,
+    "pageOverflow": false,
+    "scrollWidth": 753,
+    "sidebar": "Collapse sidebar",
+    "width": 768
+  },
+  {
+    "actions": [
+      {
+        "height": 44,
+        "text": "Send an email",
+        "width": 157.60000610351562
+      },
+      {
+        "height": 44,
+        "text": "GitHub",
+        "width": 68.67500305175781
+      },
+      {
+        "height": 44,
+        "text": "LinkedIn",
+        "width": 78.7249984741211
+      },
+      {
+        "height": 44.70000076293945,
+        "text": "Read resume",
+        "width": 147.375
+      },
+      {
+        "height": 44,
+        "text": "Download PDF",
+        "width": 124.5875015258789
+      },
+      {
+        "height": 44,
+        "text": "Explore projects",
+        "width": 106.95000457763672
+      }
+    ],
+    "contactWidth": 662.9000244140625,
+    "pageOverflow": false,
+    "scrollWidth": 1009,
+    "sidebar": "Collapse sidebar",
+    "width": 1024
+  },
+  {
+    "actions": [
+      {
+        "height": 44,
+        "text": "Send an email",
+        "width": 157.60000610351562
+      },
+      {
+        "height": 44,
+        "text": "GitHub",
+        "width": 68.67500305175781
+      },
+      {
+        "height": 44,
+        "text": "LinkedIn",
+        "width": 78.7249984741211
+      },
+      {
+        "height": 44.70000076293945,
+        "text": "Read resume",
+        "width": 147.375
+      },
+      {
+        "height": 44,
+        "text": "Download PDF",
+        "width": 124.5875015258789
+      },
+      {
+        "height": 44,
+        "text": "Explore projects",
+        "width": 106.95000457763672
+      }
+    ],
+    "contactWidth": 1045.5999755859375,
+    "pageOverflow": false,
+    "scrollWidth": 1425,
+    "sidebar": "Collapse sidebar",
+    "width": 1440
+  }
+]

@@ -1,0 +1,26 @@
+.contact-page { container-type: inline-size; }
+.contact-page p { overflow-wrap: anywhere; }
+.contact-page h2 { font-size: clamp(1.25rem, 2.2vw, 1.65rem); line-height: 1.35; }
+.contact-page .page-intro { margin-bottom: 24px; }
+.contact-availability { display: flex; gap: 10px; align-items: center; color: var(--color-muted); font-size: .85rem; margin-bottom: 36px; }
+.contact-availability .availability-dot { flex-shrink: 0; }
+.contact-grid { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); border: 1px solid var(--color-border); border-radius: var(--radius-panel); overflow: hidden; background: var(--color-background-secondary); }
+.contact-email, .contact-profiles { padding: 36px; min-width: 0; }
+.contact-email { background: linear-gradient(130deg, #a78bfa0c, transparent 75%); }
+.contact-icon { display: grid; place-items: center; width: 52px; height: 52px; border: 1px solid #65548c; border-radius: 12px; color: var(--color-accent); margin-bottom: 28px; }
+.contact-email .eyebrow, .contact-resume .eyebrow { margin-bottom: 14px; color: var(--color-accent); }
+.contact-email > p:not(.eyebrow), .contact-resume p:not(.eyebrow) { color: var(--color-muted); max-width: 60ch; margin-top: 16px; }
+.contact-email .contact-address { color: var(--color-text); font-size: clamp(1rem, 2vw, 1.2rem); margin-top: 28px; user-select: all; }
+.contact-note { font-size: .8rem; }
+.contact-profiles { border-left: 1px solid var(--color-border); }
+.contact-profiles > svg { color: var(--color-accent-secondary); margin-bottom: 20px; }
+.contact-profile-row { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--color-border); }
+.contact-profile-row p { color: var(--color-muted); font-size: .875rem; margin-top: 10px; }
+.contact-resume { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 32px; align-items: center; border-block: 1px solid var(--color-border); margin-top: 40px; padding-block: 36px; }
+.contact-resume-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+.contact-next { display: flex; align-items: flex-start; gap: 20px; margin-top: 40px; }
+.contact-next > svg { flex-shrink: 0; color: var(--color-accent-secondary); margin-top: 4px; }
+.contact-next p { color: var(--color-muted); max-width: 62ch; margin-top: 12px; }
+.contact-next .text-link { margin-top: 14px; }
+@container (max-width: 700px) { .contact-grid, .contact-resume { grid-template-columns: 1fr; } .contact-profiles { border-left: 0; border-top: 1px solid var(--color-border); } .contact-resume-actions { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 12px 24px; } }
+@container (max-width: 400px) { .contact-email, .contact-profiles { padding: 24px; } .contact-next { gap: 12px; } }

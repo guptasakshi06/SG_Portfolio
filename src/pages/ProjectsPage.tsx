@@ -18,7 +18,6 @@ export function ProjectsPage() {
     setParams(new URLSearchParams(catalogSearch(next)), { replace, preventScrollReset: true })
   }
   return <div className="projects-page">
-    <title>My Projects · SG</title>
     <PageIntro eyebrow="SG / Selected ideas & documented builds" title="My Projects"><p>Explore {content.projects.length} projects across data, analytics and AI. Start with a topic that interests you, then look closer at the work.</p></PageIntro>
     <ProjectFilters filters={filters} onChange={updateFilters} searchRef={searchRef} />
     <div className="catalog-results-heading">

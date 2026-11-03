@@ -11,7 +11,7 @@ if (!resume) {
 } else {
   const path = resolve('public', resume.path.slice(1))
   if (!existsSync(path)) {
-    console.warn('Resume asset absent. Set profile.resume to null until a real PDF is available; do not render a download.')
+    console.warn('Resume asset absent. Shared PDF availability check will suppress resume actions. Set profile.resume to null if no real PDF is intended.')
   } else {
     const bytes = readFileSync(path)
     if (bytes.subarray(0, 5).toString() !== '%PDF-') throw new Error('Resume asset is not a PDF')

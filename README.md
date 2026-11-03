@@ -1,6 +1,6 @@
 # SG · Sakshi Gupta’s portfolio
 
-A frontend portfolio built in small, verifiable sprints. **S09 adds global search** to the completed Home, project catalog/details, profile pages, skills explorer and clearly synthetic ML LAB. Search opens from the shared header or Ctrl/Cmd+K, with grouped public-content results and real page/project/skill destinations. Contact, final metadata and release audits remain later sprints. Read [HANDOFF.md](HANDOFF.md) before continuing work and complete one sprint per chat.
+A frontend portfolio built in small, verifiable sprints. **S10 completes Contact, shared contact/resume states and route metadata** alongside Home, projects, profile pages, skills, ML LAB and global search. All owner facts and the original resume are preserved. Final accessibility/responsive and release audits remain S11/S12. Read [HANDOFF.md](HANDOFF.md) before continuing and complete one sprint per chat.
 
 ## Run locally
 
@@ -31,7 +31,7 @@ Open the Local URL printed by Vite (normally `http://localhost:5173`). Keep that
 | `npm run lint` | Oxlint, including React hook checks; warnings fail |
 | `npm run validate:content` | Cross-record content checks and configured PDF/hash check |
 | `npm test` | Node test runner through tsx; content integrity and safe-link regression tests |
-| `npm run build` | Content validation, TypeScript and production build into `dist/` |
+| `npm run build` | Content validation, TypeScript, production build and route metadata HTML into `dist/` |
 | `npm run preview` | Local preview of the existing production build |
 | `npm run check` | Typecheck, lint, tests and build |
 
@@ -40,23 +40,23 @@ S01 verification used Node 24.22.2 and npm 9.2.0. A startup maintenance fix repl
 ## Structure and routes
 
 - `src/app/`: declarative React Router routes and eight navigation destinations.
-- `src/pages/`: Home, Projects, Project, About, Education, Achievements, remaining secondary-page previews and recoverable 404.
+- `src/pages/`: All eight main pages, project details and recoverable 404.
 - `src/features/profile/`: shared education, experience and achievement cards, month labels and next-step links.
 - `src/components/home/`: exact hero, original static grid/orbit artwork and profile highlights.
 - `src/features/notebook/`: lazy NotebookViewer, safe NotebookBlocks, CodeBlock and fine-grained Shiki highlighting.
 - `src/features/projects/`: shared ProjectPreview in Home/catalog modes, ProjectFilters, source-attributed ProjectTechnologies, safe ProjectSources and pure catalog filter/query helpers.
 - `src/components/layout/`: AppShell, TopBar, desktop sidebar, modal mobile navigation, shared navigation links, configured profile/resume actions and footer.
-- `src/components/ui/`: shared page intro, preview notice, SectionHeading and Badge.
+- `src/components/ui/`: shared page intro, SectionHeading and Badge.
 - `src/content/`: runtime JSON, TypeScript contracts and validated content entry point.
 - `src/lib/`: cross-record validation and safe link helpers.
 - `src/styles/`: Tailwind v4 CSS theme tokens, base styles and responsive scaffold styling.
-- `public/`: SG favicon and owner resume. Vite copies assets unchanged into `dist/`.
+- `public/`: SG favicon, original social preview SVG/PNG and owner resume. Vite copies assets unchanged into `dist/`.
 - `docs/sources/`: preserved owner inputs and full README evidence snapshots. These maintenance files are **not** imported into the browser bundle.
 - `scripts/`, `tests/`: lightweight content/PDF checks and regression tests.
 
 Routes: `/`, `/about`, `/projects`, `/projects/:slug`, `/experiments`, `/skills`, `/education`, `/achievements`, `/contact`, plus a catch-all 404. Project routes come from content, including all ten current entries. Unknown project slugs show recovery links. Vite serves SPA history fallbacks locally; production hosting must be configured in S12. Nothing is deployed yet.
 
-The shared shell lives in `src/components/layout/AppShell.tsx`. At 1200px and above the sidebar starts expanded (264px); at 768–1199px it starts collapsed (80px). Visitors can toggle it by pointer or keyboard. Below 768px a named menu button opens a native modal dialog: background scrolling is locked, Tab/Shift+Tab wrap inside, Escape or Close returns focus, navigation closes it, and resizing to desktop clears it. Pathname changes focus the main landmark and reset scroll; query-only filter changes retain focus and scroll; nested project pages keep My Projects active. Collapse preference lasts for the current app session. Search is omitted until S09. HomePage now uses this shell; later pages replace previews rather than duplicating layout.
+The shared shell lives in `src/components/layout/AppShell.tsx`. At 1200px and above the sidebar starts expanded (264px); at 768–1199px it starts collapsed (80px). Visitors can toggle it by pointer or keyboard. Below 768px a named menu button opens a native modal dialog: background scrolling is locked, Tab/Shift+Tab wrap inside, Escape or Close returns focus, navigation closes it, and resizing to desktop clears it. Pathname changes focus the main landmark and reset scroll; query-only filter changes retain focus and scroll; nested project pages keep My Projects active. Collapse preference lasts for the current app session. Search opens from the header or Ctrl/Cmd+K. All pages use this shell.
 
 ## Edit content
 
@@ -66,6 +66,8 @@ Keep owner facts in JSON rather than JSX. Start with `docs/sources/owner-inputs.
 | --- | --- |
 | `home.json` | Homepage section copy, action labels and curated skill IDs; selected projects derive from projects.json featuredOrder |
 | `profile-pages.json` | About/Education/Achievements editorial copy and shared next-step labels; owner-review notes live in docs/sources/S06-copy-notes.json |
+| `contact.json` | Welcoming Contact copy, descriptions, action labels and missing-PDF guidance |
+| `seo.json` | Route titles/descriptions, social asset labels and nullable production origin |
 | `profile.json` | Name, role, exact hero copy, availability, about copy, contact URLs, central resume metadata |
 | `notebook.json` | Standard technical topics/pending copy and a separate illustrative renderer example (every example block must be sample=true) |
 | `projects.json` | Stable IDs/slugs, summaries, nullable problem/build fields, categories, featured order, technology claims, links, technical blocks, provenance and gaps |
@@ -83,7 +85,7 @@ Run `npm run check` after changes. Types enforce the content structure; validati
 - `featuredOrder` is nullable and owner-configurable; the current selection is railway, EmotionAI, loan, in that order.
 - `technologyClaims` use existing skill IDs and a source per claim. Related skills/projects must derive from these claims. Editorial categories and proposed technologies do not prove implementation.
 - README review confirms documentation only. Retain practice/MVP, future-filter, synthetic-cost and version caveats. The earlier Metron resume version must not be merged into its current README stack.
-- Notebook blocks are typed text, code, table, chart, or callout with mandatory provenance and a sample marker. The renderer is deferred to S05; never execute supplied HTML or code.
+- Notebook blocks are typed text, code, table, chart, or callout with mandatory provenance and a sample marker. The lazy reader is implemented; never execute supplied HTML or code.
 - Use safe HTTPS external URLs. `src/lib/links.ts` centralizes protocol checks, encoded email URLs and versioned local resume URLs for shared actions.
 - No production origin exists. Do not add a fictional canonical URL, live demo, public deployment claim or fake contact submission.
 
@@ -96,11 +98,42 @@ The authoritative asset is `public/resume/sakshi-gupta-resume.pdf`. The source u
 1. Obtain the new real PDF from the owner. Check it is readable (for example `pdfinfo` and a visual review). Do not replace it with a test/sample PDF.
 2. Replace the stable workspace asset. Preserve its public path, `/resume/sakshi-gupta-resume.pdf`, and desired download name, `Sakshi_Gupta_Resume.pdf`.
 3. Compute `sha256sum public/resume/sakshi-gupta-resume.pdf`. Update `sha256`, `source`, and `version` in `src/content/profile.json`; use a date plus a hash prefix so same-day replacements also change the URL. Update source metadata and `HANDOFF.md`, recording the new size, page count, hash and any factual changes. Preserve historical source attribution.
-4. Run `npm run check`. The content script confirms the PDF signature and SHA-256 match. Set `resume` to `null` if a genuine file is unavailable; the validator supports this state. A missing file with stale configured metadata is reported as a warning and must not become a download action.
-5. Start the app, open `/resume/sakshi-gupta-resume.pdf?v=YOUR_NEW_VERSION`, and verify the served file. Once shared actions exist, test every resume action and the actual browser download/open behavior.
-6. Rebuild, and redeploy if a hosted version exists. Versioned action URLs (`resumeHref`) refresh browser caches; local replacement alone never updates a deployed site. Hosting cache settings and replacement-fixture checks are completed in S10.
+4. Run `npm run check`. The content script confirms the PDF signature and SHA-256 match. A wrong hash or invalid PDF fails the build. Set `profile.resume` to `null` if no genuine file is available. A missing asset with stale metadata is reported; the runtime check suppresses all resume links.
+5. Start `npm run preview` after building. Open the versioned asset directly and use **Read resume** on Contact to verify a real PDF reader. Download from the header, homepage hero, Contact and palette; compare downloaded bytes/hash and the configured filename. Browsers can append a number when that filename already exists in Downloads.
+6. Deploy the new **build and PDF together** when a hosted site exists. The new version value changes every action URL; the shared probe also uses `cache: 'no-cache'` for revalidation. A host must honor version query strings and must not indefinitely cache the stable PDF path across updates. Verify the new URL/hash on the actual host, and invalidate any stale CDN cache if needed. Hosting-specific policies remain S12; replacing the local file alone never changes a deployed site.
 
-The topbar and homepage use `ProfileAction` for safe GitHub/LinkedIn, encoded email and centralized versioned resume links; `ProfileActions` composes the topbar group. The footer also uses the configured email. Null/unsafe profile or resume configuration renders an explicit unavailable label with no link. See `docs/verification/S03.md` for homepage browser flows, actual download/hash, screenshots and configured/null/unsafe action fixtures; S02 evidence remains in its report. Complete cross-site replacement fixtures and missing-file handling remain S10 scope.
+`ProfileAction` and the pure `profileActionHref` resolver cover the topbar, hero, footer email, Contact and palette. Social links open with `noopener noreferrer`; email uses a safely encoded real mailto. Read resume opens a new tab without a download attribute; Download uses the configured filename. Nullable inputs show deliberate noninteractive states; unsafe inputs fail content validation, and the renderer also rejects unsafe destinations defensively.
+
+`ResumeProvider` performs one shared same-origin PDF request per app mount (React StrictMode may restart it in development). Until checked, actions say Checking resume. A non-OK response, network error/ten-second timeout, redirect, wrong MIME or missing `%PDF-` signature becomes Resume unavailable everywhere. This also rejects a host returning the SPA’s HTML with HTTP 200 for a missing PDF. Contact explains how to get in touch instead. Reload after a transient network problem; availability is checked per app session, not continuously. This lightweight signature check is not a full PDF parser; actual replacement review still requires `pdfinfo` and visual inspection.
+
+The automated replacement check uses a temporary stable-path copy with an added valid PDF comment, updated hash/version, local HTTP serving and removal. It never overwrites the owner asset or publishes a fake resume. Run `npm test` for this check. Browser missing/HTML fallback fixtures are documented in `docs/verification/S10.md`.
+
+## Contact and owner-content checklist (S10)
+
+Contact has no form or sending service. Its mailto opens the visitor’s email app; no success notice or message submission is simulated. The visible email is selectable. GitHub/LinkedIn and PDF actions derive solely from `profile.json`; update `email`/`socials` there, or use null for unavailable values, then run `npm run check`. Contact wording lives in `contact.json`. Palette includes the same email/download actions, with keyboard focus containment retained.
+
+Before adding new owner content:
+
+- Confirm the email, HTTPS profile/repository/demo URLs, availability and any replacement resume with the owner. Correctly configured destinations do not establish public service availability or email delivery.
+- For each project, supply its repository/README/notebook, actual tools/methods, dataset provenance, evaluation context/results, limitations and optional screenshots/demo. Add source attribution per claim and keep undocumented fields null. Do not turn planned features or synthetic examples into achieved results.
+- For achievements, supply optional certificate files/proof links and dates; retain Myntra’s ideation-stage qualifier and other exact claims.
+- For research, supply actual records, provenance and context before populating actual-results or notes. Synthetic teaching fixtures stay labeled and separate.
+- Supply a real production origin when hosting is established. No domain, hosting project or deployed URL is currently configured.
+
+## Metadata and production origin (S10)
+
+`src/content/seo.json` is the single metadata configuration point. Its **productionOrigin is null**. Keep it null for local-only work. All eight main pages and all project slugs have distinct browser titles/descriptions and OG text; project summaries come from `projects.json`. Query filters and skill selections keep the base route metadata. Unknown routes/slugs receive recovery metadata and noindex. SG favicon and the original 1200×630 social preview at `/og-image.png` resolve locally; `/og-image.svg` is its editable source.
+
+Vite’s `transformIndexHtml` creates meaningful initial metadata. The build then runs `scripts/generate-metadata.ts`, producing `dist/<route>/index.html` for all 18 current routes without duplicating the JS bundle. `RouteMetadata` adopts/replaces these managed head tags after client navigation, preventing stale/duplicate descriptions. This is **static metadata generation, not full-page content prerendering**. The page body still requires JavaScript. Hosts must serve existing route HTML before the generic SPA fallback; otherwise a non-JavaScript social crawler receives the generic Home metadata. There is no promise of perfect SPA indexing, crawler rendering or social-platform caching. No framework migration was required. See official [Vite HTML transform hooks](https://vite.dev/guide/api-plugin#transformindexhtml).
+
+When a real HTTPS production origin is known:
+
+1. Set `productionOrigin` to that origin only (no path/query/fragment/credentials/port). Validation rejects placeholder/localhost addresses. This is a build-time JSON setting, not an environment secret.
+2. Run `npm run check`, deploy the entire `dist/` tree, and preserve existing route HTML before applying the SPA fallback (hosting configuration is S12).
+3. The build derives absolute canonical/OG page URLs and PNG image URLs, index/follow metadata, `robots.txt` and an XML sitemap from that single origin and the actual route inventory. There are no fabricated last-modified dates. Query/filter/hash variants are excluded. Unknown client routes stay noindex and omit canonical/og:url.
+4. Inspect initial HTML at the deployed page/project URLs, download/open the social image, confirm the origin and sitemap routes, and then test any relevant social crawler. Rebuild whenever project slugs or metadata change; a stale deployment does not update from JSON on disk.
+
+With origin null, canonical/og:url/absolute social image fields, robots.txt and sitemap.xml are intentionally omitted. Initial and client HTML carry noindex/nofollow; there is no fictional public address. Origin-enabled derivation is covered with explicit test-only inputs; it has not been deployed or verified on a real host.
 
 ## Tooling decisions
 
@@ -206,6 +239,6 @@ Private source JSON, resume metadata/hashes, sources/internal maintenance notes,
 
 `CommandPalette` uses a native modal dialog and an editable ARIA combobox with grouped listbox options. Up/Down wrap, Enter opens, Escape closes, Tab/Shift+Tab stay inside the dialog, and counts/no-match guidance/Clear/Browse pages provide recovery. DOM focus stays in the input while arrows update `aria-activedescendant`; pointer/touch options also navigate. The pattern follows the [WAI-ARIA combobox guidance](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/) and [native dialog behavior](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog). Keyboard editing keys retain their normal behavior.
 
-Dismissal restores previous focus and body scrolling. Selection closes search and pushes a real route into browser history; page/project results focus main, skill links use the existing `/skills?skill=STABLE_ID` contract and focus the detail heading, and portfolio results target existing section headings. This also works when selecting another skill on the same page or selecting the current destination. Ordinary catalog/skill query editing retains its existing focus behavior. Route changes dismiss the palette; history must not reopen it. Opening/closing the mobile drawer and search are mutually exclusive through native modal inertness and the shortcut guard. Optional terminal remains deferred from v1. Contact actions, resume states and SEO belong to S10.
+Dismissal restores previous focus and body scrolling. Selection closes search and pushes a real route into browser history; page/project results focus main, skill links use the existing `/skills?skill=STABLE_ID` contract and focus the detail heading, and portfolio results target existing section headings. This also works when selecting another skill on the same page or selecting the current destination. Ordinary catalog/skill query editing retains its existing focus behavior. Route changes dismiss the palette; history must not reopen it. Opening/closing the mobile drawer and search are mutually exclusive through native modal inertness and the shortcut guard. Optional terminal remains deferred from v1. Palette quick actions now reuse the shared email and resume rendering from S10.
 
 Verification: `docs/verification/S09.md`; five focused search tests plus production browser matching, keyboard/focus/history and responsive checks. No publishing or deployment is included.

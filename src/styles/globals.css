@@ -88,7 +88,7 @@
 .profile-link:hover { color: var(--color-text); background: var(--color-panel); }
 .resume-link { padding: 8px 14px; border: 1px solid #65548c; color: var(--color-text); gap: 8px; }
 .resume-link:hover { background: #251e38; border-color: var(--color-accent); }
-.unavailable-action { color: var(--color-muted); border-color: var(--color-border); max-width: 150px; }
+.unavailable-action { text-decoration: none; pointer-events: none; color: var(--color-muted); border-color: var(--color-border); max-width: 150px; }
 .shell-body { display: flex; align-items: flex-start; }
 .desktop-sidebar { position: sticky; top: var(--topbar-height); width: var(--sidebar-width); flex: 0 0 var(--sidebar-width); min-height: calc(100dvh - var(--topbar-height)); display: flex; flex-direction: column; padding: 20px 16px; border-right: 1px solid var(--color-border); background: var(--color-background-secondary); }
 .sidebar-heading { min-height: 44px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; gap: 8px; padding-left: 12px; }

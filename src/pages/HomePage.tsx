@@ -14,7 +14,6 @@ export function HomePage() {
   const skills = home.skills.ids.map(id => content.skills.items.find(skill => skill.id === id)!)
 
   return <div className="home-page">
-    <title>Sakshi Gupta · SG</title>
     <HomeHero />
     <HomeHighlights selectedCount={selected.length} />
     <section className="home-section" aria-labelledby="selected-work">

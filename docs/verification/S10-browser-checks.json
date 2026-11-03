@@ -1,0 +1,88 @@
+{
+  "missingPdf": {
+    "links": 0,
+    "contactMessage": true,
+    "paletteUnavailable": true
+  },
+  "htmlFallback": {
+    "status": 200,
+    "mime": "text/html",
+    "resumeLinks": 0
+  },
+  "downloads": {
+    "contact": "/home/ubuntu/Downloads/Sakshi_Gupta_Resume (2).pdf",
+    "palette": "/home/ubuntu/Downloads/Sakshi_Gupta_Resume (3).pdf",
+    "hero": "/home/ubuntu/Downloads/Sakshi_Gupta_Resume (4).pdf",
+    "topbar": "/home/ubuntu/Downloads/Sakshi_Gupta_Resume (5).pdf"
+  },
+  "keyboard": {
+    "paletteTabWrap": true,
+    "paletteShiftTabWrap": true,
+    "enterDownloads": true,
+    "escapeReturnsSearch": true,
+    "projectsEnterMainFocus": true,
+    "mobileDrawerCloses": true,
+    "mobileHomeMainFocus": true,
+    "mobileResumeFocusVisible": true
+  },
+  "tabletCompact": {
+    "width": 768,
+    "scrollWidth": 753
+  },
+  "shortPalette": {
+    "width": 390,
+    "height": 400,
+    "bounds": {
+      "left": 8,
+      "top": 8,
+      "right": 382.4,
+      "bottom": 392
+    },
+    "quickActionHeights": [
+      44,
+      44
+    ]
+  },
+  "productionConsole": [],
+  "downloadChecks": [
+    {
+      "surface": "contact",
+      "bytes": 166684,
+      "sha256": "0eeadf37c6a1fb4315648b10ebc5d2e02406425eaf04d5755c62c27cbc65204c",
+      "configuredName": "Sakshi_Gupta_Resume.pdf",
+      "actualName": "Sakshi_Gupta_Resume (2).pdf"
+    },
+    {
+      "surface": "palette",
+      "bytes": 166684,
+      "sha256": "0eeadf37c6a1fb4315648b10ebc5d2e02406425eaf04d5755c62c27cbc65204c",
+      "configuredName": "Sakshi_Gupta_Resume.pdf",
+      "actualName": "Sakshi_Gupta_Resume (3).pdf"
+    },
+    {
+      "surface": "hero",
+      "bytes": 166684,
+      "sha256": "0eeadf37c6a1fb4315648b10ebc5d2e02406425eaf04d5755c62c27cbc65204c",
+      "configuredName": "Sakshi_Gupta_Resume.pdf",
+      "actualName": "Sakshi_Gupta_Resume (4).pdf"
+    },
+    {
+      "surface": "topbar",
+      "bytes": 166684,
+      "sha256": "0eeadf37c6a1fb4315648b10ebc5d2e02406425eaf04d5755c62c27cbc65204c",
+      "configuredName": "Sakshi_Gupta_Resume.pdf",
+      "actualName": "Sakshi_Gupta_Resume (5).pdf"
+    }
+  ],
+  "finalMissingContact": {
+    "resumeLinks": 0,
+    "unavailableLabels": 1,
+    "textDecoration": "none"
+  },
+  "finalRebuild": {
+    "title": "Contact Sakshi Gupta · Resume & Profiles · SG",
+    "descriptionCount": 1,
+    "resumeLinks": 3,
+    "console": []
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "eyebrow": "SG / CONTACT",
+  "title": "Let’s start a conversation.",
+  "introduction": "Have an opportunity, a project question, or an idea to share? I’d be happy to hear from you.",
+  "emailTitle": "A hello goes a long way.",
+  "emailDescription": "For internships, full-time opportunities, or a conversation about data and technology, send me an email.",
+  "emailLabel": "Send an email",
+  "emailNote": "Opens your email app. You can also copy the address shown here.",
+  "profilesTitle": "Find me elsewhere",
+  "githubDescription": "Explore my repositories and documented work.",
+  "linkedinDescription": "Connect with me on LinkedIn.",
+  "resumeTitle": "A closer look at my background.",
+  "resumeDescription": "Read my resume for a concise overview of my education, experience and skills.",
+  "resumeNote": "PDF · opens in a new tab or downloads to your device.",
+  "resumeMissing": "The resume isn’t available right now. Please use the contact details on this page to get in touch.",
+  "nextTitle": "Curious about the work first?",
+  "nextDescription": "Start with a plain-language project overview, then explore the technical notes at your own pace.",
+  "projectsLabel": "Explore projects"
+}

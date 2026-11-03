@@ -1,0 +1,133 @@
+{
+  "contact": {
+    "head": [
+      {
+        "content": "Get in touch with Sakshi Gupta about internships and full-time opportunities. Find her email, GitHub, LinkedIn and PDF resume.",
+        "name": "description",
+        "tag": "META"
+      },
+      {
+        "content": "noindex, nofollow",
+        "name": "robots",
+        "tag": "META"
+      },
+      {
+        "content": "website",
+        "name": "og:type",
+        "tag": "META"
+      },
+      {
+        "content": "SG · Sakshi Gupta",
+        "name": "og:site_name",
+        "tag": "META"
+      },
+      {
+        "content": "en_IN",
+        "name": "og:locale",
+        "tag": "META"
+      },
+      {
+        "content": "Contact Sakshi Gupta · Resume & Profiles · SG",
+        "name": "og:title",
+        "tag": "META"
+      },
+      {
+        "content": "Get in touch with Sakshi Gupta about internships and full-time opportunities. Find her email, GitHub, LinkedIn and PDF resume.",
+        "name": "og:description",
+        "tag": "META"
+      },
+      {
+        "content": "summary",
+        "name": "twitter:card",
+        "tag": "META"
+      },
+      {
+        "content": "Contact Sakshi Gupta · Resume & Profiles · SG",
+        "name": "twitter:title",
+        "tag": "META"
+      },
+      {
+        "content": "Get in touch with Sakshi Gupta about internships and full-time opportunities. Find her email, GitHub, LinkedIn and PDF resume.",
+        "name": "twitter:description",
+        "tag": "META"
+      }
+    ],
+    "links": [
+      {
+        "download": null,
+        "href": "https://github.com/guptasakshi06",
+        "rel": "noopener noreferrer",
+        "target": "_blank",
+        "text": "GitHub"
+      },
+      {
+        "download": null,
+        "href": "https://www.linkedin.com/in/sakshi-gupta06sg/",
+        "rel": "noopener noreferrer",
+        "target": "_blank",
+        "text": "LinkedIn"
+      },
+      {
+        "download": "Sakshi_Gupta_Resume.pdf",
+        "href": "/resume/sakshi-gupta-resume.pdf?v=2026-11-03-0eeadf37c6a1",
+        "rel": "",
+        "target": "",
+        "text": "Resume"
+      },
+      {
+        "download": null,
+        "href": "mailto:guptasak06%40gmail.com",
+        "rel": "",
+        "target": "",
+        "text": "Send an email"
+      },
+      {
+        "download": null,
+        "href": "https://github.com/guptasakshi06",
+        "rel": "noopener noreferrer",
+        "target": "_blank",
+        "text": "GitHub"
+      },
+      {
+        "download": null,
+        "href": "https://www.linkedin.com/in/sakshi-gupta06sg/",
+        "rel": "noopener noreferrer",
+        "target": "_blank",
+        "text": "LinkedIn"
+      },
+      {
+        "download": null,
+        "href": "/resume/sakshi-gupta-resume.pdf?v=2026-11-03-0eeadf37c6a1",
+        "rel": "noopener noreferrer",
+        "target": "_blank",
+        "text": "Read resume"
+      },
+      {
+        "download": "Sakshi_Gupta_Resume.pdf",
+        "href": "/resume/sakshi-gupta-resume.pdf?v=2026-11-03-0eeadf37c6a1",
+        "rel": "",
+        "target": "",
+        "text": "Download PDF"
+      },
+      {
+        "download": null,
+        "href": "/projects",
+        "rel": "",
+        "target": "",
+        "text": "Explore projects"
+      },
+      {
+        "download": null,
+        "href": "mailto:guptasak06%40gmail.com",
+        "rel": "",
+        "target": "",
+        "text": "Say hello"
+      }
+    ],
+    "title": "Contact Sakshi Gupta · Resume & Profiles · SG"
+  },
+  "contactDownload": "/home/ubuntu/Downloads/Sakshi_Gupta_Resume (2).pdf",
+  "paletteDownload": "/home/ubuntu/Downloads/Sakshi_Gupta_Resume (3).pdf",
+  "pdfReader": "Read action opened versioned PDF in separate browser tab; one-page viewer screenshot saved; tab closed.",
+  "keyboard": "Quick action Tab wraps to Close; Shift+Tab returns to download; Enter downloads; Escape returns search trigger. Explore projects Enter focuses main; Back/reload restores Contact."
+}

@@ -21,7 +21,6 @@ export function ProjectPage() {
   const previous = content.projects[index - 1]
   const next = content.projects[index + 1]
   return <article className="project-detail">
-    <title>{`${project.title} · SG`}</title>
     <Link className="text-link back-link" to={`/projects${search}`}><ArrowLeft size={16} aria-hidden="true" />{search ? 'Back to filtered projects' : 'All projects'}</Link>
     <PageIntro eyebrow={project.categories.join(' / ')} title={project.title}><p>{project.summary}</p></PageIntro>
     <div className="project-evidence-banner"><FileText size={18} aria-hidden="true" /><p>{project.evidence.level}</p></div>

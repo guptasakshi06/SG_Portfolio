@@ -10,7 +10,6 @@ export function AboutPage() {
   const { profile, profilePages, education, experience } = content
   const copy = profilePages.about
   return <div className="profile-page">
-    <title>About Me · SG</title>
     <PageIntro eyebrow={copy.eyebrow} title={copy.title}><p>{copy.introduction}</p></PageIntro>
     <div className="about-context">
       <section className="about-interests" aria-labelledby="about-interests"><h2 id="about-interests">{copy.interestsTitle}</h2><p>{copy.interestsDescription}</p><ul className="profile-tags">{profile.focusAreas.map(area => <li key={area}>{area}</li>)}</ul></section>

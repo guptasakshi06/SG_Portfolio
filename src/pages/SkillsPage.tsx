@@ -28,7 +28,6 @@ export function SkillsPage() {
     headingRef.current?.focus({ preventScroll: true })
   }
   return <div className="skills-page">
-    <title>Skills & Technologies · SG</title>
     <PageIntro eyebrow={copy.eyebrow} title={copy.title}><p>{copy.introduction}</p></PageIntro>
     <div className="skills-overview"><p><strong>{content.skills.items.length} skills & tools</strong><span aria-hidden="true"> / </span>{content.skills.groups.length} areas to explore</p><p>{copy.inventoryNote}</p></div>
     <p className="sr-only" role="status" aria-live="polite" aria-atomic="true">{skill ? `${skill.name} selected. ${skill.explanation} ${relatedProjects(content.projects, skill.id).length} documented related projects. Use Read ${skill.name} details for the full description.` : unknown ? copy.unknownDescription : 'No skill selected.'}</p>

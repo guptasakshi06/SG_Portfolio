@@ -1,0 +1,77 @@
+[
+  {
+    "path": "src/content/achievements.json",
+    "unchangedFrom": "a5cd937",
+    "sha256": "f8ced2f2b5ed011e0ffda66c788a8c7c4254285fc73b3a4f6867ac70c52b2ce0"
+  },
+  {
+    "path": "src/content/profile-pages.json",
+    "unchangedFrom": "a5cd937",
+    "sha256": "e4afe2aa63b5486912d8c1c11ab0e42686a4c953c9c10cd637fcbd95d92a10ac"
+  },
+  {
+    "path": "src/content/experiments.json",
+    "unchangedFrom": "a5cd937",
+    "sha256": "ac754a9ee71bdcac1668518b1ac835bb6c5eb8cef10e0944d99b192630bbee9d"
+  },
+  {
+    "path": "src/content/notebook.json",
+    "unchangedFrom": "a5cd937",
+    "sha256": "da4d4d943e84ad1de02e021169f75ab3965f8bc4c2d519ca8ec6e253defde19b"
+  },
+  {
+    "path": "src/content/projects.json",
+    "unchangedFrom": "a5cd937",
+    "sha256": "4338774f829e525662a6c8522bcd743732fe4ebc44d6b3c162ceafd9b4e25401"
+  },
+  {
+    "path": "src/content/skills.json",
+    "unchangedFrom": "a5cd937",
+    "sha256": "d616dab60de02cf1adbcb6d779a2eb69afcff8cc05cf50ad47e5ae13f5755ac1"
+  },
+  {
+    "path": "src/content/education.json",
+    "unchangedFrom": "a5cd937",
+    "sha256": "94993be4dcfef838533139c6af91bbfd9acb4f88c45bfaafb2c380cedc7a22d2"
+  },
+  {
+    "path": "src/content/profile.json",
+    "unchangedFrom": "a5cd937",
+    "sha256": "bc3cdddda1c4dcadc95c6a901b2955a0c075f1acc1a516d1c47fd2e74e13ebb8"
+  },
+  {
+    "path": "src/content/skills-page.json",
+    "unchangedFrom": "a5cd937",
+    "sha256": "f2e93cfc53104f73873c3ad6b9db46845804b1358958731be3e0b0f2ded983e0"
+  },
+  {
+    "path": "src/content/experience.json",
+    "unchangedFrom": "a5cd937",
+    "sha256": "ee2031a3c8406782e9b3de07bfff37b7a87f7176f228aea0de52f0bdd62642e1"
+  },
+  {
+    "path": "src/content/home.json",
+    "unchangedFrom": "a5cd937",
+    "sha256": "dee8d8f5e437d80cf2492870529944a2521b67dda357f6d3d5badd859f3a7149"
+  },
+  {
+    "path": "docs/sources/S06-copy-notes.json",
+    "unchangedFrom": "a5cd937",
+    "sha256": "f649328d24ff62ebba3fbcd38b9938f13b0e81746572281f88ef1fe6810aafec"
+  },
+  {
+    "path": "docs/sources/owner-inputs.json",
+    "unchangedFrom": "a5cd937",
+    "sha256": "c4c55018eaeba949f29ca8141e8e6a7804b24e60acade040ab5afbedb1fbaf01"
+  },
+  {
+    "path": "docs/sources/repository-evidence.json",
+    "unchangedFrom": "a5cd937",
+    "sha256": "11d91da46796e0a3d7909f0a5fb0ab7bcd3762ee5e03975eda113d5ced619567"
+  },
+  {
+    "path": "public/resume/sakshi-gupta-resume.pdf",
+    "unchangedFrom": "a5cd937",
+    "sha256": "0eeadf37c6a1fb4315648b10ebc5d2e02406425eaf04d5755c62c27cbc65204c"
+  }
+]

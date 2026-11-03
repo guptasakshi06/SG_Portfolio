@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<rect width="1200" height="630" fill="#0D0F15"/>
+<g stroke="#202635" stroke-width="1"><path d="M720 0v630M800 0v630M880 0v630M960 0v630M1040 0v630M1120 0v630M640 75h560M640 155h560M640 235h560M640 315h560M640 395h560M640 475h560M640 555h560"/></g>
+<circle cx="1010" cy="310" r="126" fill="none" stroke="#65548c" stroke-width="2"/><circle cx="1010" cy="310" r="76" fill="none" stroke="#67D5E8" stroke-width="2"/><circle cx="1010" cy="184" r="8" fill="#A78BFA"/><circle cx="1086" cy="310" r="7" fill="#67D5E8"/>
+<text x="72" y="104" font-family="DejaVu Sans,sans-serif" font-size="34" font-weight="700" fill="#F1F3F8">SG<tspan fill="#A78BFA">.</tspan></text>
+<text x="72" y="198" font-family="DejaVu Sans,sans-serif" font-size="19" letter-spacing="3" fill="#67D5E8">SAKSHI GUPTA</text>
+<text x="68" y="294" font-family="DejaVu Sans,sans-serif" font-size="57" font-weight="600" fill="#F1F3F8">Turning data into</text>
+<text x="68" y="374" font-family="DejaVu Sans,sans-serif" font-size="57" font-weight="600" fill="#A78BFA">meaningful insights.</text>
+<path d="M72 436h650" stroke="#2B3242"/>
+<text x="72" y="494" font-family="DejaVu Sans,sans-serif" font-size="23" fill="#A1A8B8">Aspiring Data Scientist</text>
+<text x="72" y="548" font-family="DejaVu Sans,sans-serif" font-size="17" fill="#A1A8B8">Projects · Skills · Learning</text>
+</svg>

@@ -1,0 +1,17 @@
+{
+  "productionOrigin": null,
+  "siteName": "SG · Sakshi Gupta",
+  "imagePath": "/og-image.png",
+  "imageAlt": "SG — Sakshi Gupta. Aspiring Data Scientist. Turning data into meaningful insights.",
+  "pages": {
+    "/": { "title": "Sakshi Gupta · Aspiring Data Scientist · SG", "description": "Sakshi Gupta is an aspiring Data Scientist and Information Technology student at RGIPT. Explore her projects, skills, experience and interests." },
+    "/about": { "title": "About Sakshi Gupta · SG", "description": "Meet Sakshi Gupta: Information Technology student at RGIPT with interests in data science, analytics and AI, and resume-backed internship experience." },
+    "/projects": { "title": "Data Science & Analytics Projects · Sakshi Gupta · SG", "description": "Explore Sakshi Gupta’s projects through plain-language overviews, documented tools, source notes and optional technical details." },
+    "/experiments": { "title": "Experiments & Research · ML LAB · SG", "description": "Explore an interactive machine learning teaching example with clearly synthetic data. Actual experiment results and research notes are still to be supplied." },
+    "/skills": { "title": "Skills & Technologies · Sakshi Gupta · SG", "description": "Explore Sakshi Gupta’s programming, data analysis, machine learning and development skill inventory, with source-backed project connections." },
+    "/education": { "title": "Education · Sakshi Gupta · SG", "description": "Sakshi Gupta’s B.Tech in Information Technology at RGIPT, Jais, Amethi: August 2023 to expected May 2027." },
+    "/achievements": { "title": "Coding & Hackathon Achievements · Sakshi Gupta · SG", "description": "Sakshi Gupta’s owner-supplied coding and hackathon achievements, with original qualifiers and clearly stated evidence availability." },
+    "/contact": { "title": "Contact Sakshi Gupta · Resume & Profiles · SG", "description": "Get in touch with Sakshi Gupta about internships and full-time opportunities. Find her email, GitHub, LinkedIn and PDF resume." }
+  },
+  "notFound": { "title": "Page not found · SG", "description": "This portfolio page could not be found. Explore Sakshi Gupta’s home page or browse available projects." }
+}

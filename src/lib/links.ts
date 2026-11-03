@@ -2,7 +2,7 @@
 export function isSafeExternalUrl(value: string): boolean {
   try {
     const url = new URL(value)
-    return value === value.trim() && url.protocol === 'https:' && Boolean(url.hostname) && !url.username && !url.password
+    return [...value].every(char => char.charCodeAt(0) > 32 && char.charCodeAt(0) !== 127) && url.protocol === 'https:' && Boolean(url.hostname) && !url.username && !url.password
   } catch { return false }
 }
 
