@@ -74,7 +74,7 @@ Keep owner facts in JSON rather than JSX. Start with `docs/sources/owner-inputs.
 | `education.json` | Owner-confirmed degree and source-attributed dates; expected graduation remains explicit |
 | `experience.json` | Resume-backed GreedUp internship and contribution limits |
 | `achievements.json` | Supplied wording, qualifiers, nullable dates and optional proof links |
-| `experiments.json` | Separate actual and illustrative arrays; both empty until their content is provided or S08 creates labeled synthetic samples |
+| `experiments.json` | Separate actual records, research notes and five synthetic teaching fixtures, with model references, provenance, definitions and page copy |
 
 Run `npm run check` after changes. Types enforce the content structure; validation catches duplicate IDs/slugs/featured orders, unknown skills/groups (including homepage skill IDs), empty required labels, unsafe URLs, missing provenance and misplaced sample results. The build fails on invalid content. Tests cover intake preservation and failure states, not just static component markup.
 
@@ -143,7 +143,7 @@ Notebook blocks all require `provenance` and boolean `sample`:
 - `code`: `language` plus `code`. Read-only display; no execution. Python/py, SQL and JSON are highlighted; other languages stay readable plain text.
 - `table`: descriptive `caption`, `columns`, rectangular string `rows`. Column/row headers and a named keyboard-focusable scroll region give a non-visual equivalent.
 - `callout`: `title` plus `text`, with visible provenance above it.
-- `chart`: `experimentId` referencing actual/illustrative experiments with a matching sample flag. Currently renders the description, provenance, units, accessible summary and complete data table; chart visuals belong to S08. No experiment values were added in S05.
+- `chart`: `experimentId` referencing actual/illustrative experiments with a matching sample flag. Currently renders the description, provenance, units, accessible summary and complete data table; the interactive S08 ML LAB uses separate lazy chart wrappers; notebook blocks deliberately retain this lightweight table equivalent. No experiment values were added in S05.
 
 The shared example lives only in `notebook.json`, behind a second disclosure. It contains two explicitly invented records and a missing-reading check, never model performance. All example blocks must have `sample: true`; do not copy it into actual results.
 
@@ -162,7 +162,7 @@ Education uses the owner-confirmed Information Technology label, August 2023 sta
 
 Achievement descriptions remain exact, including Myntra's team top 4% **after the ideation phase** (2024) and Hack4Delhi's Grand Finalist/Certificate of Excellence (2026). Undated coding claims stay undated. Null proof URLs render plain text, without dummy controls; future supplied safe HTTPS proof URLs render named external links with safe rel attributes. Keep the owner-provided source wording and do not describe these as independently verified. No separate certificates or coding-profile URLs have been supplied.
 
-All three pages link to Projects and Contact; About also links to Education. Cards switch to one column according to available content width, including an expanded tablet sidebar. Only Experiments and Contact still use FoundationPage. Evidence: `docs/verification/S06.md`. Nothing is deployed; next is S07 only when invoked.
+All three pages link to Projects and Contact; About also links to Education. Cards switch to one column according to available content width, including an expanded tablet sidebar. Only Contact still uses FoundationPage. Evidence: `docs/verification/S06.md`. Nothing is deployed; next is S07 only when invoked.
 
 
 ## Skills explorer (S07)
@@ -176,3 +176,21 @@ Controls are native toggle buttons (`aria-pressed`, `aria-controls`), with norma
 `relatedProjects` derives connections exclusively from `projects.json.technologyClaims`, keeping the exact source per claim and catalog order. Python has two connections (Metron README, CredResolve resume); SQL connects to CredResolve from the resume; SQL Server connects to the loan project from the resume. Power BI connects to the loan README. Do not infer SQL from the Agentic SQL title or PyTorch from a Deep Learning category. Related cards link to complete project pages, show source attribution and disclose the existing project limitations. Documentation confirms listing, not independent execution or measured results. Unmapped skills show deliberate empty copy and a working Projects link. To add a connection, supply supporting evidence first, then add the existing skill ID and accurate source to the project's claims.
 
 Evidence: `docs/verification/S07.md`; focused tests cover all skill-link round trips, invalid selection, sourced mapping, excluded inferences and copy/source/membership validation. No dependency or owner-fact changes, commits, pushes or deployment in this sprint. Next is S08 only when invoked.
+
+
+## ML LAB (S08)
+
+`/experiments` is a complete Experiments & Research page. Actual experiment results and research notes have separate, intentional empty states. The teaching demonstration is explicitly labeled **“Demonstration — synthetic sample data, not Sakshi's project results.”** Nothing was trained, collected or evaluated: every value is a hand-authored UI fixture in `src/content/experiments.json`, unrelated to Sakshi's project outcomes.
+
+The cohesive example compares two unnamed binary classifiers: final training/validation accuracy (%), six epochs of binary cross-entropy loss (unitless), and two 100-item validation confusion tables. Counts and accuracy agree. Loss curves are invented independently of the counts. Definitions explain units, better direction, training versus validation and the limits of accuracy. No export is provided.
+
+- `LabDemo` owns only the native model select and Training/Validation checkboxes. All combinations, including no series, work; Reset view restores both models/series. Filters are local exploratory state and deliberately reset on route remount/refresh. Prediction counts always represent validation and follow the model filter, as the live status explains.
+- `demoViews` derives the exact same filtered rows/series for chart and table. `MetricChart` dynamically imports Recharts **3.10.1**; charts are absent from Home's initial network load. `react-is` **19.3.1** satisfies the React-matched peer requirement. Animation is disabled; sample tooltips work with chart focus and Left/Right arrows. Solid/dashed curves, text legends and always-visible semantic tables supplement color/hover.
+- `DataTable` gives every table its own sample/source caption, units, provenance, column/row headings and named keyboard-scrollable container. A lazy-load error leaves the table readable. Notebook chart blocks continue to offer their full provenance-labeled table fallback without loading Recharts.
+- `validateExperiments` plus the content validator check nonempty labels/provenance/data, finite values, unique identities/series/observations, synthetic/actual boundaries, valid sample references, aligned loss epochs, legal percentages/counts and agreement between confusion totals, validation sample size and accuracy.
+
+To add **actual experiments**, append `sample: false` records to `actual` with a stable unique ID, title, source-backed description, provenance (source/method/data origin), axis units, series legend, accessible summary and rows of finite values. The actual section renders their descriptions and full source-attributed tables without component edits; notebook chart blocks can reference the ID with the matching sample marker. Document dataset, split/sample size, metric definition and limitations in the description/provenance; never relabel these demo fixtures as actual results. Synthetic records remain in `illustrative` with `sample: true` and their explicit non-results labels.
+
+To add real notes, append `{ id, kind, title, text, provenance }` to `notes`; kinds are `statistical-experiment`, `research-note` or `lesson`. Supply evidence before attributing a learning observation to Sakshi. Both empty arrays remain valid. Demo edits should update the linked comparison/loss/matrix records, summaries, model validation sizes and explanatory copy together; retain two Training/Validation columns and aligned numbered epochs. Run `npm run check` after changes.
+
+Official references checked: [Recharts accessibility](https://github.com/recharts/recharts/blob/main/storybook/stories/API/Accessibility.mdx), [ResponsiveContainer](https://recharts.github.io/api/ResponsiveContainer/), [Tooltip](https://recharts.github.io/en-US/api/Tooltip/). Verification: `docs/verification/S08.md`. No backend or deployment. S09 is next only when invoked.

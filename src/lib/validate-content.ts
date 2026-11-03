@@ -1,5 +1,6 @@
 import type { NotebookBlock, PortfolioContent } from '../content/types'
 import { emailHref, isSafeAssetPath, isSafeExternalUrl, resumeHref } from './links'
+import { validateExperiments } from '../features/experiments/validate'
 
 export const projectCategories = ['Data Science', 'Machine Learning', 'Deep Learning', 'Data Analytics', 'NLP', 'Computer Vision']
 
@@ -150,13 +151,19 @@ export function validateContent(content: PortfolioContent): string[] {
     item.contributions.forEach(value => required(value, 'experience contribution'))
   })
   const { actual, illustrative } = content.experiments
+  errors.push(...validateExperiments(content.experiments))
   identities([...actual, ...illustrative], 'experiments')
   actual.forEach(item => { if (item.sample) errors.push(`${item.id}: sample in actual results`) })
   illustrative.forEach(item => { if (!item.sample) errors.push(`${item.id}: missing sample marker`) })
   required(content.experiments.emptyMessage, 'experiments empty message')
   ;[...actual, ...illustrative].forEach(item => {
     for (const key of ['title', 'provenance', 'description', 'axisUnits', 'accessibleSummary'] as const) required(item[key], `${item.id}.${key}`)
-    if (!item.legend.length || item.data.some(row => row.values.length !== item.legend.length || row.values.some(value => !Number.isFinite(value)))) errors.push(`${item.id}: inconsistent chart values or legend`)
+    if (!item.legend.length || !item.data.length || item.data.some(row => row.values.length !== item.legend.length || row.values.some(value => !Number.isFinite(value)))) errors.push(`${item.id}: inconsistent chart values or legend`)
+    unique(item.legend, `${item.id} legend`)
+    unique(item.data.map(row => row.label), `${item.id} observations`)
+    item.legend.forEach(label => required(label, `${item.id} legend label`))
+    item.data.forEach(row => required(row.label, `${item.id} observation label`))
+    if (typeof item.sample !== 'boolean') errors.push(`${item.id}: missing boolean sample marker`)
   })
   return errors
 }

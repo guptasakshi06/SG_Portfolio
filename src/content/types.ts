@@ -32,7 +32,17 @@ export interface Experiment {
   axisUnits: string; legend: string[]; accessibleSummary: string
   data: { label: string; values: number[] }[]
 }
-export interface Experiments { actual: Experiment[]; illustrative: Experiment[]; emptyMessage: string }
+export interface LabDemo {
+  title: string; notice: string; provenance: string; description: string; comparisonId: string
+  accuracyExplanation: string; lossExplanation: string; matrixExplanation: string
+  models: { id: string; name: string; lossId: string; matrixId: string; validationSize: number }[]
+}
+export interface Experiments {
+  actual: Experiment[]; illustrative: Experiment[]; emptyMessage: string
+  page: { eyebrow: string; title: string; introduction: string; actualTitle: string; notesTitle: string; notesEmpty: string }
+  notes: { id: string; title: string; text: string; provenance: string; kind: 'statistical-experiment' | 'research-note' | 'lesson' }[]
+  demo: LabDemo
+}
 export interface NotebookContent {
   topics: { id: string; title: string; pending: string }[]
   example: { title: string; description: string; blocks: NotebookBlock[] }
