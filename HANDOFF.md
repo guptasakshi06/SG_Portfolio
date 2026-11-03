@@ -7,9 +7,9 @@
 **Workspace:** `/home/ubuntu/Documents/ChatGPT/MyPortfolio 2`  
 **Handoff:** `/home/ubuntu/Documents/ChatGPT/MyPortfolio 2/HANDOFF.md`  
 **Created / last updated:** 2026-11-03, Asia/Kolkata  
-**Current phase:** S02 complete — shared workspace and navigation verified.
+**Current phase:** S03 complete — homepage and visual direction verified.
 
-**Next sprint:** S03 — Homepage and visual direction.
+**Next sprint:** S04 — Project catalog and filters.
 
 ## 1. Start-of-chat execution contract
 
@@ -44,20 +44,22 @@ If code disagrees with this file, inspect and reconcile the difference rather th
 
 ## 2. Current state
 
-- S01 and S02 completed on 2026-11-03. The Vite + React + TypeScript + Tailwind frontend now has a shared responsive workspace shell; route bodies remain deliberate foundation previews for replacement in their assigned sprints.
-- Branch: `codex/s02-workspace`, created from the actual pre-existing `main` at `f947f66` (S01 completion commit). This supersedes the older no-commit/untracked record. S02 changes are uncommitted; this chat performed no commit, push or reset.
+- S03 completed 2026-11-03: Home now has the exact supplied hero, real shared actions, original static grid/orbit visual, selected projects, education/interests, qualified achievements, core skills, About and contact previews. All other route bodies retain their assigned-sprint previews.
+- S01–S03 completed on 2026-11-03. Vite + React + TypeScript + Tailwind frontend with a shared responsive workspace shell and complete HomePage; secondary route bodies remain deliberate previews for replacement in their assigned sprints.
+- Branch: `codex/s03-homepage`, created from the clean pre-existing S02 commit `7abd1f5` on `codex/s02-workspace`. S01 commit remains `f947f66`. This supersedes older uncommitted-state records. S03 changes are uncommitted; this chat performed no commit, push or reset.
 - Package manager: npm, sole lockfile `package-lock.json`. Runtime: Node 24 (`.nvmrc`, package engines), now pinned as a development dependency (`node: 24.22.2`). **Startup maintenance fixed the vanished temporary-runtime dependency. From the default Node 18 shell, run `npm run setup` once, then `npm run dev`.** Setup bootstraps Node 24 through npm and invokes npm ci under it so modern native packages are installed. All ordinary npm scripts then select the project-local Node binary automatically. No PATH override, temporary `/tmp` runtime or global Node change is required. Plain npm ci is supported when the terminal already uses Node 24; use setup from older terminals.
 - Resolved core versions: React/React DOM 19.3.1, React Router 8.5.1, Vite 8.3.5, TypeScript 7.0.2, Tailwind/@tailwindcss/vite 4.3.3, Lucide 1.66.0, Oxlint 1.90.0. Full versions and evidence: `docs/verification/S01.md`.
 - Scripts: `npm run setup`, `npm run dev`, `npm run preview`, `npm run typecheck`, `npm run lint`, `npm run validate:content`, `npm test`, `npm run build`, `npm run check`. `npm ci` and the complete check command passed after a clean install.
-- Actual structure: `src/app/` (router/navigation), `src/components/layout/` (AppShell, TopBar, DesktopSidebar, MobileNavigation, NavigationLinks, ProfileActions, Footer), `src/pages/` (shared route previews/project/404), `src/components/ui/`, `src/content/` (seven runtime JSON files plus types/index), `src/lib/` (safe links/validation), `src/styles/` (Tailwind theme/base/responsive CSS), `scripts/`, `tests/`, `docs/sources/`, `docs/verification/`, and preserved `public/resume/`. README documents setup, content contracts and resume replacement.
+- Actual structure: `src/app/` (router/navigation), `src/components/layout/` (AppShell, TopBar, DesktopSidebar, MobileNavigation, NavigationLinks, ProfileAction, ProfileActions, Footer), `src/pages/` (HomePage/shared route previews/project/404), `src/components/home/`, `src/features/projects/` (reusable ProjectPreview), `src/components/ui/` (now also SectionHeading/Badge), `src/content/` (eight runtime JSON files including home.json plus types/index), `src/lib/` (safe links/validation), `src/styles/` (Tailwind theme/base/responsive CSS), `scripts/`, `tests/`, `docs/sources/`, `docs/verification/`, and preserved `public/resume/`. README documents setup, content contracts and resume replacement.
 - All eight main routes, all ten project slugs and a recoverable catch-all/unknown-slug page are wired. Native browser titles use React 19 title support. S02 replaced wrapped navigation with the shared shell: 264px expanded / 80px collapsed sidebar, default compact at 768–1199px; below 768px a named native modal drawer. Keyboard collapse, active Projects on nested routes, Escape/Tab wrapping/focus return, route-close/main focus, skip link, history and refresh verified. Search deliberately omitted until S09.
 - Runtime content contains the supplied profile, 10 projects, 50 skills across eight groups, four achievements, corrected Information Technology education, GreedUp internship and empty actual/illustrative experiments. Skill records added solely for documented project technologies carry source labels, not expertise claims. Related project mappings use source-attributed technology IDs; unknown original-project stacks remain empty.
 - Owner contacts, internship/full-time availability and the three featured choices survive seeding. Source README/resume technology attribution and Metron version/practice/MVP caveats remain distinct. No invented metrics, datasets, demos or biographies were added.
-- The stable resume and both original source JSON files are unchanged (hashes recorded). S02 topbar actual browser download saved Sakshi_Gupta_Resume.pdf with original SHA-256; versioned response is HTTP 200 application/pdf, 166,684 bytes. Shared topbar GitHub/LinkedIn and footer email use supplied configuration with safe/unavailable states. Website degree uses Information Technology; PDF discrepancy remains private maintenance context. More action surfaces and replacement/missing-file checks remain S03/S10.
+- The stable resume and both original source JSON files are unchanged (hashes recorded). S02 topbar actual browser download saved Sakshi_Gupta_Resume.pdf with original SHA-256; versioned response is HTTP 200 application/pdf, 166,684 bytes. Shared topbar GitHub/LinkedIn and footer email use supplied configuration with safe/unavailable states. Website degree uses Information Technology; PDF discrepancy remains private maintenance context. S03 added the hero download and email/social/contact actions through reusable ProfileAction; its actual download has the same original hash. Reader/replacement/missing-file checks remain S10.
 - Central theme tokens, visible focus, skip navigation, reduced-motion CSS baseline, SG favicon and locally served Inter/JetBrains Mono fonts exist. Heavy chart/notebook/animation libraries are not installed.
-- Current local preview: `http://127.0.0.1:5173/`, reused and verified in S02, left available with a Home browser deliverable. Restart with `npm run dev` if it stops. No deployment, domain, backend or public site exists.
+- Current local preview: `http://127.0.0.1:5173/`, reused and verified through S03, left available with a Home browser deliverable. Restart with `npm run dev` if it stops. No deployment, domain, backend or public site exists.
 - S02 verification: `npm run check` PASS (type/lint/seven tests/content/build); configured/null/unsafe action fixtures PASS; actual browser eight-route, nested/history/refresh, skip/collapse/drawer checks PASS; shell inspected at 320/360/390/768/1024/1440px without page overflow. JS 306.62 kB (gzip 95.43 kB), CSS 17.61 kB (gzip 4.72 kB). Evidence and four screenshots: `docs/verification/S02.md`. No full accessibility/performance score or public social availability claim.
-- Immediate next action: invoke S03 only. Keep the shell and content contracts; replace Home's FoundationPage rendering with a real HomePage and its supplied hero, selected-project previews, skills/about/contact sections. Use the shared ProfileActions/resumeHref for actions. Read S03 scope and current content before implementation; do not start S04 automatically.
+- S03 verification: final `npm run check` PASS (type/lint/seven tests/content/PDF/build); S02 and S03 action fixtures PASS. All ten internal homepage actions, three selected project routes, keyboard CTA/focus, 360px drawer regression and actual resume download PASS. Screenshots inspected at 390/768/1440; no overflow at 320/360/390/768/1024/1440. Browser warning/error log empty. JS 316.81 kB (gzip 97.86 kB), CSS 25.99 kB (gzip 6.35 kB). Full evidence: `docs/verification/S03.md`.
+- Immediate next action: execute S04 only when invoked. Reuse ProjectPreview/Badge/SectionHeading and ProfileAction, enrich catalog cards with repository/demo states, add combined category/text filters and useful URL state, and retain all ten projects and source caveats. Home selected-project links currently reach working route-level previews. Do not start S05 automatically.
 
 ## 3. Product goal and non-negotiables
 
@@ -168,7 +170,7 @@ Read `docs/sources/repository-evidence.json` for complete README snapshots, sour
 | Email address | Supplied: guptasak06@gmail.com | Implement real mailto actions; no confirmation needed. |
 | GitHub profile | Supplied: https://github.com/guptasakshi06 | Use the owner-supplied URL; profile availability has not been independently checked. |
 | LinkedIn profile | Supplied: https://www.linkedin.com/in/sakshi-gupta06sg/ | Use the owner-supplied URL; profile availability has not been independently checked. |
-| Resume PDF | Supplied unchanged at public/resume/sakshi-gupta-resume.pdf; S02 actual topbar browser download and HTTP PDF/hash verified | Central profile path/name/version/hash and shared download work. Additional action surfaces, reader-open and replacement/missing-file fixtures remain S03/S10 work. |
+| Resume PDF | Supplied unchanged at public/resume/sakshi-gupta-resume.pdf; S02 topbar and S03 hero actual downloads/HTTP/hash verified | Central profile path/name/version/hash and shared topbar/hero download work. Reader-open, remaining later action surfaces and replacement/missing-file fixtures remain S10 work. |
 | Availability wording | Confirmed: full-time and internships | Use “Open to internships & full-time opportunities”; no immediate-start claim. |
 | Project repositories / live demos | Three repositories supplied and READMEs read; no live demos supplied | Use mapped repository links only; keep missing demos absent. |
 | Project methods, technologies, datasets, evaluation, outcomes | Partial: loan, Metron, CredResolve documented; other projects pending | Use evidence/provenance notes above; do not invent missing metrics or copy stacks between projects. |
@@ -356,7 +358,7 @@ Verify actual foreground/background combinations rather than assuming the palett
 | S00 | Planning and durable handoff | None | DONE | Handoff created; owner links/availability/degree confirmed, resume staged and three README sources captured. No implementation started. |
 | S01 | Foundation and content architecture | S00 | DONE | Startup follow-up fixed Node 18 mismatch; clean npm run setup and ordinary dev/check now pass without PATH overrides. Initial clean npm ci and check passed; typed JSON (10 projects/50 skills/eight groups), validation/seven tests, route previews, theme/fonts/favicon/README. Browser verified eight main + ten project routes, recovery, refresh, focus and narrow layouts. Evidence: docs/verification/S01.md. |
 | S02 | Global workspace and navigation | S01 | DONE | Shared topbar/sidebar/footer, keyboard collapse, modal mobile drawer/focus cleanup, real supplied social/email/versioned resume download. Eight routes/nested/history/skip verified; 320–1440px shell checks, action fixtures and npm run check PASS. Evidence: docs/verification/S02.md. |
-| S03 | Homepage and visual direction | S02 | TODO | — |
+| S03 | Homepage and visual direction | S02 | DONE | Complete supplied hero/selected work/highlights/achievements/skills/about/contact; reusable actions/cards/section/badges. Final npm run check + action fixtures PASS; all Home actions and real PDF download verified; 390/768/1440 screenshots inspected, 320–1440 no overflow. Evidence: docs/verification/S03.md. |
 | S04 | Project catalog and filters | S03 | TODO | — |
 | S05 | Project details and notebook viewer | S04 | TODO | — |
 | S06 | About, education, and achievements | S05 | TODO | — |
@@ -674,11 +676,11 @@ S12 should fill a compact result table for:
 | ML LAB | Filters, tooltips, accessible values, synthetic labels | Not run |
 | Search | Visible trigger, Ctrl/Cmd+K, matching, keyboard/focus | Not run |
 | Contact | Configured email/social actions, honest missing states | S02 supplied topbar profile destinations/rel attributes and footer encoded mailto checked; null/unsafe rendering fixtures PASS; external availability/mail-client launch not tested |
-| Resume | Real PDF download/open, centralized replacement and cache handling | S02 actual topbar browser download and HTTP response match original hash/name; further surfaces, reader UI and replacement/missing-file fixtures remain S03/S10 |
-| Responsive | Required viewport matrix and zoom | S01 basic Home/Projects 390px and long-title detail 320px checks passed; full matrix/zoom remains S11/S12 |
+| Resume | Real PDF download/open, centralized replacement and cache handling | S02 topbar and S03 hero actual downloads/HTTP match original hash/name; reader UI, later surfaces and replacement/missing-file fixtures remain S10 |
+| Responsive | Required viewport matrix and zoom | S01 basic Home/Projects 390px and long-title detail 320px checks passed; S03 Home screenshots at 390/768/1440 and no-overflow checks at 320–1440 PASS; full matrix/zoom remains S11/S12 |
 | Accessibility | Semantics, contrast, keyboard, reduced motion, audit | S01 visible focus and skip-to-main verified; semantic/reduced-motion CSS baseline added; full audit pending |
 | Metadata | Titles, description, OG, favicon, correct production origin | S01 provisional titles/description/SG favicon work; OG/production-origin work remains S10 |
-| Performance | Production bundle/loading and measured browser checks | S02 JS 306.62 kB (gzip 95.43 kB), CSS 17.61 kB (gzip 4.72 kB); no performance score measured |
+| Performance | Production bundle/loading and measured browser checks | S03 JS 316.81 kB (gzip 97.86 kB), CSS 25.99 kB (gzip 6.35 kB); no performance score measured |
 | Deployment | Hosting fallback and optional verified live deployment | Not configured |
 
 ## 11. Decisions and changes
@@ -705,32 +707,35 @@ S12 should fill a compact result table for:
 | 2026-11-03 | Pin project-local Node 24 and add a clean setup bootstrap. | Default Node 18 could not launch Vite after temporary QA runtime disappeared. npm ci under Node 18 also skipped native optional bindings. npm run setup installs under Node 24; npm scripts then use local Node without global changes. |
 | 2026-11-03 | S02 uses a native modal dialog with explicit keyboard wrapping, body-scroll cleanup and focus restoration; no UI dependency added. | Keeps the drawer accessible and small; route transitions focus main after cleanup. |
 | 2026-11-03 | Sidebar is 264px expanded / 80px collapsed, default compact at 768–1199px; search omitted until S09. | Long normal navigation labels stay readable, while mobile uses a drawer below 768px. |
+| 2026-11-03 | S03 uses static original CSS grid/orbit artwork and decorative topic icons; no photo or fabricated chart. | Gives Home a distinct workspace identity without implying measured results. |
+| 2026-11-03 | Add typed home.json, derive selected order from projects, and compose topbar/hero actions through ProfileAction. | Editable presentation copy and skill selection; retain exact hero/facts, safe URLs and one versioned resume configuration. |
+| 2026-11-03 | Label Home project links “View project preview” and use existing project routes. | Every action works today while catalog/detail enrichment remains S04/S05. |
 
 ## 12. Latest continuation record
 
-**Sprint:** S02 — Global workspace and navigation
+**Sprint:** S03 — Homepage and visual direction
 
 **Status:** DONE
 
 **Date:** 2026-11-03, Asia/Kolkata
 
-**Completed:** shared SG topbar with current-page context, confirmed availability, supplied safe social links and versioned resume download; collapsible icon/sidebar navigation with all eight readable names and nested active state; native mobile drawer with initial focus, Tab wrapping, Escape/Close return, navigation close, scroll lock and resize cleanup; main/skip route focus and shared email footer. Existing page bodies/content remain assigned-sprint previews. Search omitted until S09.
+**Completed:** real HomePage inside preserved AppShell; exact supplied hero/availability, Explore My Work, shared safe social/email/versioned resume actions; original static grid/orbit artwork; selected-work/interests/education highlights; three owner-selected project previews in configured order with evidence notes/source-backed badges; all four fully qualified achievements; six core skill explanations; grounded About and contact CTA. All other route previews preserved. Reusable ProjectPreview, SectionHeading, Badge and ProfileAction; typed home.json plus validated skill references.
 
-**Files changed:** `src/components/layout/` (seven components), `src/app/App.tsx`, `src/app/navigation.ts`, `src/styles/globals.css`, `src/pages/FoundationPage.tsx` (outdated Contact preview copy only), `README.md`, `HANDOFF.md`, `docs/verification/S02.md`, `docs/verification/S02-action-fixtures.ts`, four S02 screenshots. No dependencies/content/source/PDF/startup changes.
+**Files changed:** `src/pages/HomePage.tsx`, `src/components/home/`, `src/features/projects/ProjectPreview.tsx`, `src/components/ui/Badge.tsx`, `src/components/ui/SectionHeading.tsx`, `src/components/layout/ProfileAction.tsx`, `ProfileActions.tsx`, `src/app/App.tsx`, `src/styles/home.css`, `src/content/home.json`, `types.ts`, `index.ts`, `src/lib/validate-content.ts`, `README.md`, `HANDOFF.md`, `docs/verification/S03.md`, S03 action fixtures and four PNGs.
 
-**Checks:** final npm run check PASS: strict typecheck, Oxlint, seven tests, content/PDF validation, build. Configured/null/unsafe rendered action fixtures PASS. Browser eight routes + nested project active state/long title, refresh/back-forward, unknown-route recovery, keyboard collapse/skip, 360px drawer focus/wrap/Escape/route-close/same-route/resize cleanup PASS. Home shell at 320/360/390/768/1024/1440px and expanded tablet have no page horizontal overflow; visible topbar controls 44px tall. Browser resume download has configured filename and original SHA-256; HTTP PDF remains 200/application/pdf/166,684 bytes. Source hashes unchanged. Browser warning/error logs empty. Screenshots and test detail in verification report. Git diff whitespace check passed after fixing changed-line trailing spaces.
+**Checks:** final npm run check PASS: strict typecheck, Oxlint, seven tests, content/PDF/hash validation, production build. S02 and S03 action fixtures PASS (configured/null/unsafe profile/email/resume; home skill cross-references). All ten internal Home actions and Back, exact three preview slugs/headings, keyboard CTA/focus, 360px drawer/Escape/focus return PASS. Actual hero browser download uses configured name (browser added duplicate suffix), matching original SHA-256; HTTP 200/application/pdf/166684 bytes. Source/PDF hashes unchanged. Full-page screenshots visually inspected at 390/768/1440. No page overflow at 320/360/390/768/1024/1440; primary CTA visible in first screen. Warning/error log empty. JS 316.81 kB/gzip 97.86 kB; CSS 25.99 kB/gzip 6.35 kB. Git diff whitespace check PASS. Full conditions and limits in verification report.
 
-**Decisions:** native dialog; 264/80px sidebar with 768px drawer and 1200px default expansion thresholds; session-only collapse state; no search placeholder button. Actual repository had pre-existing S01 commit f947f66 on main, contrary to the older handoff. Created codex/s02-workspace and preserved existing work; no commits/pushes/reset in this chat.
+**Decisions:** local-only; static abstract identity art, no heavy libraries; Home project links accurately say preview and use working existing project routes; new editable presentation configuration reuses authoritative owner facts. React quality checklist reviewed. Repository already contained S02 commit 7abd1f5; created codex/s03-homepage, preserving work. No commits/pushes/deployment.
 
-**Remaining in this sprint:** none. Public profile availability, PDF-reader UI, complete replacement fixtures, full accessibility/zoom/performance and production-hosting checks were not performed and remain in their assigned later scope. No deployment.
+**Remaining in this sprint:** none. Public account availability/mail-client launch, PDF reader/replacement/missing-file checks, full accessibility/zoom/performance and hosting remain assigned later scope. Other pages intentionally remain sprint previews.
 
-**Missing owner inputs:** unchanged detailed project evidence/actual experiments/live demos/optional achievement proof/production origin; none blocks S03.
+**Missing owner inputs:** unchanged detailed project evidence, real experiments, demos, optional achievement proof, production origin; none blocked S03.
 
-**Current preview:** http://127.0.0.1:5173/ reused and left available; Home browser tab retained. Run npm run dev if it stops; fresh dependencies from the older host shell require npm run setup.
+**Current preview:** http://127.0.0.1:5173/ reused and left available; Home browser deliverable retained and temporary viewports reset. Restart with npm run dev; fresh dependencies from host Node 18 use npm run setup.
 
-**Next exact action:** when invoked, execute S03 only. Read S03 and current content, create HomePage inside AppShell, wire only the Home route away from FoundationPage, retain all other previews. Keep exact supplied hero text and three featured choices; reuse shared action/configuration contracts and avoid invented results.
+**Next exact action:** execute S04 only when invoked. Inspect catalog preview, content and ProjectPreview, then build all-project cards with truthful repository/demo states, category + text filtering, result count, combined/empty/reset states and useful query state. Preserve all ten projects/featured order/source caveats. Use existing shell/UI/action patterns; do not start S05 automatically.
 
-**Next sprint:** S03 — Homepage and visual direction.
+**Next sprint:** S04 — Project catalog and filters.
 
 ### Continuation record template for future updates
 
@@ -794,6 +799,13 @@ Next sprint when ready: ID and title
 - Verification: final npm run check and action configuration fixtures PASS. Browser all eight navigation routes, nested active state/refresh/history/recovery, collapse/skip, drawer keyboard/focus/navigation/resize cleanup PASS. Shell at 320–1440px and expanded tablet has no page overflow. Actual resume download name/hash and HTTP MIME/bytes match the staged PDF. Browser warning/error log empty. Four screenshots and details in docs/verification/S02.md.
 - Reconciled stale Git record: S01 was already committed as f947f66 on main before this chat. Current branch codex/s02-workspace; changes uncommitted. No commits/pushes/deployment this sprint. Local preview retained at http://127.0.0.1:5173/.
 - Limits: full page designs/search/filters/notebooks/charts/Contact/release audits remain later sprints; public social availability not independently verified. S02 scope complete; next S03 only when invoked.
+
+### S03 — 2026-11-03 — DONE
+
+- Built HomePage in the preserved shell with exact supplied introduction, confirmed availability, shared safe social/email/resume actions, original static abstract artwork, selected work/education/interests, all four qualified achievements, core skills, About and contact CTA. Added reusable project preview/section/badge/action primitives and typed editable home.json with skill cross-reference validation. All source assets and other route previews preserved.
+- Verification: final npm run check (type/lint/seven tests/content/PDF/build) and S02/S03 action fixtures PASS. Browser all ten internal Home actions/Back, three preview slugs, keyboard CTA/focus, mobile drawer regression and actual hero PDF download/hash PASS. 390/768/1440 screenshots reviewed; 320–1440 no overflow; empty warning/error logs. Evidence: docs/verification/S03.md and four PNGs. Source/PDF hashes unchanged.
+- Git inspection found pre-existing S02 commit 7abd1f5; created codex/s03-homepage. Changes uncommitted; no push/deployment. Reused local preview retained at http://127.0.0.1:5173/.
+- Limits: secondary pages remain assigned-sprint previews; owner project details/demos/proof/actual experiments still incomplete. PDF reader/replacement/missing-file, public profile availability, full accessibility/zoom/performance and production checks remain later scope. S03 complete; next S04 only when invoked.
 
 ## 14. What the owner needs to send in a new chat
 

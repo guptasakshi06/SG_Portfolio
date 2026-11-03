@@ -4,11 +4,12 @@ import { FoundationPage } from '../pages/FoundationPage'
 import { ProjectPage } from '../pages/ProjectPage'
 import { NotFoundPage } from '../pages/NotFoundPage'
 import { AppShell } from '../components/layout/AppShell'
+import { HomePage } from '../pages/HomePage'
 
 export function App() {
   return <AppShell>
     <Routes>
-      {navigation.map(item => <Route key={item.id} path={item.path} element={<FoundationPage page={item} />} />)}
+      {navigation.map(item => <Route key={item.id} path={item.path} element={item.id === 'home' ? <HomePage /> : <FoundationPage page={item} />} />)}
       <Route path="/projects/:slug" element={<ProjectPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>

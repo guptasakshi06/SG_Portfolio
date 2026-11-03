@@ -1,0 +1,9 @@
+{
+  "hero": { "exploreLabel": "Explore My Work", "resumeLabel": "Download Resume" },
+  "highlights": { "selected": "Selected work", "selectedDescription": "A starting point for exploring my projects.", "interests": "Areas of interest", "education": "Currently studying" },
+  "projects": { "eyebrow": "01 / SELECTED WORK", "title": "Ideas worth exploring.", "description": "From railway safety to speech and financial data, a selection of the questions behind my work.", "action": "Browse all projects", "previewAction": "View project preview" },
+  "achievements": { "eyebrow": "02 / PROBLEM SOLVING", "title": "Practice. Participate. Keep learning.", "action": "All achievements" },
+  "skills": { "eyebrow": "03 / TOOLKIT", "title": "Tools for asking better questions.", "description": "A few of the languages and tools in my skill inventory, from preparing data to making it understandable.", "action": "Explore all skills", "ids": ["python", "sql", "pandas", "scikit-learn", "power-bi", "git"] },
+  "about": { "eyebrow": "04 / A LITTLE ABOUT ME", "title": "A student with a focus on data.", "action": "Get to know me" },
+  "contact": { "eyebrow": "LET’S CONNECT", "title": "Have a question or an opportunity?", "description": "I'd love to hear about internships, full-time roles, or a project you'd like to discuss.", "emailLabel": "Say hello", "action": "Contact details" }
+}
