@@ -1,6 +1,6 @@
 # SG · Sakshi Gupta’s portfolio
 
-A frontend portfolio built in small, verifiable sprints. **S06 completes About, Education, and Achievements** alongside the existing Home, project catalog and optional technical reader. The profile uses supplied facts, accurate achievement qualifiers and deliberate missing-proof states. Skills, ML LAB, search and the full Contact page remain assigned to later sprints. Read [HANDOFF.md](HANDOFF.md) before continuing work and complete one sprint per chat.
+A frontend portfolio built in small, verifiable sprints. **S09 adds global search** to the completed Home, project catalog/details, profile pages, skills explorer and clearly synthetic ML LAB. Search opens from the shared header or Ctrl/Cmd+K, with grouped public-content results and real page/project/skill destinations. Contact, final metadata and release audits remain later sprints. Read [HANDOFF.md](HANDOFF.md) before continuing work and complete one sprint per chat.
 
 ## Run locally
 
@@ -175,7 +175,7 @@ Controls are native toggle buttons (`aria-pressed`, `aria-controls`), with norma
 
 `relatedProjects` derives connections exclusively from `projects.json.technologyClaims`, keeping the exact source per claim and catalog order. Python has two connections (Metron README, CredResolve resume); SQL connects to CredResolve from the resume; SQL Server connects to the loan project from the resume. Power BI connects to the loan README. Do not infer SQL from the Agentic SQL title or PyTorch from a Deep Learning category. Related cards link to complete project pages, show source attribution and disclose the existing project limitations. Documentation confirms listing, not independent execution or measured results. Unmapped skills show deliberate empty copy and a working Projects link. To add a connection, supply supporting evidence first, then add the existing skill ID and accurate source to the project's claims.
 
-Evidence: `docs/verification/S07.md`; focused tests cover all skill-link round trips, invalid selection, sourced mapping, excluded inferences and copy/source/membership validation. No dependency or owner-fact changes, commits, pushes or deployment in this sprint. Next is S08 only when invoked.
+Evidence: `docs/verification/S07.md`; focused tests cover all skill-link round trips, invalid selection, sourced mapping, excluded inferences and copy/source/membership validation. No dependency or owner-fact changes, commits, pushes or deployment in this sprint. S08 completes the ML LAB described below.
 
 
 ## ML LAB (S08)
@@ -193,4 +193,19 @@ To add **actual experiments**, append `sample: false` records to `actual` with a
 
 To add real notes, append `{ id, kind, title, text, provenance }` to `notes`; kinds are `statistical-experiment`, `research-note` or `lesson`. Supply evidence before attributing a learning observation to Sakshi. Both empty arrays remain valid. Demo edits should update the linked comparison/loss/matrix records, summaries, model validation sizes and explanatory copy together; retain two Training/Validation columns and aligned numbered epochs. Run `npm run check` after changes.
 
-Official references checked: [Recharts accessibility](https://github.com/recharts/recharts/blob/main/storybook/stories/API/Accessibility.mdx), [ResponsiveContainer](https://recharts.github.io/api/ResponsiveContainer/), [Tooltip](https://recharts.github.io/en-US/api/Tooltip/). Verification: `docs/verification/S08.md`. No backend or deployment. S09 is next only when invoked.
+Official references checked: [Recharts accessibility](https://github.com/recharts/recharts/blob/main/storybook/stories/API/Accessibility.mdx), [ResponsiveContainer](https://recharts.github.io/api/ResponsiveContainer/), [Tooltip](https://recharts.github.io/en-US/api/Tooltip/). Verification: `docs/verification/S08.md`. No backend or deployment. S09 global search is described below.
+
+
+## Global search (S09)
+
+The header's **Search portfolio** button works on every route, including recovery pages. **Ctrl+K** (Windows/Linux) or **Cmd+K** (macOS) opens the same dialog when focus is outside an editable field or another modal. Input/textarea/select, contenteditable, textbox/combobox, composition, repeats and Alt/Shift combinations keep normal behavior. Closing and reopening starts a fresh query; opening search does not alter the URL or history.
+
+`src/features/search/search.ts` builds one local index from explicit public fields in existing typed content: eight navigation pages, every project overview/category and **source-attributed** technology name, every skill explanation/group, visible education, internship contributions/tools, qualified achievements, approach and learning copy. The four groups are Pages, Projects, Skills and Portfolio. Empty search offers the eight pages; typing searches all records. Matching is case/accent insensitive, every whitespace-separated term must occur, partial words and punctuation such as C++ work, and title matches rank first within a stable group order. All matching results remain available in the scrollable list with an exact live count. There is no backend, network search, query storage or new dependency.
+
+Private source JSON, resume metadata/hashes, sources/internal maintenance notes, optional undisplayed CPI, proposed project technologies, notebooks and experiment records/numerical fixtures are excluded by an explicit allowlist. The Experiments page itself is searchable as ML LAB; synthetic performance is never a result. Add new public fields deliberately in `buildSearchIndex`, preserving provenance and sample boundaries; records in its existing collections appear automatically. Tests mutate excluded fields to check that they cannot leak into search.
+
+`CommandPalette` uses a native modal dialog and an editable ARIA combobox with grouped listbox options. Up/Down wrap, Enter opens, Escape closes, Tab/Shift+Tab stay inside the dialog, and counts/no-match guidance/Clear/Browse pages provide recovery. DOM focus stays in the input while arrows update `aria-activedescendant`; pointer/touch options also navigate. The pattern follows the [WAI-ARIA combobox guidance](https://www.w3.org/WAI/ARIA/apg/patterns/combobox/) and [native dialog behavior](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog). Keyboard editing keys retain their normal behavior.
+
+Dismissal restores previous focus and body scrolling. Selection closes search and pushes a real route into browser history; page/project results focus main, skill links use the existing `/skills?skill=STABLE_ID` contract and focus the detail heading, and portfolio results target existing section headings. This also works when selecting another skill on the same page or selecting the current destination. Ordinary catalog/skill query editing retains its existing focus behavior. Route changes dismiss the palette; history must not reopen it. Opening/closing the mobile drawer and search are mutually exclusive through native modal inertness and the shortcut guard. Optional terminal remains deferred from v1. Contact actions, resume states and SEO belong to S10.
+
+Verification: `docs/verification/S09.md`; five focused search tests plus production browser matching, keyboard/focus/history and responsive checks. No publishing or deployment is included.

@@ -1,0 +1,866 @@
+[
+  {
+    "client": 320,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      }
+    ],
+    "dialog": {
+      "bottom": 836,
+      "client": 302,
+      "height": 828,
+      "left": 8,
+      "right": 312,
+      "scroll": 302,
+      "top": 8,
+      "width": 304
+    },
+    "focus": "portfolio-query",
+    "query": "",
+    "results": {
+      "client": 601,
+      "count": 8,
+      "scroll": 1058
+    },
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "client": 320,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      },
+      {
+        "height": 44,
+        "name": "Clear search"
+      }
+    ],
+    "dialog": {
+      "bottom": 836,
+      "client": 302,
+      "height": 828,
+      "left": 8,
+      "right": 312,
+      "scroll": 302,
+      "top": 8,
+      "width": 304
+    },
+    "focus": "portfolio-query",
+    "query": "python",
+    "results": {
+      "client": 601,
+      "count": 5,
+      "scroll": 744
+    },
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "client": 320,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      },
+      {
+        "height": 44,
+        "name": "Clear search"
+      }
+    ],
+    "dialog": {
+      "bottom": 629.375,
+      "client": 302,
+      "height": 414.75,
+      "left": 8,
+      "right": 312,
+      "scroll": 302,
+      "top": 214.625,
+      "width": 304
+    },
+    "focus": "portfolio-query",
+    "query": "tamper",
+    "results": {
+      "client": 188,
+      "count": 1,
+      "scroll": 188
+    },
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "client": 320,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      },
+      {
+        "height": 44,
+        "name": "Clear search"
+      },
+      {
+        "height": 44,
+        "name": "Browse pages"
+      }
+    ],
+    "dialog": {
+      "bottom": 641.3874969482422,
+      "client": 302,
+      "height": 438.7749938964844,
+      "left": 8,
+      "right": 312,
+      "scroll": 302,
+      "top": 202.6125030517578,
+      "width": 304
+    },
+    "focus": "portfolio-query",
+    "query": "zzzz-unmatched-query",
+    "results": {
+      "client": 0,
+      "count": 0,
+      "scroll": 0
+    },
+    "scroll": 320,
+    "width": 320
+  },
+  {
+    "client": 360,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      }
+    ],
+    "dialog": {
+      "bottom": 836,
+      "client": 342,
+      "height": 828,
+      "left": 8,
+      "right": 352,
+      "scroll": 342,
+      "top": 8,
+      "width": 344
+    },
+    "focus": "portfolio-query",
+    "query": "",
+    "results": {
+      "client": 601,
+      "count": 8,
+      "scroll": 982
+    },
+    "scroll": 360,
+    "width": 360
+  },
+  {
+    "client": 360,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      },
+      {
+        "height": 44,
+        "name": "Clear search"
+      }
+    ],
+    "dialog": {
+      "bottom": 836,
+      "client": 342,
+      "height": 828,
+      "left": 8,
+      "right": 352,
+      "scroll": 342,
+      "top": 8,
+      "width": 344
+    },
+    "focus": "portfolio-query",
+    "query": "python",
+    "results": {
+      "client": 601,
+      "count": 5,
+      "scroll": 667
+    },
+    "scroll": 360,
+    "width": 360
+  },
+  {
+    "client": 360,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      },
+      {
+        "height": 44,
+        "name": "Clear search"
+      }
+    ],
+    "dialog": {
+      "bottom": 619.7750244140625,
+      "client": 342,
+      "height": 395.5500183105469,
+      "left": 8,
+      "right": 352,
+      "scroll": 342,
+      "top": 224.2250061035156,
+      "width": 344
+    },
+    "focus": "portfolio-query",
+    "query": "tamper",
+    "results": {
+      "client": 168,
+      "count": 1,
+      "scroll": 168
+    },
+    "scroll": 360,
+    "width": 360
+  },
+  {
+    "client": 360,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      },
+      {
+        "height": 44,
+        "name": "Clear search"
+      },
+      {
+        "height": 44,
+        "name": "Browse pages"
+      }
+    ],
+    "dialog": {
+      "bottom": 641.3874969482422,
+      "client": 342,
+      "height": 438.7749938964844,
+      "left": 8,
+      "right": 352,
+      "scroll": 342,
+      "top": 202.6125030517578,
+      "width": 344
+    },
+    "focus": "portfolio-query",
+    "query": "zzzz-unmatched-query",
+    "results": {
+      "client": 0,
+      "count": 0,
+      "scroll": 0
+    },
+    "scroll": 360,
+    "width": 360
+  },
+  {
+    "client": 390,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      }
+    ],
+    "dialog": {
+      "bottom": 836,
+      "client": 373,
+      "height": 828,
+      "left": 8,
+      "right": 382.3999938964844,
+      "scroll": 373,
+      "top": 8,
+      "width": 374.3999938964844
+    },
+    "focus": "portfolio-query",
+    "query": "",
+    "results": {
+      "client": 601,
+      "count": 8,
+      "scroll": 886
+    },
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "client": 390,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      },
+      {
+        "height": 44,
+        "name": "Clear search"
+      }
+    ],
+    "dialog": {
+      "bottom": 836,
+      "client": 373,
+      "height": 828,
+      "left": 8,
+      "right": 382.3999938964844,
+      "scroll": 373,
+      "top": 8,
+      "width": 374.3999938964844
+    },
+    "focus": "portfolio-query",
+    "query": "python",
+    "results": {
+      "client": 601,
+      "count": 5,
+      "scroll": 667
+    },
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "client": 390,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      },
+      {
+        "height": 44,
+        "name": "Clear search"
+      }
+    ],
+    "dialog": {
+      "bottom": 619.7750244140625,
+      "client": 373,
+      "height": 395.5500183105469,
+      "left": 8,
+      "right": 382.3999938964844,
+      "scroll": 373,
+      "top": 224.2250061035156,
+      "width": 374.3999938964844
+    },
+    "focus": "portfolio-query",
+    "query": "tamper",
+    "results": {
+      "client": 168,
+      "count": 1,
+      "scroll": 168
+    },
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "client": 390,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      },
+      {
+        "height": 44,
+        "name": "Clear search"
+      },
+      {
+        "height": 44,
+        "name": "Browse pages"
+      }
+    ],
+    "dialog": {
+      "bottom": 629.8375244140625,
+      "client": 373,
+      "height": 415.6750183105469,
+      "left": 8,
+      "right": 382.3999938964844,
+      "scroll": 373,
+      "top": 214.1625061035156,
+      "width": 374.3999938964844
+    },
+    "focus": "portfolio-query",
+    "query": "zzzz-unmatched-query",
+    "results": {
+      "client": 0,
+      "count": 0,
+      "scroll": 0
+    },
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "client": 768,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      }
+    ],
+    "dialog": {
+      "bottom": 802,
+      "client": 658,
+      "height": 760,
+      "left": 54,
+      "right": 714,
+      "scroll": 658,
+      "top": 42,
+      "width": 660
+    },
+    "focus": "portfolio-query",
+    "query": "",
+    "results": {
+      "client": 525,
+      "count": 8,
+      "scroll": 694
+    },
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "client": 768,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      },
+      {
+        "height": 44,
+        "name": "Clear search"
+      }
+    ],
+    "dialog": {
+      "bottom": 802,
+      "client": 658,
+      "height": 760,
+      "left": 54,
+      "right": 714,
+      "scroll": 658,
+      "top": 42,
+      "width": 660
+    },
+    "focus": "portfolio-query",
+    "query": "python",
+    "results": {
+      "client": 525,
+      "count": 5,
+      "scroll": 550
+    },
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "client": 768,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      },
+      {
+        "height": 44,
+        "name": "Clear search"
+      }
+    ],
+    "dialog": {
+      "bottom": 603.6750030517578,
+      "client": 658,
+      "height": 363.3500061035156,
+      "left": 54,
+      "right": 714,
+      "scroll": 658,
+      "top": 240.3249969482422,
+      "width": 660
+    },
+    "focus": "portfolio-query",
+    "query": "tamper",
+    "results": {
+      "client": 128,
+      "count": 1,
+      "scroll": 128
+    },
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "client": 768,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      },
+      {
+        "height": 44,
+        "name": "Clear search"
+      },
+      {
+        "height": 44,
+        "name": "Browse pages"
+      }
+    ],
+    "dialog": {
+      "bottom": 633.8375244140625,
+      "client": 658,
+      "height": 423.6750183105469,
+      "left": 54,
+      "right": 714,
+      "scroll": 658,
+      "top": 210.1625061035156,
+      "width": 660
+    },
+    "focus": "portfolio-query",
+    "query": "zzzz-unmatched-query",
+    "results": {
+      "client": 0,
+      "count": 0,
+      "scroll": 0
+    },
+    "scroll": 768,
+    "width": 768
+  },
+  {
+    "client": 1024,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      }
+    ],
+    "dialog": {
+      "bottom": 802,
+      "client": 658,
+      "height": 760,
+      "left": 182,
+      "right": 842,
+      "scroll": 658,
+      "top": 42,
+      "width": 660
+    },
+    "focus": "portfolio-query",
+    "query": "",
+    "results": {
+      "client": 525,
+      "count": 8,
+      "scroll": 694
+    },
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "client": 1024,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      },
+      {
+        "height": 44,
+        "name": "Clear search"
+      }
+    ],
+    "dialog": {
+      "bottom": 802,
+      "client": 658,
+      "height": 760,
+      "left": 182,
+      "right": 842,
+      "scroll": 658,
+      "top": 42,
+      "width": 660
+    },
+    "focus": "portfolio-query",
+    "query": "python",
+    "results": {
+      "client": 525,
+      "count": 5,
+      "scroll": 550
+    },
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "client": 1024,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      },
+      {
+        "height": 44,
+        "name": "Clear search"
+      }
+    ],
+    "dialog": {
+      "bottom": 603.6750030517578,
+      "client": 658,
+      "height": 363.3500061035156,
+      "left": 182,
+      "right": 842,
+      "scroll": 658,
+      "top": 240.3249969482422,
+      "width": 660
+    },
+    "focus": "portfolio-query",
+    "query": "tamper",
+    "results": {
+      "client": 128,
+      "count": 1,
+      "scroll": 128
+    },
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "client": 1024,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      },
+      {
+        "height": 44,
+        "name": "Clear search"
+      },
+      {
+        "height": 44,
+        "name": "Browse pages"
+      }
+    ],
+    "dialog": {
+      "bottom": 633.8375244140625,
+      "client": 658,
+      "height": 423.6750183105469,
+      "left": 182,
+      "right": 842,
+      "scroll": 658,
+      "top": 210.1625061035156,
+      "width": 660
+    },
+    "focus": "portfolio-query",
+    "query": "zzzz-unmatched-query",
+    "results": {
+      "client": 0,
+      "count": 0,
+      "scroll": 0
+    },
+    "scroll": 1024,
+    "width": 1024
+  },
+  {
+    "client": 1440,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      }
+    ],
+    "dialog": {
+      "bottom": 802,
+      "client": 658,
+      "height": 760,
+      "left": 390,
+      "right": 1050,
+      "scroll": 658,
+      "top": 42,
+      "width": 660
+    },
+    "focus": "portfolio-query",
+    "query": "",
+    "results": {
+      "client": 525,
+      "count": 8,
+      "scroll": 694
+    },
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "client": 1440,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      },
+      {
+        "height": 44,
+        "name": "Clear search"
+      }
+    ],
+    "dialog": {
+      "bottom": 802,
+      "client": 658,
+      "height": 760,
+      "left": 390,
+      "right": 1050,
+      "scroll": 658,
+      "top": 42,
+      "width": 660
+    },
+    "focus": "portfolio-query",
+    "query": "python",
+    "results": {
+      "client": 525,
+      "count": 5,
+      "scroll": 550
+    },
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "client": 1440,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      },
+      {
+        "height": 44,
+        "name": "Clear search"
+      }
+    ],
+    "dialog": {
+      "bottom": 603.6750030517578,
+      "client": 658,
+      "height": 363.3500061035156,
+      "left": 390,
+      "right": 1050,
+      "scroll": 658,
+      "top": 240.3249969482422,
+      "width": 660
+    },
+    "focus": "portfolio-query",
+    "query": "tamper",
+    "results": {
+      "client": 128,
+      "count": 1,
+      "scroll": 128
+    },
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "client": 1440,
+    "controls": [
+      {
+        "height": 44,
+        "name": "Close search"
+      },
+      {
+        "height": 44,
+        "name": "portfolio-query"
+      },
+      {
+        "height": 44,
+        "name": "Clear search"
+      },
+      {
+        "height": 44,
+        "name": "Browse pages"
+      }
+    ],
+    "dialog": {
+      "bottom": 633.8375244140625,
+      "client": 658,
+      "height": 423.6750183105469,
+      "left": 390,
+      "right": 1050,
+      "scroll": 658,
+      "top": 210.1625061035156,
+      "width": 660
+    },
+    "focus": "portfolio-query",
+    "query": "zzzz-unmatched-query",
+    "results": {
+      "client": 0,
+      "count": 0,
+      "scroll": 0
+    },
+    "scroll": 1440,
+    "width": 1440
+  }
+]

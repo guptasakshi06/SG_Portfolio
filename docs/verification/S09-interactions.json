@@ -1,0 +1,190 @@
+[
+  {
+    "check": "keyboard skill destination",
+    "focus": "skill-detail-title",
+    "modal": false,
+    "overflow": "",
+    "selected": "Python",
+    "url": "http://127.0.0.1:4173/skills?skill=python"
+  },
+  {
+    "check": "Ctrl+K opens",
+    "focus": "portfolio-query",
+    "open": true
+  },
+  {
+    "check": "Escape focus return",
+    "focus": "Search portfolio",
+    "open": false,
+    "overflow": ""
+  },
+  {
+    "check": "Meta+K opens",
+    "focus": "portfolio-query",
+    "open": true
+  },
+  {
+    "check": "Tab to clear",
+    "focus": "Clear search"
+  },
+  {
+    "check": "Tab wraps",
+    "focus": "Close search"
+  },
+  {
+    "check": "Shift+Tab wraps",
+    "focus": "Clear search"
+  },
+  {
+    "check": "editing shortcut preserves palette query",
+    "open": true,
+    "query": "SQL"
+  },
+  {
+    "check": "same-route skill change",
+    "focus": "skill-detail-title",
+    "modal": false,
+    "selected": "Pandas",
+    "url": "http://127.0.0.1:4173/skills?skill=pandas"
+  },
+  {
+    "check": "skill direct refresh",
+    "selected": "Pandas",
+    "url": "http://127.0.0.1:4173/skills?skill=pandas"
+  },
+  {
+    "check": "history back",
+    "selected": "Python",
+    "url": "http://127.0.0.1:4173/skills?skill=python"
+  },
+  {
+    "check": "history forward",
+    "selected": "Pandas",
+    "url": "http://127.0.0.1:4173/skills?skill=pandas"
+  },
+  {
+    "check": "internship section",
+    "focus": "experience-greedup-2026",
+    "heading": "Data Science Intern",
+    "top": 127.9875030517578,
+    "url": "http://127.0.0.1:4173/about#experience-greedup-2026"
+  },
+  {
+    "check": "education section",
+    "focus": "education-rgipt-btech",
+    "url": "http://127.0.0.1:4173/education#education-rgipt-btech"
+  },
+  {
+    "active": null,
+    "check": "empty Arrow/Enter safe",
+    "empty": "No matches yetTry a shorter word, a project topic or a skill such as Python. Clear search to browse all pages.Browse pages",
+    "modal": true
+  },
+  {
+    "active": "search-result-page-contact",
+    "check": "empty recovery and wrap upward",
+    "count": "8 results · Start with a page, or type to explore",
+    "focus": "portfolio-query"
+  },
+  {
+    "active": "search-result-page-home",
+    "check": "wrap downward"
+  },
+  {
+    "check": "project result",
+    "focus": "main",
+    "heading": "End-to-End Loan Analysis Dashboard",
+    "open": false,
+    "url": "http://127.0.0.1:4173/projects/loan-analysis-dashboard"
+  },
+  {
+    "check": "Back while open dismisses",
+    "open": false,
+    "overflow": "",
+    "url": "http://127.0.0.1:4173/education#education-rgipt-btech"
+  },
+  {
+    "check": "Forward cannot reopen dismissed palette",
+    "open": false,
+    "url": "http://127.0.0.1:4173/projects/loan-analysis-dashboard"
+  },
+  {
+    "check": "Ctrl+K does not hijack catalog input",
+    "focus": "project-search",
+    "open": false,
+    "value": "loan"
+  },
+  {
+    "check": "Meta+K does not hijack catalog input",
+    "open": false,
+    "value": "loan"
+  },
+  {
+    "check": "achievement destination",
+    "description": "Team reached the top 4% after the ideation phase.",
+    "focus": "achievement-myntra",
+    "heading": "Myntra Hackathon",
+    "url": "http://127.0.0.1:4173/achievements#achievement-myntra"
+  },
+  {
+    "check": "404 palette recovery",
+    "focus": "main",
+    "url": "http://127.0.0.1:4173/"
+  },
+  {
+    "check": "drawer shortcut does not stack search",
+    "dialogs": [
+      "mobile-navigation"
+    ]
+  },
+  {
+    "check": "drawer Escape regression",
+    "focus": "Open navigation",
+    "open": false,
+    "overflow": ""
+  },
+  {
+    "check": "mobile pointer result navigation",
+    "client": 375,
+    "focus": "main",
+    "h1": "AI-powered Railway Track Tampering Detection System",
+    "open": false,
+    "scroll": 375,
+    "url": "http://127.0.0.1:4173/projects/railway-track-tampering"
+  },
+  {
+    "active": "search-result-achievement-gfg",
+    "check": "long list Arrow scroll",
+    "count": 77,
+    "focus": "portfolio-query",
+    "visible": true
+  },
+  {
+    "check": "Clear search restores pages/input",
+    "count": 8,
+    "focus": "portfolio-query",
+    "value": ""
+  },
+  {
+    "check": "Close button restores trigger",
+    "focus": "Search portfolio",
+    "open": false
+  },
+  {
+    "check": "compact 768 sidebar with palette",
+    "client": 768,
+    "collapsed": true,
+    "dialogWidth": 660,
+    "scroll": 768
+  },
+  {
+    "check": "short mobile viewport",
+    "client": 390,
+    "dialogBottom": 392,
+    "dialogTop": 8,
+    "height": 400,
+    "resultsHeight": 157,
+    "scroll": 390,
+    "width": 390
+  }
+]

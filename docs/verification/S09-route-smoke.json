@@ -1,0 +1,82 @@
+[
+  {
+    "client": 1425,
+    "focus": "main",
+    "h1": "Turning data into meaningful insights.",
+    "open": false,
+    "scroll": 1425,
+    "title": "Sakshi Gupta · SG",
+    "triggerVisible": true,
+    "url": "http://127.0.0.1:4173/"
+  },
+  {
+    "client": 1425,
+    "focus": "main",
+    "h1": "About Me",
+    "open": false,
+    "scroll": 1425,
+    "title": "About Me · SG",
+    "triggerVisible": true,
+    "url": "http://127.0.0.1:4173/about"
+  },
+  {
+    "client": 1425,
+    "focus": "main",
+    "h1": "My Projects",
+    "open": false,
+    "scroll": 1425,
+    "title": "My Projects · SG",
+    "triggerVisible": true,
+    "url": "http://127.0.0.1:4173/projects"
+  },
+  {
+    "client": 1425,
+    "focus": "main",
+    "h1": "Experiments & Research",
+    "open": false,
+    "scroll": 1425,
+    "title": "Experiments & Research · SG",
+    "triggerVisible": true,
+    "url": "http://127.0.0.1:4173/experiments"
+  },
+  {
+    "client": 1425,
+    "focus": "main",
+    "h1": "Skills & Technologies",
+    "open": false,
+    "scroll": 1425,
+    "title": "Skills & Technologies · SG",
+    "triggerVisible": true,
+    "url": "http://127.0.0.1:4173/skills"
+  },
+  {
+    "client": 1425,
+    "focus": "main",
+    "h1": "Education",
+    "open": false,
+    "scroll": 1425,
+    "title": "Education · SG",
+    "triggerVisible": true,
+    "url": "http://127.0.0.1:4173/education"
+  },
+  {
+    "client": 1425,
+    "focus": "main",
+    "h1": "Achievements",
+    "open": false,
+    "scroll": 1425,
+    "title": "Achievements · SG",
+    "triggerVisible": true,
+    "url": "http://127.0.0.1:4173/achievements"
+  },
+  {
+    "client": 1440,
+    "focus": "main",
+    "h1": "Contact",
+    "open": false,
+    "scroll": 1440,
+    "title": "Contact · SG",
+    "triggerVisible": true,
+    "url": "http://127.0.0.1:4173/contact"
+  }
+]
