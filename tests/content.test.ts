@@ -83,3 +83,18 @@ test('undocumented original projects keep technical claims and unknown results e
     assert.ok(project.evidence.missing.length > 0)
   }
 })
+
+test('education and internship date ranges reject invalid months and reversed ordering', () => {
+  const fixture = structuredClone(content)
+  fixture.education[0].start = '2027-06'
+  fixture.experience[0].end = '2026-00'
+  let errors = validateContent(fixture)
+  assert.ok(errors.some(error => error.includes('education rgipt-btech: start follows expected end')))
+  assert.ok(errors.some(error => error.includes('experience greedup-2026 end: expected YYYY-MM')))
+  fixture.education[0].start = null
+  fixture.experience[0].end = '2026-05'
+  errors = validateContent(fixture)
+  assert.ok(errors.some(error => error.includes('experience greedup-2026: start follows end')))
+  fixture.experience[0].end = '2026-08'
+  assert.deepEqual(validateContent(fixture), [])
+})

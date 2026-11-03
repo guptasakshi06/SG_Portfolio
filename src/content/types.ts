@@ -11,7 +11,7 @@ export interface SkillCatalog { groups: { id: string; name: string }[]; items: S
 export type NotebookBlock =
   | { type: 'text'; text: string; provenance: string; sample: boolean }
   | { type: 'code'; language: string; code: string; provenance: string; sample: boolean }
-  | { type: 'table'; columns: string[]; rows: string[][]; provenance: string; sample: boolean }
+  | { type: 'table'; caption: string; columns: string[]; rows: string[][]; provenance: string; sample: boolean }
   | { type: 'chart'; experimentId: string; provenance: string; sample: boolean }
   | { type: 'callout'; title: string; text: string; provenance: string; sample: boolean }
 export interface Project {
@@ -33,7 +33,33 @@ export interface Experiment {
   data: { label: string; values: number[] }[]
 }
 export interface Experiments { actual: Experiment[]; illustrative: Experiment[]; emptyMessage: string }
+export interface NotebookContent {
+  topics: { id: string; title: string; pending: string }[]
+  example: { title: string; description: string; blocks: NotebookBlock[] }
+}
+export interface ProfilePages {
+  about: {
+    eyebrow: string; title: string; introduction: string; interestsTitle: string; interestsDescription: string
+    approachTitle: string; approach: { id: string; title: string; text: string }[]
+    learningTitle: string; learningDescription: string; experienceTitle: string; experienceEyebrow: string; educationTitle: string
+  }
+  education: { eyebrow: string; title: string; introduction: string; interestsTitle: string; interestsDescription: string }
+  achievements: { eyebrow: string; title: string; introduction: string; evidenceNote: string; missingEvidence: string; evidenceLabel: string; undatedLabel: string }
+  nextSteps: { title: string; description: string; projectsLabel: string; contactLabel: string }
+}
 export interface PortfolioContent {
+  skillsPage: Record<'eyebrow' | 'title' | 'introduction' | 'groupsTitle' | 'instructions' | 'inventoryNote' | 'chooseTitle' | 'chooseDescription' | 'unknownTitle' | 'unknownDescription' | 'clearLabel' | 'detailEyebrow' | 'sourceLabel' | 'relatedTitle' | 'relatedNote' | 'emptyTitle' | 'emptyDescription' | 'allProjectsLabel' | 'browseLabel' | 'contextLabel', string>
+  profilePages: ProfilePages
+  notebook: NotebookContent
+  home: {
+    hero: { exploreLabel: string; resumeLabel: string }
+    highlights: { selected: string; selectedDescription: string; interests: string; education: string }
+    projects: { eyebrow: string; title: string; description: string; action: string; previewAction: string }
+    achievements: { eyebrow: string; title: string; action: string }
+    skills: { eyebrow: string; title: string; description: string; action: string; ids: string[] }
+    about: { eyebrow: string; title: string; action: string }
+    contact: { eyebrow: string; title: string; description: string; emailLabel: string; action: string }
+  }
   profile: Profile; projects: Project[]; skills: SkillCatalog; achievements: Achievement[]
   education: Education[]; experience: Experience[]; experiments: Experiments
 }

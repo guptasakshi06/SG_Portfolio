@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/",
+    "title": "Sakshi Gupta · SG",
+    "h1": "Turning data into meaningful insights."
+  },
+  {
+    "path": "/about",
+    "title": "About Me · SG",
+    "h1": "About Me"
+  },
+  {
+    "path": "/projects",
+    "title": "My Projects · SG",
+    "h1": "My Projects"
+  },
+  {
+    "path": "/experiments",
+    "title": "Experiments & Research · SG",
+    "h1": "Experiments & Research"
+  },
+  {
+    "path": "/skills",
+    "title": "Skills & Technologies · SG",
+    "h1": "Skills & Technologies"
+  },
+  {
+    "path": "/education",
+    "title": "Education · SG",
+    "h1": "Education"
+  },
+  {
+    "path": "/achievements",
+    "title": "Achievements · SG",
+    "h1": "Achievements"
+  },
+  {
+    "path": "/contact",
+    "title": "Contact · SG",
+    "h1": "Contact"
+  }
+]

@@ -1,0 +1,105 @@
+{
+  "topics": [
+    {
+      "id": "problem-formulation",
+      "title": "Problem formulation",
+      "pending": "A precise problem statement has not been supplied."
+    },
+    {
+      "id": "dataset",
+      "title": "Dataset",
+      "pending": "Dataset origin, scope and usage permissions have not been supplied."
+    },
+    {
+      "id": "preprocessing",
+      "title": "Preprocessing",
+      "pending": "Preprocessing steps and supporting code have not been supplied."
+    },
+    {
+      "id": "eda",
+      "title": "Exploratory data analysis",
+      "pending": "Exploration notes and visual findings have not been supplied."
+    },
+    {
+      "id": "feature-engineering",
+      "title": "Feature engineering",
+      "pending": "No feature-engineering details are documented in the supplied sources."
+    },
+    {
+      "id": "algorithms-models",
+      "title": "Algorithms / models",
+      "pending": "No algorithm or model details are documented in the supplied sources."
+    },
+    {
+      "id": "implementation",
+      "title": "Implementation",
+      "pending": "Implementation details have not been supplied."
+    },
+    {
+      "id": "evaluation-metrics",
+      "title": "Evaluation metrics",
+      "pending": "Evaluation definitions and measurements have not been supplied."
+    },
+    {
+      "id": "results",
+      "title": "Results",
+      "pending": "No verified numerical results have been supplied."
+    },
+    {
+      "id": "limitations",
+      "title": "Limitations",
+      "pending": "Limitations cannot be assessed from the title alone; implementation evidence is pending."
+    },
+    {
+      "id": "future-improvements",
+      "title": "Future improvements",
+      "pending": "Project-specific next steps have not been supplied."
+    }
+  ],
+  "example": {
+    "title": "How to read a notebook",
+    "description": "Illustrative example — invented sample data, not Sakshi’s project results. This small example shows how an explanation, code and output can be read together. Code is displayed only; it does not run here.",
+    "blocks": [
+      {
+        "type": "text",
+        "text": "Start with a question: which sample records have a reading?\n\nThese two invented records demonstrate a simple missing-value check. They do not come from any project on this site.",
+        "provenance": "Portfolio renderer example, authored for S05. Invented records; not Sakshi’s project code, dataset or results.",
+        "sample": true
+      },
+      {
+        "type": "code",
+        "language": "python",
+        "code": "# Illustrative only — invented sample records\nrecords = [\n    {\"label\": \"Sample A\", \"reading\": 12},\n    {\"label\": \"Sample B\", \"reading\": None},\n]\n\nfor record in records:\n    status = \"missing\" if record[\"reading\"] is None else \"present\"\n    print(record[\"label\"], status)",
+        "provenance": "Portfolio renderer example, authored for S05. Invented records; not Sakshi’s project code, dataset or results.",
+        "sample": true
+      },
+      {
+        "type": "table",
+        "caption": "Illustrative output — presence of a reading in two invented records",
+        "columns": [
+          "Sample record",
+          "Reading available?"
+        ],
+        "rows": [
+          [
+            "Sample A",
+            "Present"
+          ],
+          [
+            "Sample B",
+            "Missing"
+          ]
+        ],
+        "provenance": "Portfolio renderer example, authored for S05. Invented records; not Sakshi’s project code, dataset or results.",
+        "sample": true
+      },
+      {
+        "type": "callout",
+        "title": "What this example tells us",
+        "text": "Only whether a reading is present in these invented records. It does not measure data quality, model accuracy or project performance.",
+        "provenance": "Portfolio renderer example, authored for S05. Invented records; not Sakshi’s project code, dataset or results.",
+        "sample": true
+      }
+    ]
+  }
+}

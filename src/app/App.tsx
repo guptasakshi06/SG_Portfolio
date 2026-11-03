@@ -1,32 +1,25 @@
-import { Link, NavLink, Route, Routes } from 'react-router'
-import { navigation } from './navigation'
+import { Route, Routes } from 'react-router'
+import type { ReactElement } from 'react'
+import { navigation, type PageId } from './navigation'
 import { FoundationPage } from '../pages/FoundationPage'
 import { ProjectPage } from '../pages/ProjectPage'
 import { NotFoundPage } from '../pages/NotFoundPage'
+import { AppShell } from '../components/layout/AppShell'
+import { HomePage } from '../pages/HomePage'
+import { ProjectsPage } from '../pages/ProjectsPage'
+import { AboutPage } from '../pages/AboutPage'
+import { EducationPage } from '../pages/EducationPage'
+import { AchievementsPage } from '../pages/AchievementsPage'
+import { SkillsPage } from '../pages/SkillsPage'
 
-/** S01 route scaffold. S02 replaces this simple header/nav with the workspace shell. */
+const routePages: Partial<Record<PageId, ReactElement>> = { home: <HomePage />, projects: <ProjectsPage />, about: <AboutPage />, education: <EducationPage />, achievements: <AchievementsPage />, skills: <SkillsPage /> }
+
 export function App() {
-  return (
-    <div className="foundation">
-      <a className="skip-link" href="#main">Skip to content</a>
-      <header className="foundation-header">
-        <Link className="identity" to="/" aria-label="SG — Sakshi Gupta, Home">
-          <span className="monogram" aria-hidden="true">SG<span>.</span></span>
-          <span>SAKSHI GUPTA<span className="identity-subtitle">Data Science Portfolio</span></span>
-        </Link>
-        <span className="build-label">Foundation preview</span>
-      </header>
-      <nav className="foundation-nav" aria-label="Main navigation">
-        {navigation.map(item => <NavLink key={item.id} to={item.path} end={item.path === '/'}>{item.label}</NavLink>)}
-      </nav>
-      <main id="main" tabIndex={-1} className="workspace">
-        <Routes>
-          {navigation.map(item => <Route key={item.id} path={item.path} element={<FoundationPage page={item} />} />)}
-          <Route path="/projects/:slug" element={<ProjectPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-      </main>
-      <footer className="foundation-footer"><span>SG · Sakshi Gupta</span><span>Turning data into meaningful insights.</span></footer>
-    </div>
-  )
+  return <AppShell>
+    <Routes>
+      {navigation.map(item => <Route key={item.id} path={item.path} element={routePages[item.id] ?? <FoundationPage page={item} />} />)}
+      <Route path="/projects/:slug" element={<ProjectPage />} />
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
+  </AppShell>
 }

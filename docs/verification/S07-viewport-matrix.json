@@ -1,0 +1,182 @@
+[
+  {
+    "client": 305,
+    "columns": "264.8px",
+    "groups": 8,
+    "scroll": 305,
+    "smallControls": 0,
+    "uniqueSkills": 50,
+    "url": "/skills",
+    "viewport": 320
+  },
+  {
+    "client": 345,
+    "columns": "296.8px",
+    "groups": 8,
+    "scroll": 345,
+    "smallControls": 0,
+    "uniqueSkills": 50,
+    "url": "/skills",
+    "viewport": 360
+  },
+  {
+    "client": 375,
+    "columns": "327.2px",
+    "groups": 8,
+    "scroll": 375,
+    "smallControls": 0,
+    "uniqueSkills": 50,
+    "url": "/skills",
+    "viewport": 390
+  },
+  {
+    "client": 753,
+    "columns": "427.375px",
+    "groups": 8,
+    "scroll": 753,
+    "smallControls": 0,
+    "uniqueSkills": 50,
+    "url": "/skills",
+    "viewport": 768
+  },
+  {
+    "client": 1009,
+    "columns": "662.9px",
+    "groups": 8,
+    "scroll": 1009,
+    "smallControls": 0,
+    "uniqueSkills": 50,
+    "url": "/skills",
+    "viewport": 1024
+  },
+  {
+    "client": 1425,
+    "columns": "508.8px 508.8px",
+    "groups": 8,
+    "scroll": 1425,
+    "smallControls": 0,
+    "uniqueSkills": 50,
+    "url": "/skills",
+    "viewport": 1440
+  },
+  {
+    "client": 305,
+    "columns": "264.8px",
+    "groups": 8,
+    "scroll": 305,
+    "smallControls": 0,
+    "uniqueSkills": 50,
+    "url": "/skills?skill=python",
+    "viewport": 320
+  },
+  {
+    "client": 345,
+    "columns": "296.8px",
+    "groups": 8,
+    "scroll": 345,
+    "smallControls": 0,
+    "uniqueSkills": 50,
+    "url": "/skills?skill=python",
+    "viewport": 360
+  },
+  {
+    "client": 375,
+    "columns": "327.2px",
+    "groups": 8,
+    "scroll": 375,
+    "smallControls": 0,
+    "uniqueSkills": 50,
+    "url": "/skills?skill=python",
+    "viewport": 390
+  },
+  {
+    "client": 753,
+    "columns": "427.375px",
+    "groups": 8,
+    "scroll": 753,
+    "smallControls": 0,
+    "uniqueSkills": 50,
+    "url": "/skills?skill=python",
+    "viewport": 768
+  },
+  {
+    "client": 1009,
+    "columns": "662.9px",
+    "groups": 8,
+    "scroll": 1009,
+    "smallControls": 0,
+    "uniqueSkills": 50,
+    "url": "/skills?skill=python",
+    "viewport": 1024
+  },
+  {
+    "client": 1425,
+    "columns": "508.8px 508.8px",
+    "groups": 8,
+    "scroll": 1425,
+    "smallControls": 0,
+    "uniqueSkills": 50,
+    "url": "/skills?skill=python",
+    "viewport": 1440
+  },
+  {
+    "client": 305,
+    "columns": "264.8px",
+    "groups": 8,
+    "scroll": 305,
+    "smallControls": 0,
+    "uniqueSkills": 50,
+    "url": "/skills?skill=cpp",
+    "viewport": 320
+  },
+  {
+    "client": 345,
+    "columns": "296.8px",
+    "groups": 8,
+    "scroll": 345,
+    "smallControls": 0,
+    "uniqueSkills": 50,
+    "url": "/skills?skill=cpp",
+    "viewport": 360
+  },
+  {
+    "client": 375,
+    "columns": "327.2px",
+    "groups": 8,
+    "scroll": 375,
+    "smallControls": 0,
+    "uniqueSkills": 50,
+    "url": "/skills?skill=cpp",
+    "viewport": 390
+  },
+  {
+    "client": 753,
+    "columns": "427.375px",
+    "groups": 8,
+    "scroll": 753,
+    "smallControls": 0,
+    "uniqueSkills": 50,
+    "url": "/skills?skill=cpp",
+    "viewport": 768
+  },
+  {
+    "client": 1009,
+    "columns": "662.9px",
+    "groups": 8,
+    "scroll": 1009,
+    "smallControls": 0,
+    "uniqueSkills": 50,
+    "url": "/skills?skill=cpp",
+    "viewport": 1024
+  },
+  {
+    "client": 1425,
+    "columns": "508.8px 508.8px",
+    "groups": 8,
+    "scroll": 1425,
+    "smallControls": 0,
+    "uniqueSkills": 50,
+    "url": "/skills?skill=cpp",
+    "viewport": 1440
+  }
+]

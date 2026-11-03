@@ -1,0 +1,22 @@
+{
+  "eyebrow": "SG / Skills in context",
+  "title": "Skills & Technologies",
+  "introduction": "Explore the tools and ideas in my skill inventory. Choose a skill to see what it means and find related work where a source documents its use.",
+  "groupsTitle": "Explore by area",
+  "instructions": "Select a skill to explore it. Select it again to clear, or choose another to compare. Use Tab to move and Enter or Space to select.",
+  "inventoryNote": "This inventory combines owner-supplied skills with tools listed in project documentation. It does not assign proficiency scores.",
+  "chooseTitle": "Start with a skill",
+  "chooseDescription": "Choose any skill from the groups to read a simple explanation and explore documented project connections.",
+  "unknownTitle": "This skill link is unavailable",
+  "unknownDescription": "The skill may have moved or the link may be incomplete. Choose a skill below or clear the selection to start again.",
+  "clearLabel": "Clear selection",
+  "detailEyebrow": "Selected skill",
+  "sourceLabel": "Inventory source",
+  "relatedTitle": "Related projects",
+  "relatedNote": "Connections come from supplied README or resume technology listings. They document a tool's inclusion; they do not independently verify implementation or results. Open a project for its full context.",
+  "emptyTitle": "No documented project connection yet",
+  "emptyDescription": "The supplied project sources do not currently connect this skill to a project. More examples can be added when supporting details are available.",
+  "allProjectsLabel": "Explore all projects",
+  "browseLabel": "Browse skill groups",
+  "contextLabel": "Context & limitations"
+}

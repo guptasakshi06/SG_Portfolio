@@ -1,0 +1,42 @@
+{
+  "about": {
+    "eyebrow": "SG / THE PERSON BEHIND THE PROJECTS",
+    "title": "About Me",
+    "introduction": "I'm Sakshi, an aspiring Data Scientist studying Information Technology at RGIPT. My interests span understanding data, finding patterns, and exploring what intelligent tools can do.",
+    "interestsTitle": "The questions that interest me.",
+    "interestsDescription": "Data Science, Machine Learning, Data Analytics, and Artificial Intelligence are the areas I want to explore through my studies and projects.",
+    "approachTitle": "From a question to something useful.",
+    "approach": [
+      { "id": "question", "title": "Start with the question", "text": "My aim is to make the problem understandable before getting into tools or models. What are we trying to learn, and why would the answer matter?" },
+      { "id": "evidence", "title": "Look closely at the evidence", "text": "Preparing data, checking it, and exploring patterns are part of the work that interests me. A useful explanation also makes room for what the data cannot tell us." },
+      { "id": "explanation", "title": "Make the work understandable", "text": "I want to connect technical work with clear summaries and visual explanations, so someone can follow the idea without needing to read the code." }
+    ],
+    "learningTitle": "Learning through practice.",
+    "learningDescription": "I see projects and problem solving as ways to put ideas into practice. My next step is to keep developing my skills across analysis, machine learning, and AI while making the work easier to explain.",
+    "experienceTitle": "Putting ideas into practice.",
+    "experienceEyebrow": "EXPERIENCE",
+    "educationTitle": "Where I'm studying."
+  },
+  "education": {
+    "eyebrow": "SG / EDUCATION",
+    "title": "Education",
+    "introduction": "An Information Technology degree, with a growing focus on data and intelligent systems.",
+    "interestsTitle": "Areas I'm interested in exploring.",
+    "interestsDescription": "These are my career and technical interests; they are not a list of completed courses."
+  },
+  "achievements": {
+    "eyebrow": "SG / PRACTICE & PARTICIPATION",
+    "title": "Achievements",
+    "introduction": "Coding practice and hackathon milestones, with the stage and recognition kept in context.",
+    "evidenceNote": "These achievements are shared from my supplied profile and resume. Public proof links and separate certificate files have not been added yet.",
+    "missingEvidence": "Proof link not added",
+    "evidenceLabel": "View supporting evidence",
+    "undatedLabel": "Coding practice"
+  },
+  "nextSteps": {
+    "title": "Explore the work behind the introduction.",
+    "description": "Browse the project overviews, or get in touch about an internship, a full-time role, or a question about my work.",
+    "projectsLabel": "Explore my projects",
+    "contactLabel": "Contact details"
+  }
+}
