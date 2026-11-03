@@ -1,0 +1,502 @@
+[
+  {
+    "id": "railway-track-tampering",
+    "slug": "railway-track-tampering",
+    "title": "AI-powered Railway Track Tampering Detection System",
+    "summary": "Exploring how AI could help identify possible interference with railway tracks.",
+    "problem": null,
+    "whyItMatters": null,
+    "whatIBuilt": null,
+    "categories": [
+      "Computer Vision",
+      "Machine Learning"
+    ],
+    "categoryNote": "Editorial classification from supplied title; methods not confirmed.",
+    "featuredOrder": 1,
+    "technologyClaims": [],
+    "proposedTechnologies": [],
+    "links": {
+      "repository": null,
+      "demo": null
+    },
+    "thumbnail": null,
+    "technicalSections": [],
+    "evidence": {
+      "level": "Owner-supplied title; implementation details pending",
+      "sources": [
+        {
+          "source": "Owner project inventory",
+          "note": "Topic summary is cautious editorial copy, not a verified implementation claim."
+        }
+      ],
+      "limitations": [
+        "No implementation or performance claims established from title alone."
+      ],
+      "missing": [
+        "Methods and implementation details",
+        "Dataset provenance",
+        "Evaluation and outcomes",
+        "Repository or notebook evidence"
+      ]
+    }
+  },
+  {
+    "id": "emotionai-studio",
+    "slug": "emotionai-studio",
+    "title": "EmotionAI Studio — Speech Emotion Analytics",
+    "summary": "Exploring emotion-related patterns in speech.",
+    "problem": null,
+    "whyItMatters": null,
+    "whatIBuilt": null,
+    "categories": [
+      "Deep Learning"
+    ],
+    "categoryNote": "Editorial classification from supplied title; methods not confirmed.",
+    "featuredOrder": 2,
+    "technologyClaims": [],
+    "proposedTechnologies": [],
+    "links": {
+      "repository": null,
+      "demo": null
+    },
+    "thumbnail": null,
+    "technicalSections": [],
+    "evidence": {
+      "level": "Owner-supplied title; implementation details pending",
+      "sources": [
+        {
+          "source": "Owner project inventory",
+          "note": "Topic summary is cautious editorial copy, not a verified implementation claim."
+        }
+      ],
+      "limitations": [
+        "No implementation or performance claims established from title alone."
+      ],
+      "missing": [
+        "Methods and implementation details",
+        "Dataset provenance",
+        "Evaluation and outcomes",
+        "Repository or notebook evidence"
+      ]
+    }
+  },
+  {
+    "id": "reliance-nifty-analysis",
+    "slug": "reliance-nifty-analysis",
+    "title": "Reliance vs NIFTY 50 Stock Analysis",
+    "summary": "Comparing a company's stock with a broader market benchmark.",
+    "problem": null,
+    "whyItMatters": null,
+    "whatIBuilt": null,
+    "categories": [
+      "Data Analytics"
+    ],
+    "categoryNote": "Editorial classification from supplied title; methods not confirmed.",
+    "featuredOrder": null,
+    "technologyClaims": [],
+    "proposedTechnologies": [],
+    "links": {
+      "repository": null,
+      "demo": null
+    },
+    "thumbnail": null,
+    "technicalSections": [],
+    "evidence": {
+      "level": "Owner-supplied title; implementation details pending",
+      "sources": [
+        {
+          "source": "Owner project inventory",
+          "note": "Topic summary is cautious editorial copy, not a verified implementation claim."
+        }
+      ],
+      "limitations": [
+        "No implementation or performance claims established from title alone."
+      ],
+      "missing": [
+        "Methods and implementation details",
+        "Dataset provenance",
+        "Evaluation and outcomes",
+        "Repository or notebook evidence"
+      ]
+    }
+  },
+  {
+    "id": "loan-analysis-dashboard",
+    "slug": "loan-analysis-dashboard",
+    "title": "End-to-End Loan Analysis Dashboard",
+    "summary": "A Power BI project for exploring loan distribution, applicant demographics and financial risk patterns.",
+    "problem": null,
+    "whyItMatters": null,
+    "whatIBuilt": "A practice Power BI dashboard with loan overview, applicant demographics, and financial risk views; documented transformations, YoY/YTD measures, validation, and interactive visuals.",
+    "categories": [
+      "Data Analytics"
+    ],
+    "categoryNote": "Editorial classification from supplied title; methods not confirmed.",
+    "featuredOrder": 3,
+    "technologyClaims": [
+      {
+        "skillId": "power-bi",
+        "source": "https://github.com/guptasakshi06/loan-default-analysis-powerbi/blob/main/README.md"
+      },
+      {
+        "skillId": "power-query",
+        "source": "https://github.com/guptasakshi06/loan-default-analysis-powerbi/blob/main/README.md"
+      },
+      {
+        "skillId": "dax",
+        "source": "https://github.com/guptasakshi06/loan-default-analysis-powerbi/blob/main/README.md"
+      },
+      {
+        "skillId": "excel",
+        "source": "https://github.com/guptasakshi06/loan-default-analysis-powerbi/blob/main/README.md"
+      },
+      {
+        "skillId": "csv",
+        "source": "https://github.com/guptasakshi06/loan-default-analysis-powerbi/blob/main/README.md"
+      },
+      {
+        "skillId": "sql-server",
+        "source": "Owner-supplied resume"
+      }
+    ],
+    "proposedTechnologies": [],
+    "links": {
+      "repository": "https://github.com/guptasakshi06/loan-default-analysis-powerbi",
+      "demo": null
+    },
+    "thumbnail": null,
+    "technicalSections": [],
+    "evidence": {
+      "level": "README reviewed; code execution and result reproduction not performed",
+      "sources": [
+        {
+          "source": "https://github.com/guptasakshi06/loan-default-analysis-powerbi/blob/main/README.md",
+          "note": "README snapshot reviewed on 2026-11-03; blob 6593b1d713e6d3c1b2f143c0a9c64f46bf9243ea"
+        },
+        {
+          "source": "Owner-supplied resume",
+          "note": "Resume confirms SQL Server and a 3-page Power BI dashboard in 2026."
+        }
+      ],
+      "limitations": [
+        "README explicitly identifies this as a practice/learning project.",
+        "Resume additionally lists SQL Server; retain separate source attribution.",
+        "No dataset provenance, externally verified numeric results or public live demo provided.",
+        "Financial-risk visuals are analytical project outputs, not investment advice or evidence of real operational impact."
+      ],
+      "missing": [
+        "Dataset provenance",
+        "Independently reproduced outcomes",
+        "Public live demo"
+      ]
+    }
+  },
+  {
+    "id": "agentic-sql-search",
+    "slug": "agentic-sql-search",
+    "title": "Agentic SQL Search",
+    "summary": "Exploring ways to make information in databases easier to find.",
+    "problem": null,
+    "whyItMatters": null,
+    "whatIBuilt": null,
+    "categories": [
+      "Data Science"
+    ],
+    "categoryNote": "Editorial classification from supplied title; methods not confirmed.",
+    "featuredOrder": null,
+    "technologyClaims": [],
+    "proposedTechnologies": [],
+    "links": {
+      "repository": null,
+      "demo": null
+    },
+    "thumbnail": null,
+    "technicalSections": [],
+    "evidence": {
+      "level": "Owner-supplied title; implementation details pending",
+      "sources": [
+        {
+          "source": "Owner project inventory",
+          "note": "Topic summary is cautious editorial copy, not a verified implementation claim."
+        }
+      ],
+      "limitations": [
+        "No implementation or performance claims established from title alone."
+      ],
+      "missing": [
+        "Methods and implementation details",
+        "Dataset provenance",
+        "Evaluation and outcomes",
+        "Repository or notebook evidence"
+      ]
+    }
+  },
+  {
+    "id": "password-strength-prediction",
+    "slug": "password-strength-prediction",
+    "title": "Password Strength Prediction using NLP and Machine Learning",
+    "summary": "Exploring how patterns in text can help estimate password strength.",
+    "problem": null,
+    "whyItMatters": null,
+    "whatIBuilt": null,
+    "categories": [
+      "NLP",
+      "Machine Learning"
+    ],
+    "categoryNote": "Editorial classification from supplied title; methods not confirmed.",
+    "featuredOrder": null,
+    "technologyClaims": [],
+    "proposedTechnologies": [],
+    "links": {
+      "repository": null,
+      "demo": null
+    },
+    "thumbnail": null,
+    "technicalSections": [],
+    "evidence": {
+      "level": "Owner-supplied title; implementation details pending",
+      "sources": [
+        {
+          "source": "Owner project inventory",
+          "note": "Topic summary is cautious editorial copy, not a verified implementation claim."
+        }
+      ],
+      "limitations": [
+        "No implementation or performance claims established from title alone."
+      ],
+      "missing": [
+        "Methods and implementation details",
+        "Dataset provenance",
+        "Evaluation and outcomes",
+        "Repository or notebook evidence"
+      ]
+    }
+  },
+  {
+    "id": "air-quality-analysis",
+    "slug": "air-quality-analysis",
+    "title": "Air Quality Data Analysis and Visualization",
+    "summary": "Exploring patterns in air quality readings through analysis and charts.",
+    "problem": null,
+    "whyItMatters": null,
+    "whatIBuilt": null,
+    "categories": [
+      "Data Analytics"
+    ],
+    "categoryNote": "Editorial classification from supplied title; methods not confirmed.",
+    "featuredOrder": null,
+    "technologyClaims": [],
+    "proposedTechnologies": [],
+    "links": {
+      "repository": null,
+      "demo": null
+    },
+    "thumbnail": null,
+    "technicalSections": [],
+    "evidence": {
+      "level": "Owner-supplied title; implementation details pending",
+      "sources": [
+        {
+          "source": "Owner project inventory",
+          "note": "Topic summary is cautious editorial copy, not a verified implementation claim."
+        }
+      ],
+      "limitations": [
+        "No implementation or performance claims established from title alone."
+      ],
+      "missing": [
+        "Methods and implementation details",
+        "Dataset provenance",
+        "Evaluation and outcomes",
+        "Repository or notebook evidence"
+      ]
+    }
+  },
+  {
+    "id": "alexa-voice-assistant",
+    "slug": "alexa-voice-assistant",
+    "title": "Alexa Voice Assistant using Deep Learning",
+    "summary": "Exploring voice-based interaction using deep learning.",
+    "problem": null,
+    "whyItMatters": null,
+    "whatIBuilt": null,
+    "categories": [
+      "Deep Learning"
+    ],
+    "categoryNote": "Editorial classification from supplied title; methods not confirmed.",
+    "featuredOrder": null,
+    "technologyClaims": [],
+    "proposedTechnologies": [],
+    "links": {
+      "repository": null,
+      "demo": null
+    },
+    "thumbnail": null,
+    "technicalSections": [],
+    "evidence": {
+      "level": "Owner-supplied title; implementation details pending",
+      "sources": [
+        {
+          "source": "Owner project inventory",
+          "note": "Topic summary is cautious editorial copy, not a verified implementation claim."
+        }
+      ],
+      "limitations": [
+        "No implementation or performance claims established from title alone."
+      ],
+      "missing": [
+        "Methods and implementation details",
+        "Dataset provenance",
+        "Evaluation and outcomes",
+        "Repository or notebook evidence"
+      ]
+    }
+  },
+  {
+    "id": "metron-data-optimizer",
+    "slug": "metron-data-optimizer",
+    "title": "Metron — Data Optimizer",
+    "summary": "Compares ways to store analytical data for a stated workload, using measured local tests and data-integrity checks to explain a recommendation.",
+    "problem": null,
+    "whyItMatters": null,
+    "whatIBuilt": "A local MVP comparing analytical data representations with integrity checks, bounded Docker benchmarks, cost assumptions, recommendations, asynchronous jobs, a dashboard, and portable reports.",
+    "categories": [
+      "Data Science"
+    ],
+    "categoryNote": "Editorial browse category based on README scope.",
+    "featuredOrder": null,
+    "technologyClaims": [
+      {
+        "skillId": "python",
+        "source": "https://github.com/guptasakshi06/Metron/blob/main/README.md"
+      },
+      {
+        "skillId": "docker",
+        "source": "https://github.com/guptasakshi06/Metron/blob/main/README.md"
+      },
+      {
+        "skillId": "duckdb",
+        "source": "https://github.com/guptasakshi06/Metron/blob/main/README.md"
+      },
+      {
+        "skillId": "postgresql",
+        "source": "https://github.com/guptasakshi06/Metron/blob/main/README.md"
+      },
+      {
+        "skillId": "redis",
+        "source": "https://github.com/guptasakshi06/Metron/blob/main/README.md"
+      },
+      {
+        "skillId": "minio",
+        "source": "https://github.com/guptasakshi06/Metron/blob/main/README.md"
+      },
+      {
+        "skillId": "nodejs",
+        "source": "https://github.com/guptasakshi06/Metron/blob/main/README.md"
+      },
+      {
+        "skillId": "vite",
+        "source": "https://github.com/guptasakshi06/Metron/blob/main/README.md"
+      }
+    ],
+    "proposedTechnologies": [],
+    "links": {
+      "repository": "https://github.com/guptasakshi06/Metron",
+      "demo": null
+    },
+    "thumbnail": null,
+    "technicalSections": [],
+    "evidence": {
+      "level": "README reviewed; code execution and result reproduction not performed",
+      "sources": [
+        {
+          "source": "https://github.com/guptasakshi06/Metron/blob/main/README.md",
+          "note": "README snapshot reviewed on 2026-11-03; blob acdfc7bb202c8e5b593a55e48003839fede4dc34"
+        },
+        {
+          "source": "Owner-supplied resume (earlier version)",
+          "note": "Resume describes AI-Powered Data Storage Optimization Advisor using Python, Streamlit, YAML, DuckDB and Docker with a 1,000-row synthetic demo dataset. Current Metron README describes an evolved Data Optimizer local MVP; do not merge versions or represent 1,000 rows as real customer data."
+        }
+      ],
+      "limitations": [
+        "README describes a local MVP, not a production release or customer validation.",
+        "Prices and savings must retain synthetic/user-supplied/modeled labels.",
+        "No independently verified speedup, cloud latency, customer savings or public deployment.",
+        "Resume describes an earlier Streamlit/YAML storage-advisor version; do not blend it with current README as one verified stack."
+      ],
+      "missing": [
+        "Dataset provenance",
+        "Independently reproduced outcomes",
+        "Public live demo"
+      ]
+    }
+  },
+  {
+    "id": "credresolve-collections-dashboard",
+    "slug": "credresolve-collections-dashboard",
+    "title": "CredResolve — Collections Intelligence Dashboard",
+    "summary": "Brings collection performance, data-quality issues, recovery funnels and channel comparisons into one dashboard.",
+    "problem": null,
+    "whyItMatters": null,
+    "whatIBuilt": "A dashboard exploring recovery performance, data-quality issues, recovery funnels, channel comparisons, and investment scenarios. Filters and validated dataset/API connections are future work in the README.",
+    "categories": [
+      "Data Analytics"
+    ],
+    "categoryNote": "Editorial browse category based on README scope.",
+    "featuredOrder": null,
+    "technologyClaims": [
+      {
+        "skillId": "html",
+        "source": "https://github.com/guptasakshi06/CredResolveeeee/blob/main/README.md"
+      },
+      {
+        "skillId": "css",
+        "source": "https://github.com/guptasakshi06/CredResolveeeee/blob/main/README.md"
+      },
+      {
+        "skillId": "javascript",
+        "source": "https://github.com/guptasakshi06/CredResolveeeee/blob/main/README.md"
+      },
+      {
+        "skillId": "python",
+        "source": "Owner-supplied resume"
+      },
+      {
+        "skillId": "sql",
+        "source": "Owner-supplied resume"
+      }
+    ],
+    "proposedTechnologies": [],
+    "links": {
+      "repository": "https://github.com/guptasakshi06/CredResolveeeee",
+      "demo": null
+    },
+    "thumbnail": null,
+    "technicalSections": [],
+    "evidence": {
+      "level": "README reviewed; code execution and result reproduction not performed",
+      "sources": [
+        {
+          "source": "https://github.com/guptasakshi06/CredResolveeeee/blob/main/README.md",
+          "note": "README snapshot reviewed on 2026-11-03; blob 60121b87c0d4d5136675d376202f50997c2fad50"
+        },
+        {
+          "source": "Owner-supplied resume",
+          "note": "Resume additionally lists Python and SQL. README explicitly lists HTML/CSS/JavaScript; keep attribution distinct."
+        }
+      ],
+      "limitations": [
+        "README describes Python/SQL analytical workflow as desired methodology only indirectly; resume separately lists Python and SQL.",
+        "Metric formulas, denominators and data lineage need further documentation.",
+        "Period/channel/segment filters and a validated dataset/backend are listed as future improvements.",
+        "Dashboard screenshots are examples of the interface, not evidence of actual business gains.",
+        "No verified recovery increase, ROI improvement, client deployment or live public demo."
+      ],
+      "missing": [
+        "Dataset provenance",
+        "Independently reproduced outcomes",
+        "Public live demo"
+      ]
+    }
+  }
+]

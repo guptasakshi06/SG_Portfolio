@@ -1,0 +1,34 @@
+[
+  {
+    "id": "leetcode",
+    "name": "LeetCode",
+    "description": "300+ DSA problems solved in C++.",
+    "year": null,
+    "evidenceUrl": null,
+    "source": "Owner brief and resume"
+  },
+  {
+    "id": "gfg",
+    "name": "GeeksforGeeks",
+    "description": "GFG national rank in the top 100.",
+    "year": null,
+    "evidenceUrl": null,
+    "source": "Owner brief; no proof URL supplied"
+  },
+  {
+    "id": "myntra",
+    "name": "Myntra Hackathon",
+    "description": "Team reached the top 4% after the ideation phase.",
+    "year": 2024,
+    "evidenceUrl": null,
+    "source": "Owner brief and resume; not a final placement"
+  },
+  {
+    "id": "hack4delhi",
+    "name": "Hack4Delhi",
+    "description": "Grand Finalist and Certificate of Excellence recipient.",
+    "year": 2026,
+    "evidenceUrl": null,
+    "source": "Owner brief and resume"
+  }
+]

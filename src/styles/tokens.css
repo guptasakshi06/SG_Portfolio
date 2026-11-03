@@ -1,0 +1,17 @@
+@theme {
+  --color-background: #0d0f15;
+  --color-background-secondary: #121622;
+  --color-panel: #171b26;
+  --color-card: #202635;
+  --color-accent: #a78bfa;
+  --color-accent-secondary: #67d5e8;
+  --color-success: #22c55e;
+  --color-text: #f1f3f8;
+  --color-muted: #a1a8b8;
+  --color-border: #2b3242;
+  --font-sans: 'Inter Variable', Inter, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --spacing: 4px;
+  --radius-control: 8px;
+  --radius-panel: 12px;
+}

@@ -1,0 +1,495 @@
+{
+  "groups": [
+    {
+      "id": "programming",
+      "name": "Programming Languages"
+    },
+    {
+      "id": "analysis",
+      "name": "Data Analysis"
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics"
+    },
+    {
+      "id": "ml",
+      "name": "Machine Learning"
+    },
+    {
+      "id": "dl",
+      "name": "Deep Learning"
+    },
+    {
+      "id": "databases",
+      "name": "Databases"
+    },
+    {
+      "id": "visualization",
+      "name": "Data Visualization"
+    },
+    {
+      "id": "tools",
+      "name": "Development Tools"
+    }
+  ],
+  "items": [
+    {
+      "id": "python",
+      "name": "Python",
+      "groups": [
+        "programming"
+      ],
+      "explanation": "A language for preparing data, analysis, and building applications.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "cpp",
+      "name": "C++",
+      "groups": [
+        "programming"
+      ],
+      "explanation": "A programming language used for algorithms and problem solving.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "sql",
+      "name": "SQL",
+      "groups": [
+        "programming",
+        "databases"
+      ],
+      "explanation": "A language for asking questions of structured data.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "groups": [
+        "programming"
+      ],
+      "explanation": "A language for interactive websites and applications.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "pandas",
+      "name": "Pandas",
+      "groups": [
+        "analysis"
+      ],
+      "explanation": "Tools for cleaning and exploring tables of data.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "numpy",
+      "name": "NumPy",
+      "groups": [
+        "analysis"
+      ],
+      "explanation": "Tools for working with numerical arrays.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "scikit-learn",
+      "name": "Scikit-learn",
+      "groups": [
+        "ml"
+      ],
+      "explanation": "Tools for building and evaluating machine learning models.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "pytorch",
+      "name": "PyTorch",
+      "groups": [
+        "dl"
+      ],
+      "explanation": "Tools for building and training neural networks.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "data-cleaning",
+      "name": "Data Cleaning",
+      "groups": [
+        "analysis"
+      ],
+      "explanation": "Finding and correcting inconsistent or missing data.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "eda",
+      "name": "Exploratory Data Analysis",
+      "groups": [
+        "analysis",
+        "statistics"
+      ],
+      "explanation": "Exploring a dataset to understand patterns and questions.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "statistical-analysis",
+      "name": "Statistical Analysis",
+      "groups": [
+        "statistics"
+      ],
+      "explanation": "Using statistical methods to understand data and uncertainty.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "data-visualization",
+      "name": "Data Visualization",
+      "groups": [
+        "visualization"
+      ],
+      "explanation": "Explaining patterns through clear charts and graphics.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "machine-learning",
+      "name": "Machine Learning",
+      "groups": [
+        "ml"
+      ],
+      "explanation": "Learning patterns from data to support predictions.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "groups": [
+        "databases"
+      ],
+      "explanation": "A relational database for storing and querying structured data.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "power-bi",
+      "name": "Power BI",
+      "groups": [
+        "visualization"
+      ],
+      "explanation": "Tools for exploring data through reports and dashboards.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "excel",
+      "name": "Excel",
+      "groups": [
+        "analysis",
+        "visualization"
+      ],
+      "explanation": "A spreadsheet tool for organizing and analyzing data.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "groups": [
+        "tools"
+      ],
+      "explanation": "A library for building interactive user interfaces.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "groups": [
+        "tools"
+      ],
+      "explanation": "A runtime for JavaScript outside the browser.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "groups": [
+        "tools"
+      ],
+      "explanation": "Tracking changes to code and collaborating on projects.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "linux",
+      "name": "Linux",
+      "groups": [
+        "tools"
+      ],
+      "explanation": "An operating system used for development and computing.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "jupyter",
+      "name": "Jupyter Notebook",
+      "groups": [
+        "tools",
+        "analysis"
+      ],
+      "explanation": "Combining code, explanations, and outputs in a notebook.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "streamlit",
+      "name": "Streamlit",
+      "groups": [
+        "tools",
+        "visualization"
+      ],
+      "explanation": "Building small data applications in Python.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "groups": [
+        "tools"
+      ],
+      "explanation": "Packaging software into isolated, reproducible environments.",
+      "source": "Owner-supplied skill inventory"
+    },
+    {
+      "id": "dax",
+      "name": "DAX",
+      "groups": [
+        "analysis"
+      ],
+      "explanation": "Writing calculations and measures for Power BI.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "power-query",
+      "name": "Power Query",
+      "groups": [
+        "analysis"
+      ],
+      "explanation": "Preparing and transforming data before analysis.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "kpi-tracking",
+      "name": "KPI Tracking",
+      "groups": [
+        "analysis"
+      ],
+      "explanation": "Following indicators that describe progress toward goals.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "roi-analysis",
+      "name": "ROI Analysis",
+      "groups": [
+        "analysis"
+      ],
+      "explanation": "Comparing a proposed investment with its costs and returns.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "sql-server",
+      "name": "SQL Server",
+      "groups": [
+        "databases"
+      ],
+      "explanation": "A relational database system from Microsoft.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "groups": [
+        "databases"
+      ],
+      "explanation": "A relational database for structured data.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "groups": [
+        "databases"
+      ],
+      "explanation": "A database that stores document-shaped records.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "duckdb",
+      "name": "DuckDB",
+      "groups": [
+        "databases",
+        "analysis"
+      ],
+      "explanation": "An analytical database that can run locally.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "schema-design",
+      "name": "Schema Design",
+      "groups": [
+        "databases"
+      ],
+      "explanation": "Organizing tables, fields, and relationships.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "indexing",
+      "name": "Indexing",
+      "groups": [
+        "databases"
+      ],
+      "explanation": "Structuring database lookups to make queries more efficient.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "groups": [
+        "programming"
+      ],
+      "explanation": "JavaScript with types to make code easier to check.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "rest-apis",
+      "name": "REST APIs",
+      "groups": [
+        "tools"
+      ],
+      "explanation": "Connecting applications through HTTP-based interfaces.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "groups": [
+        "tools"
+      ],
+      "explanation": "Hosting Git repositories and collaborating on code.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "postman",
+      "name": "Postman",
+      "groups": [
+        "tools"
+      ],
+      "explanation": "Sending and inspecting requests to APIs.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "groups": [
+        "tools"
+      ],
+      "explanation": "A platform for deploying web applications.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "gemini-apis",
+      "name": "Gemini APIs",
+      "groups": [
+        "tools"
+      ],
+      "explanation": "Interfaces for using Gemini models in applications.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "prompt-engineering",
+      "name": "Prompt Engineering",
+      "groups": [
+        "ml"
+      ],
+      "explanation": "Writing and refining instructions for language models.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "text-to-sql",
+      "name": "Text-to-SQL",
+      "groups": [
+        "ml",
+        "databases"
+      ],
+      "explanation": "Translating plain-language questions into database queries.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "langchain",
+      "name": "LangChain",
+      "groups": [
+        "tools"
+      ],
+      "explanation": "Tools for connecting language models with application workflows.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "dbms",
+      "name": "DBMS",
+      "groups": [
+        "databases"
+      ],
+      "explanation": "Concepts for storing, organizing, and managing databases.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "dsa",
+      "name": "DSA",
+      "groups": [
+        "programming"
+      ],
+      "explanation": "Data structures and algorithms for solving computing problems.",
+      "source": "Owner-supplied resume"
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "groups": [
+        "databases"
+      ],
+      "explanation": "An in-memory data store; documented in the Metron project.",
+      "source": "Reviewed repository README; project technology, not an expertise claim"
+    },
+    {
+      "id": "minio",
+      "name": "MinIO",
+      "groups": [
+        "tools"
+      ],
+      "explanation": "Object storage tooling documented in the Metron project.",
+      "source": "Reviewed repository README; project technology, not an expertise claim"
+    },
+    {
+      "id": "vite",
+      "name": "Vite",
+      "groups": [
+        "tools"
+      ],
+      "explanation": "Frontend development and build tooling documented in Metron.",
+      "source": "Reviewed repository README; project technology, not an expertise claim"
+    },
+    {
+      "id": "html",
+      "name": "HTML5",
+      "groups": [
+        "programming"
+      ],
+      "explanation": "Structuring web content; documented in CredResolve.",
+      "source": "Reviewed repository README; project technology, not an expertise claim"
+    },
+    {
+      "id": "css",
+      "name": "CSS3",
+      "groups": [
+        "tools"
+      ],
+      "explanation": "Styling web content; documented in CredResolve.",
+      "source": "Reviewed repository README; project technology, not an expertise claim"
+    },
+    {
+      "id": "csv",
+      "name": "CSV",
+      "groups": [
+        "analysis"
+      ],
+      "explanation": "A plain-text table format documented in the loan project.",
+      "source": "Reviewed repository README; project technology, not an expertise claim"
+    }
+  ]
+}

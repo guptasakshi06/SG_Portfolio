@@ -1,0 +1,23 @@
+[
+  {
+    "id": "greedup-2026",
+    "organization": "GreedUp",
+    "role": "Data Science Intern",
+    "start": "2026-06",
+    "end": "2026-08",
+    "summary": "Contributed to a real-time AI meeting assistant that turns conversations into transcripts, summaries and action items.",
+    "technologies": [
+      "Python",
+      "OpenAI Whisper",
+      "Silero VAD",
+      "LLMs"
+    ],
+    "contributions": [
+      "Prepared audio for the transcription pipeline.",
+      "Worked on LLM-based summarization and action-item extraction.",
+      "Tested varied recordings, investigated noisy-audio accuracy issues and documented/debugged problems."
+    ],
+    "limitations": "No numeric accuracy or business impact supplied; do not imply sole ownership or senior professional experience.",
+    "source": "Uploaded owner resume, visually reviewed and text extracted on 2026-11-03. Owner-provided claims; not independently verified."
+  }
+]

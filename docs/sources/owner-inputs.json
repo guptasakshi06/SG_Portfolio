@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "updatedOn": "2026-11-03",
+  "purpose": "Owner-confirmed inputs and resume-derived source facts for future sprint implementation. Not runtime content yet.",
+  "profile": {
+    "name": "Sakshi Gupta",
+    "email": "guptasak06@gmail.com",
+    "github": "https://github.com/guptasakshi06",
+    "linkedin": "https://www.linkedin.com/in/sakshi-gupta06sg/",
+    "availability": {
+      "seeking": [
+        "internships",
+        "full-time opportunities"
+      ],
+      "displayLabel": "Open to internships & full-time opportunities",
+      "immediateStartConfirmed": false
+    },
+    "degree": {
+      "name": "B.Tech in Information Technology",
+      "institution": "Rajiv Gandhi Institute of Petroleum Technology (RGIPT)",
+      "location": "Jais, Amethi",
+      "expectedGraduationYear": 2027,
+      "source": "Owner explicitly confirmed Information Technology after resume conflict was raised.",
+      "resumeConflict": "Current PDF says Computer Science. Do not copy that label to website; PDF itself has not been edited."
+    }
+  },
+  "resume": {
+    "originalSourcePath": "/home/ubuntu/Downloads/Resume_Sakshi_Gupta_BA.pdf",
+    "workspacePath": "public/resume/sakshi-gupta-resume.pdf",
+    "publicPath": "/resume/sakshi-gupta-resume.pdf",
+    "downloadName": "Sakshi_Gupta_Resume.pdf",
+    "sha256": "0eeadf37c6a1fb4315648b10ebc5d2e02406425eaf04d5755c62c27cbc65204c",
+    "bytes": 166684,
+    "pages": 1,
+    "replaceable": true,
+    "policy": "Replace the stable workspace PDF, update centralized resume metadata/version, verify the download and redeploy if hosted. Do not build an admin uploader or backend just for replacement.",
+    "unchangedFromUpload": true
+  },
+  "featuredProjectSlugs": [
+    "railway-track-tampering",
+    "emotionai-studio",
+    "loan-analysis-dashboard"
+  ],
+  "repositorySources": [
+    "https://github.com/guptasakshi06/Metron",
+    "https://github.com/guptasakshi06/CredResolveeeee",
+    "https://github.com/guptasakshi06/loan-default-analysis-powerbi"
+  ],
+  "resumeDerived": {
+    "source": "Uploaded owner resume, visually reviewed and text extracted on 2026-11-03. Owner-provided claims; not independently verified.",
+    "education": {
+      "start": "2023-08",
+      "expectedEnd": "2027-05",
+      "cpi": 7.22,
+      "degreeNameConflict": "Use owner-confirmed Information Technology. The PDF's Computer Science label is superseded for website copy."
+    },
+    "experience": [
+      {
+        "organization": "GreedUp",
+        "role": "Data Science Intern",
+        "start": "2026-06",
+        "end": "2026-08",
+        "summary": "Contributed to a real-time AI meeting assistant that turns conversations into transcripts, summaries and action items.",
+        "technologies": [
+          "Python",
+          "OpenAI Whisper",
+          "Silero VAD",
+          "LLMs"
+        ],
+        "contributions": [
+          "Prepared audio for the transcription pipeline.",
+          "Worked on LLM-based summarization and action-item extraction.",
+          "Tested varied recordings, investigated noisy-audio accuracy issues and documented/debugged problems."
+        ],
+        "limitations": "No numeric accuracy or business impact supplied; do not imply sole ownership or senior professional experience."
+      }
+    ],
+    "achievements": [
+      {
+        "name": "Hack4Delhi",
+        "year": 2026,
+        "description": "Grand Finalist and Certificate of Excellence recipient."
+      },
+      {
+        "name": "Myntra Hackathon",
+        "year": 2024,
+        "description": "Top 4% after ideation phase."
+      },
+      {
+        "name": "LeetCode",
+        "description": "300+ DSA problems solved in C++."
+      }
+    ],
+    "additionalSkills": [
+      "DAX",
+      "Power Query",
+      "KPI Tracking",
+      "ROI Analysis",
+      "SQL Server",
+      "MySQL",
+      "MongoDB",
+      "DuckDB",
+      "Schema Design",
+      "Indexing",
+      "TypeScript",
+      "REST APIs",
+      "GitHub",
+      "Postman",
+      "Vercel",
+      "Gemini APIs",
+      "Prompt Engineering",
+      "Text-to-SQL",
+      "LangChain",
+      "DBMS",
+      "DSA"
+    ],
+    "projectSourceNotes": {
+      "credresolve": "Resume additionally lists Python and SQL. README explicitly lists HTML/CSS/JavaScript; keep attribution distinct.",
+      "loan": "Resume confirms SQL Server and a 3-page Power BI dashboard in 2026.",
+      "metron": "Resume describes AI-Powered Data Storage Optimization Advisor using Python, Streamlit, YAML, DuckDB and Docker with a 1,000-row synthetic demo dataset. Current Metron README describes an evolved Data Optimizer local MVP; do not merge versions or represent 1,000 rows as real customer data."
+    }
+  },
+  "creativeDirection": {
+    "ownerDelegated": true,
+    "decision": "Use the original dark SG design brief. Draft modest personal copy from supplied interests, use initials/abstract artwork, and do not invent life stories or a portrait."
+  },
+  "pending": [
+    "Repository/notebook evidence for Railway Track Tampering and EmotionAI Studio",
+    "Evidence for other original projects without supplied repositories",
+    "Real experiment datasets and model evaluation/training logs",
+    "Live demo URLs",
+    "Optional certificate files and coding-profile URLs",
+    "Production origin and hosting setup"
+  ],
+  "verification": {
+    "resume": "pdfinfo, full-page rendered review, text extraction, and byte-identical staging completed.",
+    "readmes": "All three README.md files retrieved through GitHub connector; blob SHAs and full text saved separately.",
+    "externalProfiles": "Owner supplied URLs; GitHub/LinkedIn profile availability not independently checked.",
+    "application": "No application code, serving, browser download, project runtime or deployment verification performed."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Sakshi Gupta",
+  "role": "Aspiring Data Scientist",
+  "intro": "HELLO, I'M SAKSHI GUPTA",
+  "tagline": "Turning data into meaningful insights.",
+  "description": "I'm an aspiring Data Scientist passionate about uncovering patterns, solving problems, and building intelligent solutions using data and technology.",
+  "about": [
+    "I am studying Information Technology at RGIPT, with interests in Data Science, Machine Learning, Data Analytics, and Artificial Intelligence."
+  ],
+  "focusAreas": [
+    "Data Science",
+    "Machine Learning",
+    "Data Analytics",
+    "Artificial Intelligence"
+  ],
+  "availability": {
+    "label": "Open to internships & full-time opportunities",
+    "immediateStartConfirmed": false
+  },
+  "email": "guptasak06@gmail.com",
+  "socials": {
+    "github": "https://github.com/guptasakshi06",
+    "linkedin": "https://www.linkedin.com/in/sakshi-gupta06sg/"
+  },
+  "resume": {
+    "path": "/resume/sakshi-gupta-resume.pdf",
+    "downloadName": "Sakshi_Gupta_Resume.pdf",
+    "version": "2026-11-03-0eeadf37c6a1",
+    "source": "Owner-supplied resume, staged unchanged on 2026-11-03.",
+    "sha256": "0eeadf37c6a1fb4315648b10ebc5d2e02406425eaf04d5755c62c27cbc65204c"
+  }
+}
