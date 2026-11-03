@@ -1,6 +1,6 @@
 # SG · Sakshi Gupta’s portfolio
 
-A frontend portfolio built in small, verifiable sprints. **S01 is the application foundation.** The current pages are useful previews; the workspace shell, full page designs, filters, notebooks, charts, search, and contact actions belong to later sprints. Read [HANDOFF.md](HANDOFF.md) before continuing work and complete one sprint per chat.
+A frontend portfolio built in small, verifiable sprints. **S02 adds the shared workspace and navigation to the S01 foundation.** The current page bodies are useful previews; full page designs, filters, notebooks, charts, global search, and the complete Contact page belong to later sprints. Read [HANDOFF.md](HANDOFF.md) before continuing work and complete one sprint per chat.
 
 ## Run locally
 
@@ -39,8 +39,9 @@ S01 verification used Node 24.22.2 and npm 9.2.0. A startup maintenance fix repl
 
 ## Structure and routes
 
-- `src/app/`: declarative React Router routes, temporary shell, and eight navigation destinations.
+- `src/app/`: declarative React Router routes and eight navigation destinations.
 - `src/pages/`: reusable foundation page previews, project preview and recoverable 404.
+- `src/components/layout/`: AppShell, TopBar, desktop sidebar, modal mobile navigation, shared navigation links, configured profile/resume actions and footer.
 - `src/components/ui/`: shared page intro and preview notice.
 - `src/content/`: runtime JSON, TypeScript contracts and validated content entry point.
 - `src/lib/`: cross-record validation and safe link helpers.
@@ -51,7 +52,7 @@ S01 verification used Node 24.22.2 and npm 9.2.0. A startup maintenance fix repl
 
 Routes: `/`, `/about`, `/projects`, `/projects/:slug`, `/experiments`, `/skills`, `/education`, `/achievements`, `/contact`, plus a catch-all 404. Project routes come from content, including all ten current entries. Unknown project slugs show recovery links. Vite serves SPA history fallbacks locally; production hosting must be configured in S12. Nothing is deployed yet.
 
-S02 begins by replacing the temporary header/navigation in `src/app/App.tsx` with the accessible workspace shell. Preserve route and content contracts. Later pages replace previews rather than duplicating the shell.
+The shared shell lives in `src/components/layout/AppShell.tsx`. At 1200px and above the sidebar starts expanded (264px); at 768–1199px it starts collapsed (80px). Visitors can toggle it by pointer or keyboard. Below 768px a named menu button opens a native modal dialog: background scrolling is locked, Tab/Shift+Tab wrap inside, Escape or Close returns focus, navigation closes it, and resizing to desktop clears it. Route changes focus the main landmark and reset scroll; nested project pages keep My Projects active. Collapse preference lasts for the current app session. Search is omitted until S09. S03 builds Home inside this shell; later pages replace previews rather than duplicating layout.
 
 ## Edit content
 
@@ -82,7 +83,7 @@ The website degree is **Information Technology**, explicitly confirmed by the ow
 
 ## Replace the resume anytime
 
-The authoritative asset is `public/resume/sakshi-gupta-resume.pdf`. The source upload in Downloads is not served. All future download actions must use the single `profile.resume` object, including `path`, `downloadName`, `version` and `sha256`.
+The authoritative asset is `public/resume/sakshi-gupta-resume.pdf`. The source upload in Downloads is not served. All download actions must use the single `profile.resume` object, including `path`, `downloadName`, `version` and `sha256`.
 
 1. Obtain the new real PDF from the owner. Check it is readable (for example `pdfinfo` and a visual review). Do not replace it with a test/sample PDF.
 2. Replace the stable workspace asset. Preserve its public path, `/resume/sakshi-gupta-resume.pdf`, and desired download name, `Sakshi_Gupta_Resume.pdf`.
@@ -91,7 +92,7 @@ The authoritative asset is `public/resume/sakshi-gupta-resume.pdf`. The source u
 5. Start the app, open `/resume/sakshi-gupta-resume.pdf?v=YOUR_NEW_VERSION`, and verify the served file. Once shared actions exist, test every resume action and the actual browser download/open behavior.
 6. Rebuild, and redeploy if a hosted version exists. Versioned action URLs (`resumeHref`) refresh browser caches; local replacement alone never updates a deployed site. Hosting cache settings and replacement-fixture checks are completed in S10.
 
-S01 verified HTTP PDF delivery and original bytes, not cross-site download buttons; those actions have not been implemented yet.
+S02 adds the versioned topbar download through `ProfileActions`; GitHub/LinkedIn use safe new-tab links and the footer uses the configured email. Null/unsafe profile or resume configuration renders an explicit unavailable label with no link. See `docs/verification/S02.md` for actual checks. Complete cross-site replacement fixtures and missing-file handling remain S10 scope.
 
 ## Tooling decisions
 
