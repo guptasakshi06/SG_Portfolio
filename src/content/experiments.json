@@ -1,5 +1,242 @@
 {
   "actual": [],
-  "illustrative": [],
-  "emptyMessage": "Experiment records have not been supplied yet. Actual results will be added when available."
+  "emptyMessage": "Experiment records have not been supplied yet. Actual results will be added when available.",
+  "page": {
+    "eyebrow": "ML LAB / Explore & understand",
+    "title": "Experiments & Research",
+    "introduction": "A space to explore how models are compared, what their numbers mean, and where careful evaluation matters. Start with a small, interactive teaching example.",
+    "actualTitle": "Actual experiment results",
+    "notesTitle": "Research notes & lessons",
+    "notesEmpty": "Statistical experiments, research notes and lessons from real work will appear here when source records are supplied."
+  },
+  "notes": [],
+  "demo": {
+    "title": "Two models, one sample task",
+    "notice": "Demonstration — synthetic sample data, not Sakshi's project results",
+    "provenance": "Hand-authored synthetic teaching fixture for this portfolio UI. No dataset was collected and no model was trained; these are not Sakshi’s project results.",
+    "description": "Imagine two unnamed models sorting items into Class 0 or Class 1. Compare their illustrative scores, follow their loss over six passes through training, and inspect their sample prediction counts. Neither model represents a portfolio project.",
+    "comparisonId": "demo-accuracy",
+    "accuracyExplanation": "Accuracy is the share of predictions that match the known class. The unit is percent (%); higher means more correct predictions on that set. Training uses examples seen during fitting; validation uses held-out examples. These invented validation counts contain 100 items per model, with 50 in each class. Training sample size is not represented. Accuracy alone does not describe every kind of error.",
+    "lossExplanation": "Binary cross-entropy loss describes how far predicted probabilities are from the known classes. It is a unitless score; lower is better on the same task and set. An epoch is one pass through the training examples. These six hand-authored points illustrate curves only; they are not calculated from the prediction-count tables. A training curve alone cannot establish performance on unseen data.",
+    "matrixExplanation": "A confusion matrix counts correct and incorrect predictions. Rows are the known class; columns are the predicted class. Matching row/column classes are correct predictions. Each synthetic table has 100 validation items. These counts explain the sample validation accuracy; they do not establish real model quality.",
+    "models": [
+      {
+        "id": "model-a",
+        "name": "Model A",
+        "lossId": "demo-loss-a",
+        "matrixId": "demo-matrix-a",
+        "validationSize": 100
+      },
+      {
+        "id": "model-b",
+        "name": "Model B",
+        "lossId": "demo-loss-b",
+        "matrixId": "demo-matrix-b",
+        "validationSize": 100
+      }
+    ]
+  },
+  "illustrative": [
+    {
+      "id": "demo-accuracy",
+      "title": "Final accuracy comparison",
+      "sample": true,
+      "provenance": "Hand-authored synthetic teaching fixture for this portfolio UI. No dataset was collected and no model was trained; these are not Sakshi’s project results.",
+      "description": "Synthetic accuracy after the sixth illustrative epoch.",
+      "axisUnits": "accuracy (%)",
+      "legend": [
+        "Training",
+        "Validation"
+      ],
+      "accessibleSummary": "Synthetic final accuracy: Model A training 90%, validation 84%; Model B training 96%, validation 89%. Higher is better within this invented task.",
+      "data": [
+        {
+          "label": "Model A",
+          "values": [
+            90,
+            84
+          ]
+        },
+        {
+          "label": "Model B",
+          "values": [
+            96,
+            89
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-loss-a",
+      "title": "Model A loss",
+      "sample": true,
+      "provenance": "Hand-authored synthetic teaching fixture for this portfolio UI. No dataset was collected and no model was trained; these are not Sakshi’s project results.",
+      "description": "Six invented epoch scores for Model A.",
+      "axisUnits": "unitless binary cross-entropy loss",
+      "legend": [
+        "Training",
+        "Validation"
+      ],
+      "accessibleSummary": "Synthetic Model A loss goes from 0.69 to 0.27 for training and 0.71 to 0.39 for validation; no real training was run.",
+      "data": [
+        {
+          "label": "1",
+          "values": [
+            0.69,
+            0.71
+          ]
+        },
+        {
+          "label": "2",
+          "values": [
+            0.54,
+            0.59
+          ]
+        },
+        {
+          "label": "3",
+          "values": [
+            0.43,
+            0.5
+          ]
+        },
+        {
+          "label": "4",
+          "values": [
+            0.35,
+            0.44
+          ]
+        },
+        {
+          "label": "5",
+          "values": [
+            0.3,
+            0.41
+          ]
+        },
+        {
+          "label": "6",
+          "values": [
+            0.27,
+            0.39
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-loss-b",
+      "title": "Model B loss",
+      "sample": true,
+      "provenance": "Hand-authored synthetic teaching fixture for this portfolio UI. No dataset was collected and no model was trained; these are not Sakshi’s project results.",
+      "description": "Six invented epoch scores for Model B.",
+      "axisUnits": "unitless binary cross-entropy loss",
+      "legend": [
+        "Training",
+        "Validation"
+      ],
+      "accessibleSummary": "Synthetic Model B loss goes from 0.68 to 0.16 for training and 0.70 to 0.34 for validation; no real training was run.",
+      "data": [
+        {
+          "label": "1",
+          "values": [
+            0.68,
+            0.7
+          ]
+        },
+        {
+          "label": "2",
+          "values": [
+            0.48,
+            0.53
+          ]
+        },
+        {
+          "label": "3",
+          "values": [
+            0.34,
+            0.43
+          ]
+        },
+        {
+          "label": "4",
+          "values": [
+            0.25,
+            0.37
+          ]
+        },
+        {
+          "label": "5",
+          "values": [
+            0.2,
+            0.35
+          ]
+        },
+        {
+          "label": "6",
+          "values": [
+            0.16,
+            0.34
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-matrix-a",
+      "title": "Model A validation prediction counts",
+      "sample": true,
+      "provenance": "Hand-authored synthetic teaching fixture for this portfolio UI. No dataset was collected and no model was trained; these are not Sakshi’s project results.",
+      "description": "Synthetic binary-classification confusion matrix.",
+      "axisUnits": "validation items (count)",
+      "legend": [
+        "Predicted Class 0",
+        "Predicted Class 1"
+      ],
+      "accessibleSummary": "Synthetic Model A: 43 + 41 = 84 correct out of 100 validation items. 7 Class 0 items were predicted Class 1; 9 Class 1 items were predicted Class 0.",
+      "data": [
+        {
+          "label": "Actual Class 0",
+          "values": [
+            43,
+            7
+          ]
+        },
+        {
+          "label": "Actual Class 1",
+          "values": [
+            9,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demo-matrix-b",
+      "title": "Model B validation prediction counts",
+      "sample": true,
+      "provenance": "Hand-authored synthetic teaching fixture for this portfolio UI. No dataset was collected and no model was trained; these are not Sakshi’s project results.",
+      "description": "Synthetic binary-classification confusion matrix.",
+      "axisUnits": "validation items (count)",
+      "legend": [
+        "Predicted Class 0",
+        "Predicted Class 1"
+      ],
+      "accessibleSummary": "Synthetic Model B: 46 + 43 = 89 correct out of 100 validation items. 4 Class 0 items were predicted Class 1; 7 Class 1 items were predicted Class 0.",
+      "data": [
+        {
+          "label": "Actual Class 0",
+          "values": [
+            46,
+            4
+          ]
+        },
+        {
+          "label": "Actual Class 1",
+          "values": [
+            7,
+            43
+          ]
+        }
+      ]
+    }
+  ]
 }

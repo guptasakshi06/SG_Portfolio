@@ -1,0 +1,206 @@
+[
+  {
+    "width": 320,
+    "state": "both models, both series",
+    "chartContainerWidths": [
+      231.1999969482422,
+      231.1999969482422
+    ],
+    "client": 305,
+    "controlHeights": [
+      44,
+      44,
+      44,
+      44
+    ],
+    "scroll": 305,
+    "tables": [
+      {
+        "client": 230,
+        "scroll": 230
+      },
+      {
+        "client": 230,
+        "scroll": 349
+      },
+      {
+        "client": 230,
+        "scroll": 230
+      },
+      {
+        "client": 230,
+        "scroll": 230
+      }
+    ]
+  },
+  {
+    "width": 360,
+    "state": "both models, both series",
+    "chartContainerWidths": [
+      263.20001220703125,
+      263.20001220703125
+    ],
+    "client": 345,
+    "controlHeights": [
+      44,
+      44,
+      44,
+      44
+    ],
+    "scroll": 345,
+    "tables": [
+      {
+        "client": 262,
+        "scroll": 262
+      },
+      {
+        "client": 262,
+        "scroll": 349
+      },
+      {
+        "client": 262,
+        "scroll": 262
+      },
+      {
+        "client": 262,
+        "scroll": 262
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "state": "both models, both series",
+    "chartContainerWidths": [
+      293.6000061035156,
+      293.6000061035156
+    ],
+    "client": 375,
+    "controlHeights": [
+      44,
+      44,
+      44,
+      44
+    ],
+    "scroll": 375,
+    "tables": [
+      {
+        "client": 292,
+        "scroll": 292
+      },
+      {
+        "client": 292,
+        "scroll": 349
+      },
+      {
+        "client": 292,
+        "scroll": 292
+      },
+      {
+        "client": 292,
+        "scroll": 292
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "state": "both models, both series",
+    "chartContainerWidths": [
+      561.7750244140625,
+      561.7750244140625
+    ],
+    "client": 753,
+    "controlHeights": [
+      44,
+      44,
+      44,
+      44
+    ],
+    "scroll": 753,
+    "tables": [
+      {
+        "client": 560,
+        "scroll": 560
+      },
+      {
+        "client": 560,
+        "scroll": 560
+      },
+      {
+        "client": 560,
+        "scroll": 560
+      },
+      {
+        "client": 560,
+        "scroll": 560
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "state": "both models, both series",
+    "chartContainerWidths": [
+      797.2999877929688,
+      797.2999877929688
+    ],
+    "client": 1009,
+    "controlHeights": [
+      44,
+      44,
+      44,
+      44
+    ],
+    "scroll": 1009,
+    "tables": [
+      {
+        "client": 796,
+        "scroll": 796
+      },
+      {
+        "client": 796,
+        "scroll": 796
+      },
+      {
+        "client": 796,
+        "scroll": 796
+      },
+      {
+        "client": 796,
+        "scroll": 796
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "state": "both models, both series",
+    "chartContainerWidths": [
+      520.7999877929688,
+      520.7999877929688
+    ],
+    "client": 1425,
+    "controlHeights": [
+      44,
+      44,
+      44,
+      44
+    ],
+    "scroll": 1425,
+    "tables": [
+      {
+        "client": 519,
+        "scroll": 519
+      },
+      {
+        "client": 519,
+        "scroll": 519
+      },
+      {
+        "client": 544,
+        "scroll": 544
+      },
+      {
+        "client": 544,
+        "scroll": 544
+      }
+    ]
+  }
+]

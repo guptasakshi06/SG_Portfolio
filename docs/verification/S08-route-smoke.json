@@ -1,0 +1,50 @@
+[
+  {
+    "route": "/",
+    "title": "Sakshi Gupta · SG",
+    "h1": "Turning data into meaningful insights.",
+    "samplePanels": 0
+  },
+  {
+    "route": "/about",
+    "title": "About Me · SG",
+    "h1": "About Me",
+    "samplePanels": 0
+  },
+  {
+    "route": "/projects",
+    "title": "My Projects · SG",
+    "h1": "My Projects",
+    "samplePanels": 0
+  },
+  {
+    "route": "/skills?skill=python",
+    "title": "Skills & Technologies · SG",
+    "h1": "Skills & Technologies",
+    "samplePanels": 0
+  },
+  {
+    "route": "/education",
+    "title": "Education · SG",
+    "h1": "Education",
+    "samplePanels": 0
+  },
+  {
+    "route": "/achievements",
+    "title": "Achievements · SG",
+    "h1": "Achievements",
+    "samplePanels": 0
+  },
+  {
+    "route": "/contact",
+    "title": "Contact · SG",
+    "h1": "Contact",
+    "samplePanels": 0
+  },
+  {
+    "route": "/experiments",
+    "title": "Experiments & Research · SG",
+    "h1": "Experiments & Research",
+    "samplePanels": 1
+  }
+]

@@ -1,0 +1,453 @@
+[
+  {
+    "modelId": "all",
+    "mask": 3,
+    "emptyCount": 0,
+    "matrixCount": 2,
+    "status": "Synthetic view: Model A and Model B. Training and Validation accuracy and loss. Prediction-count tables always show validation.",
+    "tables": [
+      [
+        [
+          "Model A",
+          "90",
+          "84"
+        ],
+        [
+          "Model B",
+          "96",
+          "89"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0.69",
+          "0.71",
+          "0.68",
+          "0.7"
+        ],
+        [
+          "2",
+          "0.54",
+          "0.59",
+          "0.48",
+          "0.53"
+        ],
+        [
+          "3",
+          "0.43",
+          "0.5",
+          "0.34",
+          "0.43"
+        ],
+        [
+          "4",
+          "0.35",
+          "0.44",
+          "0.25",
+          "0.37"
+        ],
+        [
+          "5",
+          "0.3",
+          "0.41",
+          "0.2",
+          "0.35"
+        ],
+        [
+          "6",
+          "0.27",
+          "0.39",
+          "0.16",
+          "0.34"
+        ]
+      ]
+    ]
+  },
+  {
+    "modelId": "all",
+    "mask": 1,
+    "emptyCount": 0,
+    "matrixCount": 2,
+    "status": "Synthetic view: Model A and Model B. Training accuracy and loss. Prediction-count tables always show validation.",
+    "tables": [
+      [
+        [
+          "Model A",
+          "90"
+        ],
+        [
+          "Model B",
+          "96"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0.69",
+          "0.68"
+        ],
+        [
+          "2",
+          "0.54",
+          "0.48"
+        ],
+        [
+          "3",
+          "0.43",
+          "0.34"
+        ],
+        [
+          "4",
+          "0.35",
+          "0.25"
+        ],
+        [
+          "5",
+          "0.3",
+          "0.2"
+        ],
+        [
+          "6",
+          "0.27",
+          "0.16"
+        ]
+      ]
+    ]
+  },
+  {
+    "modelId": "all",
+    "mask": 2,
+    "emptyCount": 0,
+    "matrixCount": 2,
+    "status": "Synthetic view: Model A and Model B. Validation accuracy and loss. Prediction-count tables always show validation.",
+    "tables": [
+      [
+        [
+          "Model A",
+          "84"
+        ],
+        [
+          "Model B",
+          "89"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0.71",
+          "0.7"
+        ],
+        [
+          "2",
+          "0.59",
+          "0.53"
+        ],
+        [
+          "3",
+          "0.5",
+          "0.43"
+        ],
+        [
+          "4",
+          "0.44",
+          "0.37"
+        ],
+        [
+          "5",
+          "0.41",
+          "0.35"
+        ],
+        [
+          "6",
+          "0.39",
+          "0.34"
+        ]
+      ]
+    ]
+  },
+  {
+    "modelId": "all",
+    "mask": 0,
+    "emptyCount": 2,
+    "matrixCount": 2,
+    "status": "Synthetic view: Model A and Model B. No accuracy or loss series selected. Prediction-count tables always show validation.",
+    "tables": []
+  },
+  {
+    "modelId": "model-a",
+    "mask": 3,
+    "emptyCount": 0,
+    "matrixCount": 1,
+    "status": "Synthetic view: Model A. Training and Validation accuracy and loss. Prediction-count tables always show validation.",
+    "tables": [
+      [
+        [
+          "Model A",
+          "90",
+          "84"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0.69",
+          "0.71"
+        ],
+        [
+          "2",
+          "0.54",
+          "0.59"
+        ],
+        [
+          "3",
+          "0.43",
+          "0.5"
+        ],
+        [
+          "4",
+          "0.35",
+          "0.44"
+        ],
+        [
+          "5",
+          "0.3",
+          "0.41"
+        ],
+        [
+          "6",
+          "0.27",
+          "0.39"
+        ]
+      ]
+    ]
+  },
+  {
+    "modelId": "model-a",
+    "mask": 1,
+    "emptyCount": 0,
+    "matrixCount": 1,
+    "status": "Synthetic view: Model A. Training accuracy and loss. Prediction-count tables always show validation.",
+    "tables": [
+      [
+        [
+          "Model A",
+          "90"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0.69"
+        ],
+        [
+          "2",
+          "0.54"
+        ],
+        [
+          "3",
+          "0.43"
+        ],
+        [
+          "4",
+          "0.35"
+        ],
+        [
+          "5",
+          "0.3"
+        ],
+        [
+          "6",
+          "0.27"
+        ]
+      ]
+    ]
+  },
+  {
+    "modelId": "model-a",
+    "mask": 2,
+    "emptyCount": 0,
+    "matrixCount": 1,
+    "status": "Synthetic view: Model A. Validation accuracy and loss. Prediction-count tables always show validation.",
+    "tables": [
+      [
+        [
+          "Model A",
+          "84"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0.71"
+        ],
+        [
+          "2",
+          "0.59"
+        ],
+        [
+          "3",
+          "0.5"
+        ],
+        [
+          "4",
+          "0.44"
+        ],
+        [
+          "5",
+          "0.41"
+        ],
+        [
+          "6",
+          "0.39"
+        ]
+      ]
+    ]
+  },
+  {
+    "modelId": "model-a",
+    "mask": 0,
+    "emptyCount": 2,
+    "matrixCount": 1,
+    "status": "Synthetic view: Model A. No accuracy or loss series selected. Prediction-count tables always show validation.",
+    "tables": []
+  },
+  {
+    "modelId": "model-b",
+    "mask": 3,
+    "emptyCount": 0,
+    "matrixCount": 1,
+    "status": "Synthetic view: Model B. Training and Validation accuracy and loss. Prediction-count tables always show validation.",
+    "tables": [
+      [
+        [
+          "Model B",
+          "96",
+          "89"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0.68",
+          "0.7"
+        ],
+        [
+          "2",
+          "0.48",
+          "0.53"
+        ],
+        [
+          "3",
+          "0.34",
+          "0.43"
+        ],
+        [
+          "4",
+          "0.25",
+          "0.37"
+        ],
+        [
+          "5",
+          "0.2",
+          "0.35"
+        ],
+        [
+          "6",
+          "0.16",
+          "0.34"
+        ]
+      ]
+    ]
+  },
+  {
+    "modelId": "model-b",
+    "mask": 1,
+    "emptyCount": 0,
+    "matrixCount": 1,
+    "status": "Synthetic view: Model B. Training accuracy and loss. Prediction-count tables always show validation.",
+    "tables": [
+      [
+        [
+          "Model B",
+          "96"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0.68"
+        ],
+        [
+          "2",
+          "0.48"
+        ],
+        [
+          "3",
+          "0.34"
+        ],
+        [
+          "4",
+          "0.25"
+        ],
+        [
+          "5",
+          "0.2"
+        ],
+        [
+          "6",
+          "0.16"
+        ]
+      ]
+    ]
+  },
+  {
+    "modelId": "model-b",
+    "mask": 2,
+    "emptyCount": 0,
+    "matrixCount": 1,
+    "status": "Synthetic view: Model B. Validation accuracy and loss. Prediction-count tables always show validation.",
+    "tables": [
+      [
+        [
+          "Model B",
+          "89"
+        ]
+      ],
+      [
+        [
+          "1",
+          "0.7"
+        ],
+        [
+          "2",
+          "0.53"
+        ],
+        [
+          "3",
+          "0.43"
+        ],
+        [
+          "4",
+          "0.37"
+        ],
+        [
+          "5",
+          "0.35"
+        ],
+        [
+          "6",
+          "0.34"
+        ]
+      ]
+    ]
+  },
+  {
+    "modelId": "model-b",
+    "mask": 0,
+    "emptyCount": 2,
+    "matrixCount": 1,
+    "status": "Synthetic view: Model B. No accuracy or loss series selected. Prediction-count tables always show validation.",
+    "tables": []
+  }
+]

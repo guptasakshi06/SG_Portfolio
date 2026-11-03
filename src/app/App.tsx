@@ -11,8 +11,9 @@ import { AboutPage } from '../pages/AboutPage'
 import { EducationPage } from '../pages/EducationPage'
 import { AchievementsPage } from '../pages/AchievementsPage'
 import { SkillsPage } from '../pages/SkillsPage'
+import { ExperimentsPage } from '../pages/ExperimentsPage'
 
-const routePages: Partial<Record<PageId, ReactElement>> = { home: <HomePage />, projects: <ProjectsPage />, about: <AboutPage />, education: <EducationPage />, achievements: <AchievementsPage />, skills: <SkillsPage /> }
+const routePages: Partial<Record<PageId, ReactElement>> = { home: <HomePage />, projects: <ProjectsPage />, about: <AboutPage />, education: <EducationPage />, achievements: <AchievementsPage />, skills: <SkillsPage />, experiments: <ExperimentsPage /> }
 
 export function App() {
   return <AppShell>

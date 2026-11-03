@@ -7,7 +7,6 @@ type Page = typeof navigation[number]
 
 function PreviewContent({ id }: { id: PageId }) {
   switch (id) {
-    case 'experiments': return <section className="content-panel"><h2>Experiment records</h2><p>{content.experiments.emptyMessage}</p><p>No demonstration values or performance results are displayed in this foundation preview.</p><Link className="text-link" to="/projects">Explore the project catalog</Link></section>
     case 'contact': return <section className="content-panel"><h2>{content.profile.availability.label}</h2><p>{content.profile.email ?? 'Contact details will be added when available.'}</p><p>Use the shared profile and resume links above, or Say hello below. The full Contact page is planned for S10.</p><Link className="text-link" to="/about">Read about Sakshi</Link></section>
   }
 }
