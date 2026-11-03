@@ -1,6 +1,6 @@
 # SG · Sakshi Gupta’s portfolio
 
-A frontend portfolio built in small, verifiable sprints. **S05 adds complete plain-language project overviews and an optional technical reader to the existing Home/catalog/workspace.** All ten projects have working detail routes, honest evidence gaps and project navigation; three documented projects have attributed technical notes. The reader supports safe text, Shiki code, tables and callouts, with a separate illustrative example. Charts, global search and other full secondary pages belong to later sprints. Read [HANDOFF.md](HANDOFF.md) before continuing work and complete one sprint per chat.
+A frontend portfolio built in small, verifiable sprints. **S06 completes About, Education, and Achievements** alongside the existing Home, project catalog and optional technical reader. The profile uses supplied facts, accurate achievement qualifiers and deliberate missing-proof states. Skills, ML LAB, search and the full Contact page remain assigned to later sprints. Read [HANDOFF.md](HANDOFF.md) before continuing work and complete one sprint per chat.
 
 ## Run locally
 
@@ -40,7 +40,8 @@ S01 verification used Node 24.22.2 and npm 9.2.0. A startup maintenance fix repl
 ## Structure and routes
 
 - `src/app/`: declarative React Router routes and eight navigation destinations.
-- `src/pages/`: HomePage, ProjectsPage, reusable secondary-page previews, project details and recoverable 404.
+- `src/pages/`: Home, Projects, Project, About, Education, Achievements, remaining secondary-page previews and recoverable 404.
+- `src/features/profile/`: shared education, experience and achievement cards, month labels and next-step links.
 - `src/components/home/`: exact hero, original static grid/orbit artwork and profile highlights.
 - `src/features/notebook/`: lazy NotebookViewer, safe NotebookBlocks, CodeBlock and fine-grained Shiki highlighting.
 - `src/features/projects/`: shared ProjectPreview in Home/catalog modes, ProjectFilters, source-attributed ProjectTechnologies, safe ProjectSources and pure catalog filter/query helpers.
@@ -64,10 +65,12 @@ Keep owner facts in JSON rather than JSX. Start with `docs/sources/owner-inputs.
 | File under `src/content/` | Edit here |
 | --- | --- |
 | `home.json` | Homepage section copy, action labels and curated skill IDs; selected projects derive from projects.json featuredOrder |
+| `profile-pages.json` | About/Education/Achievements editorial copy and shared next-step labels; owner-review notes live in docs/sources/S06-copy-notes.json |
 | `profile.json` | Name, role, exact hero copy, availability, about copy, contact URLs, central resume metadata |
 | `notebook.json` | Standard technical topics/pending copy and a separate illustrative renderer example (every example block must be sample=true) |
 | `projects.json` | Stable IDs/slugs, summaries, nullable problem/build fields, categories, featured order, technology claims, links, technical blocks, provenance and gaps |
-| `skills.json` | One stable record per skill, readable explanation and membership in one or more of eight groups |
+| `skills.json` | One stable record per skill, readable explanation, source and membership in one or more of eight groups |
+| `skills-page.json` | Skills explorer editorial copy, instructions and honest missing/unknown-connection states |
 | `education.json` | Owner-confirmed degree and source-attributed dates; expected graduation remains explicit |
 | `experience.json` | Resume-backed GreedUp internship and contribution limits |
 | `achievements.json` | Supplied wording, qualifiers, nullable dates and optional proof links |
@@ -149,3 +152,27 @@ Shiki 4.6.0 is imported through core and its JavaScript regex engine, with only 
 To add real project detail, supply the source and fill the appropriate overview/technical fields. Cite the source at each block; sample outputs keep `sample: true`. `sample: false` means source-attributed material and does not establish independent reproduction. Preserve learning/MVP/version/future-feature caveats. Provide dataset provenance, exact implementation and measured evaluation evidence before adding outcomes. Run `npm run check`; tests now include renderer escaping, provenance/sample/schema failures, Shiki token round trips, pending states and optional chart tables. Test scripts and TypeScript tooling enable JSX for server-rendered component checks.
 
 Evidence and remaining owner-input needs: `docs/verification/S05.md`. No commits, pushes or deployment were made in S05. Next is S06 only when invoked.
+
+
+## Profile, education and achievements (S06)
+
+`AboutPage`, `EducationPage` and `AchievementsPage` share the workspace shell and small components in `src/features/profile/`. Facts continue to come from the existing profile, education, experience and achievement JSON records; `profile-pages.json` holds editable page copy. The approach and learning paragraphs are modest editorial drafts, recorded for optional owner review in `docs/sources/S06-copy-notes.json`. No new biography, employment or outcome is claimed.
+
+Education uses the owner-confirmed Information Technology label, August 2023 start and **expected May 2027** graduation; optional CPI is omitted. The About internship preserves the supplied GreedUp role, June–August 2026, contribution verbs and tools. Dates use semantic `<time>` elements and stable UTC month formatting; content validation rejects malformed months and reversed ranges.
+
+Achievement descriptions remain exact, including Myntra's team top 4% **after the ideation phase** (2024) and Hack4Delhi's Grand Finalist/Certificate of Excellence (2026). Undated coding claims stay undated. Null proof URLs render plain text, without dummy controls; future supplied safe HTTPS proof URLs render named external links with safe rel attributes. Keep the owner-provided source wording and do not describe these as independently verified. No separate certificates or coding-profile URLs have been supplied.
+
+All three pages link to Projects and Contact; About also links to Education. Cards switch to one column according to available content width, including an expanded tablet sidebar. Only Experiments and Contact still use FoundationPage. Evidence: `docs/verification/S06.md`. Nothing is deployed; next is S07 only when invoked.
+
+
+## Skills explorer (S07)
+
+`SkillsPage` composes `SkillGroups` and `SkillDetail`. All eight groups and all 50 existing skill records are preserved. Membership is defined only in `skills.json`; a skill can appear in more than one group while sharing one ID and selected state. Explanations and inventory sources come from that record; editable page copy lives in `skills-page.json`. Group icons are decorative Lucide icons with a fallback. No expertise levels or percentages are assigned. The six README-only tooling records retain their explicit “not an expertise claim” source text.
+
+Direct-link contract for S09: **`/skills?skill=<stable-skill-id>`**, for example `/skills?skill=power-bi`, `/skills?skill=cpp` or `/skills?skill=python`. Use `skillHref(id)` from `src/features/skills/explorer.ts` to encode links. IDs are case-sensitive. Missing selection shows guidance; empty/unknown IDs show recovery without echoing the untrusted value. Query changes push history and preserve scroll/focus, so Back/Forward and refresh restore selection. Unrelated query parameters are retained during selection; permalink links use only the canonical skill parameter.
+
+Controls are native toggle buttons (`aria-pressed`, `aria-controls`), with normal Tab/Shift+Tab and Enter/Space behavior. Selecting a pressed skill clears it; another skill replaces it. A live status announces its explanation and related-project count. Selection keeps focus on the control; “Read [skill] details” explicitly focuses/scrolls to the detail heading. Clear selection retains focus on that heading. The panel appears above the groups when stacked, matching DOM reading order; “Browse skill groups” is a real heading anchor. Wide layouts place groups beside the detail panel. Optional local search is omitted; the existing eight groups keep this scope focused, and global search belongs to S09.
+
+`relatedProjects` derives connections exclusively from `projects.json.technologyClaims`, keeping the exact source per claim and catalog order. Python has two connections (Metron README, CredResolve resume); SQL connects to CredResolve from the resume; SQL Server connects to the loan project from the resume. Power BI connects to the loan README. Do not infer SQL from the Agentic SQL title or PyTorch from a Deep Learning category. Related cards link to complete project pages, show source attribution and disclose the existing project limitations. Documentation confirms listing, not independent execution or measured results. Unmapped skills show deliberate empty copy and a working Projects link. To add a connection, supply supporting evidence first, then add the existing skill ID and accurate source to the project's claims.
+
+Evidence: `docs/verification/S07.md`; focused tests cover all skill-link round trips, invalid selection, sourced mapping, excluded inferences and copy/source/membership validation. No dependency or owner-fact changes, commits, pushes or deployment in this sprint. Next is S08 only when invoked.

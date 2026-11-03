@@ -1,0 +1,24 @@
+{
+  "sprint": "S06",
+  "date": "2026-11-03",
+  "runtimeCopy": "src/content/profile-pages.json",
+  "ownerReview": [
+    {
+      "fields": ["about.approachTitle", "about.approach", "about.learningTitle", "about.learningDescription"],
+      "status": "Editorial draft for optional owner review; not a new biographical claim or owner-confirmed personal philosophy.",
+      "basis": "Owner delegated personal copy/design. Modest aims drawn from supplied data/AI interests, analysis projects, coding practice and resume-backed preparation/testing work. No life story, routine, motivation, leadership, seniority or result was added."
+    }
+  ],
+  "factSources": {
+    "profileAndInterests": "HANDOFF.md sections 3–4; docs/sources/owner-inputs.json profile and creativeDirection",
+    "education": "Owner-confirmed Information Technology label; resumeDerived.education for August 2023 and expected May 2027. CPI is deliberately omitted from display.",
+    "experience": "docs/sources/owner-inputs.json resumeDerived.experience; runtime experience.json unchanged. Contributions and tools remain those supplied; no impact metric or sole-ownership claim.",
+    "achievements": "Original owner brief and resumeDerived.achievements; runtime achievements.json unchanged. Myntra is the team top 4% after ideation in 2024; Hack4Delhi Grand Finalist/Certificate of Excellence in 2026. GFG top-100 national rank is owner-brief-only."
+  },
+  "outstandingEvidence": [
+    "Optional public proof/coding-profile links and separate certificate files for all four achievements.",
+    "No year supplied for LeetCode or GeeksforGeeks; rendered as undated coding practice, without a timeline date.",
+    "Claims are owner supplied; no independent employment, ranking, certificate or current problem-count verification performed."
+  ],
+  "preservation": "Original owner-inputs.json, repository-evidence.json and the unchanged stable resume PDF remain untouched. The private degree discrepancy is not displayed on the website."
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "h1": "Turning data into meaningful insights.",
+    "preview": false,
+    "route": "/",
+    "title": "Sakshi Gupta · SG"
+  },
+  {
+    "h1": "About Me",
+    "preview": false,
+    "route": "/about",
+    "title": "About Me · SG"
+  },
+  {
+    "h1": "My Projects",
+    "preview": false,
+    "route": "/projects",
+    "title": "My Projects · SG"
+  },
+  {
+    "h1": "Experiments & Research",
+    "preview": true,
+    "route": "/experiments",
+    "title": "Experiments & Research · SG"
+  },
+  {
+    "h1": "Skills & Technologies",
+    "preview": true,
+    "route": "/skills",
+    "title": "Skills & Technologies · SG"
+  },
+  {
+    "h1": "Education",
+    "preview": false,
+    "route": "/education",
+    "title": "Education · SG"
+  },
+  {
+    "h1": "Achievements",
+    "preview": false,
+    "route": "/achievements",
+    "title": "Achievements · SG"
+  },
+  {
+    "h1": "Contact",
+    "preview": true,
+    "route": "/contact",
+    "title": "Contact · SG"
+  },
+  {
+    "h1": "End-to-End Loan Analysis Dashboard",
+    "preview": false,
+    "route": "/projects/loan-analysis-dashboard",
+    "title": "End-to-End Loan Analysis Dashboard · SG"
+  }
+]

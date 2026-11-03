@@ -15,6 +15,9 @@ export function validateContent(content: PortfolioContent): string[] {
   const external = (value: string | null, label: string) => {
     if (value !== null && !isSafeExternalUrl(value)) errors.push(`${label}: expected a safe HTTPS URL or null`)
   }
+  const month = (value: string, label: string) => {
+    if (!/^\d{4}-(0[1-9]|1[0-2])$/.test(value)) errors.push(`${label}: expected YYYY-MM with a valid month`)
+  }
   const identities = (items: { id: string }[], label: string) => {
     unique(items.map(item => item.id), label)
     items.forEach(item => {
@@ -51,6 +54,17 @@ export function validateContent(content: PortfolioContent): string[] {
   if (!content.notebook.example.blocks.length || content.notebook.example.blocks.some(block => !block.sample)) errors.push('notebook example: every block must be marked illustrative')
   notebookBlocks(content.notebook.example.blocks, 'notebook example')
   const { profile, projects, skills } = content
+  Object.entries(content.skillsPage).forEach(([key, value]) => required(value, `skillsPage.${key}`))
+  Object.entries(content.profilePages).forEach(([section, copy]) => {
+    Object.entries(copy).forEach(([key, value]) => {
+      if (typeof value === 'string') required(value, `profilePages.${section}.${key}`)
+    })
+  })
+  identities(content.profilePages.about.approach, 'profile approach')
+  content.profilePages.about.approach.forEach(item => {
+    required(item.title, `profile approach ${item.id} title`)
+    required(item.text, `profile approach ${item.id} text`)
+  })
   for (const key of ['name', 'role', 'intro', 'tagline', 'description'] as const) required(profile[key], `profile.${key}`)
   required(profile.availability.label, 'profile.availability.label')
   profile.about.forEach(value => required(value, 'profile.about'))
@@ -121,10 +135,18 @@ export function validateContent(content: PortfolioContent): string[] {
   identities(content.education, 'education')
   content.education.forEach(item => {
     for (const key of ['degree', 'institution', 'location', 'expectedEnd', 'source'] as const) required(item[key], `education ${key}`)
+    month(item.expectedEnd, `education ${item.id} expectedEnd`)
+    if (item.start !== null) {
+      month(item.start, `education ${item.id} start`)
+      if (item.start > item.expectedEnd) errors.push(`education ${item.id}: start follows expected end`)
+    }
   })
   identities(content.experience, 'experience')
   content.experience.forEach(item => {
     for (const key of ['organization', 'role', 'start', 'end', 'summary', 'source'] as const) required(item[key], `experience ${key}`)
+    month(item.start, `experience ${item.id} start`)
+    month(item.end, `experience ${item.id} end`)
+    if (item.start > item.end) errors.push(`experience ${item.id}: start follows end`)
     item.contributions.forEach(value => required(value, 'experience contribution'))
   })
   const { actual, illustrative } = content.experiments

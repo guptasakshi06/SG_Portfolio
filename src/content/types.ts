@@ -37,7 +37,19 @@ export interface NotebookContent {
   topics: { id: string; title: string; pending: string }[]
   example: { title: string; description: string; blocks: NotebookBlock[] }
 }
+export interface ProfilePages {
+  about: {
+    eyebrow: string; title: string; introduction: string; interestsTitle: string; interestsDescription: string
+    approachTitle: string; approach: { id: string; title: string; text: string }[]
+    learningTitle: string; learningDescription: string; experienceTitle: string; experienceEyebrow: string; educationTitle: string
+  }
+  education: { eyebrow: string; title: string; introduction: string; interestsTitle: string; interestsDescription: string }
+  achievements: { eyebrow: string; title: string; introduction: string; evidenceNote: string; missingEvidence: string; evidenceLabel: string; undatedLabel: string }
+  nextSteps: { title: string; description: string; projectsLabel: string; contactLabel: string }
+}
 export interface PortfolioContent {
+  skillsPage: Record<'eyebrow' | 'title' | 'introduction' | 'groupsTitle' | 'instructions' | 'inventoryNote' | 'chooseTitle' | 'chooseDescription' | 'unknownTitle' | 'unknownDescription' | 'clearLabel' | 'detailEyebrow' | 'sourceLabel' | 'relatedTitle' | 'relatedNote' | 'emptyTitle' | 'emptyDescription' | 'allProjectsLabel' | 'browseLabel' | 'contextLabel', string>
+  profilePages: ProfilePages
   notebook: NotebookContent
   home: {
     hero: { exploreLabel: string; resumeLabel: string }

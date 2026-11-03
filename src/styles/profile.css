@@ -1,0 +1,67 @@
+.profile-page { container-type: inline-size; }
+.profile-page h2 { font-size: clamp(1.2rem, 2.2vw, 1.6rem); line-height: 1.35; }
+.profile-page h3 { font-size: 1rem; line-height: 1.5; }
+.profile-page p, .profile-page li { overflow-wrap: anywhere; }
+.profile-page .page-intro { margin-bottom: 40px; }
+.about-context { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 32px; padding-block: 32px; border-block: 1px solid var(--color-border); }
+.about-context p, .education-interests > p { color: var(--color-muted); margin-top: 16px; max-width: 64ch; }
+.about-education { border-left: 1px solid var(--color-border); padding-left: 32px; }
+.about-education .eyebrow { margin: 0 0 16px; color: var(--color-accent); }
+.about-education .about-degree { color: var(--color-text); font-weight: 500; }
+.about-education .text-link { margin-top: 12px; }
+.profile-tags { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0 0; }
+.profile-tags li { padding: 6px 10px; border: 1px solid var(--color-border); background: var(--color-panel); color: var(--color-muted); font-size: .8rem; border-radius: 6px; }
+.profile-section { margin-top: 56px; }
+.approach-list { margin: 28px 0 0; padding: 0; list-style: none; }
+.approach-list li { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 20px; padding: 24px 0; border-top: 1px solid var(--color-border); }
+.approach-number { color: var(--color-accent); font-family: var(--font-mono); font-size: .8rem; padding-top: 4px; }
+.approach-list p { color: var(--color-muted); max-width: 68ch; margin-top: 10px; }
+.learning-note { border-left: 2px solid var(--color-accent-secondary); padding: 8px 0 8px 24px; margin-top: 12px; }
+.learning-note p { color: var(--color-muted); max-width: 68ch; margin-top: 12px; }
+.experience-list, .education-list { display: grid; gap: 20px; }
+.experience-card, .education-card { padding: 32px; border: 1px solid var(--color-border); background: var(--color-background-secondary); border-radius: var(--radius-panel); }
+.experience-heading { display: flex; gap: 16px; align-items: flex-start; flex-wrap: wrap; }
+.profile-card-icon { color: var(--color-accent); border: 1px solid var(--color-border); border-radius: 10px; background: var(--color-panel); width: 48px; height: 48px; display: grid; place-items: center; flex-shrink: 0; }
+.experience-organization { color: var(--color-accent-secondary); margin-top: 4px; }
+.experience-date { margin-left: auto; color: var(--color-muted); font-size: .85rem; }
+.experience-summary { margin-top: 24px; max-width: 68ch; }
+.contribution-list { color: var(--color-muted); padding-left: 20px; margin: 20px 0 0; max-width: 72ch; }
+.contribution-list li + li { margin-top: 12px; }
+.profile-source { color: var(--color-muted); font-size: .8rem; line-height: 1.6; }
+.experience-card > .profile-source { margin-top: 24px; }
+.education-card { display: flex; gap: 24px; }
+.education-card-body { min-width: 0; }
+.education-card .eyebrow { margin-bottom: 16px; }
+.institution-name { color: var(--color-muted); margin-top: 16px; font-size: 1.05rem; max-width: 48ch; }
+.profile-location { display: flex; gap: 8px; align-items: center; color: var(--color-muted); margin-top: 12px; }
+.profile-location svg { flex-shrink: 0; }
+.education-dates { display: flex; flex-wrap: wrap; gap: 24px 48px; margin: 32px 0 0; padding-top: 24px; border-top: 1px solid var(--color-border); }
+.education-dates dt { color: var(--color-muted); font-size: .8rem; margin-bottom: 8px; }
+.education-dates dd { color: var(--color-accent-secondary); margin: 0; }
+.education-interests { margin-top: 40px; }
+.achievement-evidence-note { color: var(--color-muted); max-width: 75ch; padding-left: 20px; border-left: 2px solid var(--color-accent); margin-bottom: 32px; font-size: .875rem; }
+.achievement-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.achievement-card { border: 1px solid var(--color-border); background: var(--color-background-secondary); border-radius: var(--radius-panel); padding: 28px; display: flex; flex-direction: column; }
+.achievement-card-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; color: var(--color-accent); margin-bottom: 24px; }
+.achievement-description { margin: 16px 0 24px; }
+.achievement-evidence { border-top: 1px solid var(--color-border); padding-top: 20px; margin-top: auto; }
+.achievement-evidence p + p { margin-top: 8px; }
+.profile-next-steps { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 28px; margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--color-border); }
+.profile-next-steps p { color: var(--color-muted); max-width: 60ch; margin-top: 16px; }
+.profile-next-actions { display: flex; align-items: flex-start; flex-direction: column; gap: 8px; }
+@container (max-width: 700px) {
+  .about-context { grid-template-columns: 1fr; gap: 28px; }
+  .about-education { border-left: 0; border-top: 1px solid var(--color-border); padding: 28px 0 0; }
+  .profile-next-steps { grid-template-columns: 1fr; }
+  .profile-next-actions { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 12px 24px; }
+  .experience-date { margin-left: 64px; width: 100%; }
+}
+@container (max-width: 580px) {
+  .achievement-grid { grid-template-columns: 1fr; }
+  .experience-card, .education-card, .achievement-card { padding: 24px; }
+  .education-card { flex-direction: column; }
+}
+@container (max-width: 340px) {
+  .experience-date { margin-left: 0; }
+  .approach-list li { grid-template-columns: 24px minmax(0, 1fr); gap: 12px; }
+}
