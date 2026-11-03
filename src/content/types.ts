@@ -34,6 +34,15 @@ export interface Experiment {
 }
 export interface Experiments { actual: Experiment[]; illustrative: Experiment[]; emptyMessage: string }
 export interface PortfolioContent {
+  home: {
+    hero: { exploreLabel: string; resumeLabel: string }
+    highlights: { selected: string; selectedDescription: string; interests: string; education: string }
+    projects: { eyebrow: string; title: string; description: string; action: string; previewAction: string }
+    achievements: { eyebrow: string; title: string; action: string }
+    skills: { eyebrow: string; title: string; description: string; action: string; ids: string[] }
+    about: { eyebrow: string; title: string; action: string }
+    contact: { eyebrow: string; title: string; description: string; emailLabel: string; action: string }
+  }
   profile: Profile; projects: Project[]; skills: SkillCatalog; achievements: Achievement[]
   education: Education[]; experience: Experience[]; experiments: Experiments
 }

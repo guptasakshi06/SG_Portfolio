@@ -38,6 +38,10 @@ export function validateContent(content: PortfolioContent): string[] {
   identities(skills.items, 'skills')
   const groupIds = new Set(skills.groups.map(group => group.id))
   const skillIds = new Set(skills.items.map(skill => skill.id))
+  unique(content.home.skills.ids, 'home skill selection')
+  content.home.skills.ids.forEach(id => {
+    if (!skillIds.has(id)) errors.push(`home: unknown skill ${id}`)
+  })
   skills.groups.forEach(group => required(group.name, `group ${group.id}`))
   skills.items.forEach(skill => {
     required(skill.name, `skill ${skill.id}.name`)
