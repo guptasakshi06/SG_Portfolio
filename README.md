@@ -1,6 +1,6 @@
 # SG · Sakshi Gupta’s portfolio
 
-A frontend portfolio built in small, verifiable sprints. **S03 adds a complete homepage inside the shared S02 workspace.** Home includes the supplied introduction, real profile/resume/email actions, selected project previews, qualified achievements, skills, about and contact sections. Other page bodies remain useful previews; filters, notebooks, charts, global search, and full secondary pages belong to later sprints. Read [HANDOFF.md](HANDOFF.md) before continuing work and complete one sprint per chat.
+A frontend portfolio built in small, verifiable sprints. **S04 adds the complete searchable project catalog alongside the S03 homepage and shared workspace.** All ten projects have reusable cards, category/text filters, shareable URL state, source notes and honest repository/demo states. Project detail routes remain previews for S05; notebooks, charts, global search, and other full secondary pages belong to later sprints. Read [HANDOFF.md](HANDOFF.md) before continuing work and complete one sprint per chat.
 
 ## Run locally
 
@@ -40,9 +40,9 @@ S01 verification used Node 24.22.2 and npm 9.2.0. A startup maintenance fix repl
 ## Structure and routes
 
 - `src/app/`: declarative React Router routes and eight navigation destinations.
-- `src/pages/`: HomePage, reusable secondary-page previews, project preview and recoverable 404.
+- `src/pages/`: HomePage, ProjectsPage, reusable secondary-page previews, project preview and recoverable 404.
 - `src/components/home/`: exact hero, original static grid/orbit artwork and profile highlights.
-- `src/features/projects/`: reusable ProjectPreview with topic illustration, source-backed technology badges, evidence note and working project-preview link.
+- `src/features/projects/`: shared ProjectPreview in Home/catalog modes, ProjectFilters, source-attributed ProjectTechnologies, safe ProjectSources and pure catalog filter/query helpers.
 - `src/components/layout/`: AppShell, TopBar, desktop sidebar, modal mobile navigation, shared navigation links, configured profile/resume actions and footer.
 - `src/components/ui/`: shared page intro, preview notice, SectionHeading and Badge.
 - `src/content/`: runtime JSON, TypeScript contracts and validated content entry point.
@@ -54,7 +54,7 @@ S01 verification used Node 24.22.2 and npm 9.2.0. A startup maintenance fix repl
 
 Routes: `/`, `/about`, `/projects`, `/projects/:slug`, `/experiments`, `/skills`, `/education`, `/achievements`, `/contact`, plus a catch-all 404. Project routes come from content, including all ten current entries. Unknown project slugs show recovery links. Vite serves SPA history fallbacks locally; production hosting must be configured in S12. Nothing is deployed yet.
 
-The shared shell lives in `src/components/layout/AppShell.tsx`. At 1200px and above the sidebar starts expanded (264px); at 768–1199px it starts collapsed (80px). Visitors can toggle it by pointer or keyboard. Below 768px a named menu button opens a native modal dialog: background scrolling is locked, Tab/Shift+Tab wrap inside, Escape or Close returns focus, navigation closes it, and resizing to desktop clears it. Route changes focus the main landmark and reset scroll; nested project pages keep My Projects active. Collapse preference lasts for the current app session. Search is omitted until S09. HomePage now uses this shell; later pages replace previews rather than duplicating layout.
+The shared shell lives in `src/components/layout/AppShell.tsx`. At 1200px and above the sidebar starts expanded (264px); at 768–1199px it starts collapsed (80px). Visitors can toggle it by pointer or keyboard. Below 768px a named menu button opens a native modal dialog: background scrolling is locked, Tab/Shift+Tab wrap inside, Escape or Close returns focus, navigation closes it, and resizing to desktop clears it. Pathname changes focus the main landmark and reset scroll; query-only filter changes retain focus and scroll; nested project pages keep My Projects active. Collapse preference lasts for the current app session. Search is omitted until S09. HomePage now uses this shell; later pages replace previews rather than duplicating layout.
 
 ## Edit content
 
@@ -108,6 +108,19 @@ No commits, pushes, backend setup, deployment, or second sprint are part of S01.
 
 ## Homepage patterns (S03)
 
-`HomePage` composes small sections and reuses `ProjectPreview`, `SectionHeading`, `Badge` and `ProfileAction`. `src/styles/home.css` keeps the typography, static abstract artwork and responsive layouts separate from the shell. No portrait, chart results or new heavy libraries are introduced. The three owner-selected projects derive from nullable `featuredOrder`, with plain summaries and explicit evidence gaps. Their actions say “View project preview” and reach the existing project route; S04/S05 will enrich the catalog/details. Hero copy comes unchanged from `profile.json`; six core skill IDs and section copy live in `home.json`. Skills descriptions, achievements and education reuse their authoritative runtime records.
+`HomePage` composes small sections and reuses `ProjectPreview`, `SectionHeading`, `Badge` and `ProfileAction`. `src/styles/home.css` keeps the typography, static abstract artwork and responsive layouts separate from the shell. No portrait, chart results or new heavy libraries are introduced. The three owner-selected projects derive from nullable `featuredOrder`, with plain summaries and explicit evidence gaps. Their actions say “View project preview” and reach the existing project route; S04 enriches the catalog; S05 will enrich the details. Hero copy comes unchanged from `profile.json`; six core skill IDs and section copy live in `home.json`. Skills descriptions, achievements and education reuse their authoritative runtime records.
 
-The Homepage is complete for S03. Next is S04 only when invoked. No commit, push or deployment was performed by S03.
+The Homepage remains complete for S03. No homepage selection or owner-content facts changed in S04.
+
+
+## Project catalog (S04)
+
+`ProjectsPage` derives all cards and ordering from `projects.json`, reusing `ProjectPreview` with a `catalogSearch` prop (including an empty string for the unfiltered catalog). This mode uses h2 card headings, source-grouped technologies, missing-technology text, native source-note disclosures and safe external actions. Omitting the prop keeps the existing Home preview. Visuals are decorative topic illustrations. README and resume technology claims remain separate; source limitations remain visible through the disclosures. Repository/demo values are validated HTTPS URLs or non-clickable “not provided” states. No live demos have been supplied.
+
+Categories are editorial browsing labels, not evidence of algorithms. All six topic categories plus All remain selectable even when a future category has no entries. Cards keep JSON order; homepage featured order is independent. Search matches every whitespace-separated term, case-insensitively, across title, summary, supplied problem, category and source-attributed technology names. It excludes proposed technologies and private maintenance evidence.
+
+Filter links use `/projects?category=Data+Analytics&q=power+bi`. Defaults are omitted; unknown categories fall back to All. Typing replaces the current history entry to avoid one entry per character; category changes and reset create history entries. Result count is a polite live status. All clears the category while retaining text; Reset filters clears both. The empty-state action also restores search focus. No search/filter API, backend or extra dependency is involved. React Router's [useSearchParams](https://reactrouter.com/api/hooks/useSearchParams) provides URL navigation.
+
+Catalog detail links carry the recognized query parameters to `/projects/:slug`; the existing preview's return action restores those filters, including after refresh. Browser Back/Forward also restores filter state. S05 should preserve this contract while replacing `ProjectPage` with approachable overviews and notebook details. AppShell resets focus/scroll on pathname changes so query edits do not interrupt typing. The catalog grid uses its actual container width, switching to one column below 600px of available content, including an expanded tablet sidebar.
+
+Evidence: `docs/verification/S04.md`, three catalog regression tests and `S04-card-fixtures.ts`. Next is S05 only when invoked. S04 made no commit, push or deployment.
