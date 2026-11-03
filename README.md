@@ -1,6 +1,6 @@
 # SG · Sakshi Gupta’s portfolio
 
-A frontend portfolio built in small, verifiable sprints. **S04 adds the complete searchable project catalog alongside the S03 homepage and shared workspace.** All ten projects have reusable cards, category/text filters, shareable URL state, source notes and honest repository/demo states. Project detail routes remain previews for S05; notebooks, charts, global search, and other full secondary pages belong to later sprints. Read [HANDOFF.md](HANDOFF.md) before continuing work and complete one sprint per chat.
+A frontend portfolio built in small, verifiable sprints. **S05 adds complete plain-language project overviews and an optional technical reader to the existing Home/catalog/workspace.** All ten projects have working detail routes, honest evidence gaps and project navigation; three documented projects have attributed technical notes. The reader supports safe text, Shiki code, tables and callouts, with a separate illustrative example. Charts, global search and other full secondary pages belong to later sprints. Read [HANDOFF.md](HANDOFF.md) before continuing work and complete one sprint per chat.
 
 ## Run locally
 
@@ -40,8 +40,9 @@ S01 verification used Node 24.22.2 and npm 9.2.0. A startup maintenance fix repl
 ## Structure and routes
 
 - `src/app/`: declarative React Router routes and eight navigation destinations.
-- `src/pages/`: HomePage, ProjectsPage, reusable secondary-page previews, project preview and recoverable 404.
+- `src/pages/`: HomePage, ProjectsPage, reusable secondary-page previews, project details and recoverable 404.
 - `src/components/home/`: exact hero, original static grid/orbit artwork and profile highlights.
+- `src/features/notebook/`: lazy NotebookViewer, safe NotebookBlocks, CodeBlock and fine-grained Shiki highlighting.
 - `src/features/projects/`: shared ProjectPreview in Home/catalog modes, ProjectFilters, source-attributed ProjectTechnologies, safe ProjectSources and pure catalog filter/query helpers.
 - `src/components/layout/`: AppShell, TopBar, desktop sidebar, modal mobile navigation, shared navigation links, configured profile/resume actions and footer.
 - `src/components/ui/`: shared page intro, preview notice, SectionHeading and Badge.
@@ -64,6 +65,7 @@ Keep owner facts in JSON rather than JSX. Start with `docs/sources/owner-inputs.
 | --- | --- |
 | `home.json` | Homepage section copy, action labels and curated skill IDs; selected projects derive from projects.json featuredOrder |
 | `profile.json` | Name, role, exact hero copy, availability, about copy, contact URLs, central resume metadata |
+| `notebook.json` | Standard technical topics/pending copy and a separate illustrative renderer example (every example block must be sample=true) |
 | `projects.json` | Stable IDs/slugs, summaries, nullable problem/build fields, categories, featured order, technology claims, links, technical blocks, provenance and gaps |
 | `skills.json` | One stable record per skill, readable explanation and membership in one or more of eight groups |
 | `education.json` | Owner-confirmed degree and source-attributed dates; expected graduation remains explicit |
@@ -108,7 +110,7 @@ No commits, pushes, backend setup, deployment, or second sprint are part of S01.
 
 ## Homepage patterns (S03)
 
-`HomePage` composes small sections and reuses `ProjectPreview`, `SectionHeading`, `Badge` and `ProfileAction`. `src/styles/home.css` keeps the typography, static abstract artwork and responsive layouts separate from the shell. No portrait, chart results or new heavy libraries are introduced. The three owner-selected projects derive from nullable `featuredOrder`, with plain summaries and explicit evidence gaps. Their actions say “View project preview” and reach the existing project route; S04 enriches the catalog; S05 will enrich the details. Hero copy comes unchanged from `profile.json`; six core skill IDs and section copy live in `home.json`. Skills descriptions, achievements and education reuse their authoritative runtime records.
+`HomePage` composes small sections and reuses `ProjectPreview`, `SectionHeading`, `Badge` and `ProfileAction`. `src/styles/home.css` keeps the typography, static abstract artwork and responsive layouts separate from the shell. No portrait, chart results or new heavy libraries are introduced. The three owner-selected projects derive from nullable `featuredOrder`, with plain summaries and explicit evidence gaps. Their actions say “View project preview” and reach the existing project route; S04 enriches the catalog; S05 now provides full overviews and optional technical notes. Hero copy comes unchanged from `profile.json`; six core skill IDs and section copy live in `home.json`. Skills descriptions, achievements and education reuse their authoritative runtime records.
 
 The Homepage remains complete for S03. No homepage selection or owner-content facts changed in S04.
 
@@ -121,6 +123,29 @@ Categories are editorial browsing labels, not evidence of algorithms. All six to
 
 Filter links use `/projects?category=Data+Analytics&q=power+bi`. Defaults are omitted; unknown categories fall back to All. Typing replaces the current history entry to avoid one entry per character; category changes and reset create history entries. Result count is a polite live status. All clears the category while retaining text; Reset filters clears both. The empty-state action also restores search focus. No search/filter API, backend or extra dependency is involved. React Router's [useSearchParams](https://reactrouter.com/api/hooks/useSearchParams) provides URL navigation.
 
-Catalog detail links carry the recognized query parameters to `/projects/:slug`; the existing preview's return action restores those filters, including after refresh. Browser Back/Forward also restores filter state. S05 should preserve this contract while replacing `ProjectPage` with approachable overviews and notebook details. AppShell resets focus/scroll on pathname changes so query edits do not interrupt typing. The catalog grid uses its actual container width, switching to one column below 600px of available content, including an expanded tablet sidebar.
+Catalog detail links carry the recognized query parameters to `/projects/:slug`; the detail page's return action restores those filters, including after refresh. Browser Back/Forward also restores filter state. S05 preserves this contract in overviews, technical notes and previous/next navigation. AppShell resets focus/scroll on pathname changes so query edits do not interrupt typing. The catalog grid uses its actual container width, switching to one column below 600px of available content, including an expanded tablet sidebar.
 
-Evidence: `docs/verification/S04.md`, three catalog regression tests and `S04-card-fixtures.ts`. Next is S05 only when invoked. S04 made no commit, push or deployment.
+Evidence: `docs/verification/S04.md`, three catalog regression tests and `S04-card-fixtures.ts`. S05 continues these contracts below. No deployment exists.
+
+
+## Project details and technical reader (S05)
+
+Every `ProjectPage` presents four questions before the optional reader: what is it, what problem, why it matters, and what was built. Unknown values remain explicit pending copy. `ProjectSources` and `ProjectTechnologies` keep safe links and separate README/resume attribution. Previous/next navigation follows JSON catalog order; recognized q/category parameters survive those links and the catalog return. Unknown slugs retain the friendly recovery page. Direct URL and refresh work with Vite dev/preview SPA fallback; production hosting remains S12.
+
+`ProjectTechnicalDetails` is a native details/summary disclosure, closed by default and reset when the project changes. Its viewer mounts only while open through React.lazy/Suspense. Eleven standard technical topic IDs come from `notebook.json`; matching `technicalSections` in `projects.json` supply blocks, absent/empty sections show the topic's pending text. Custom section IDs are appended. Loan, Metron and CredResolve notes summarize the saved reviewed sources; documentation is not reproduced project evidence. The original seven projects keep empty technicalSections. All sample blocks stay visibly labeled and separate from the claimed project narrative.
+
+Notebook blocks all require `provenance` and boolean `sample`:
+
+- `text`: plain `text`, with blank lines separating paragraphs. Text is escaped by React; Markdown syntax and raw HTML are intentionally unsupported.
+- `code`: `language` plus `code`. Read-only display; no execution. Python/py, SQL and JSON are highlighted; other languages stay readable plain text.
+- `table`: descriptive `caption`, `columns`, rectangular string `rows`. Column/row headers and a named keyboard-focusable scroll region give a non-visual equivalent.
+- `callout`: `title` plus `text`, with visible provenance above it.
+- `chart`: `experimentId` referencing actual/illustrative experiments with a matching sample flag. Currently renders the description, provenance, units, accessible summary and complete data table; chart visuals belong to S08. No experiment values were added in S05.
+
+The shared example lives only in `notebook.json`, behind a second disclosure. It contains two explicitly invented records and a missing-reading check, never model performance. All example blocks must have `sample: true`; do not copy it into actual results.
+
+Shiki 4.6.0 is imported through core and its JavaScript regex engine, with only Python, SQL, JSON and dark-plus. The highlighting module is dynamically imported only when a code block mounts; opening a text-only project notebook does not fetch it. Tokens become escaped React spans, not injected HTML. Failed highlighting retains readable code. This follows the official [fine-grained bundles](https://shiki.style/guide/bundles#fine-grained-bundle) and [performance guidance](https://shiki.style/guide/best-performance). No editor, all-language bundle, Wasm engine or Markdown parser ships in the built app.
+
+To add real project detail, supply the source and fill the appropriate overview/technical fields. Cite the source at each block; sample outputs keep `sample: true`. `sample: false` means source-attributed material and does not establish independent reproduction. Preserve learning/MVP/version/future-feature caveats. Provide dataset provenance, exact implementation and measured evaluation evidence before adding outcomes. Run `npm run check`; tests now include renderer escaping, provenance/sample/schema failures, Shiki token round trips, pending states and optional chart tables. Test scripts and TypeScript tooling enable JSX for server-rendered component checks.
+
+Evidence and remaining owner-input needs: `docs/verification/S05.md`. No commits, pushes or deployment were made in S05. Next is S06 only when invoked.

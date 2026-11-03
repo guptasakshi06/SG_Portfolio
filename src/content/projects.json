@@ -125,8 +125,8 @@
     "slug": "loan-analysis-dashboard",
     "title": "End-to-End Loan Analysis Dashboard",
     "summary": "A Power BI project for exploring loan distribution, applicant demographics and financial risk patterns.",
-    "problem": null,
-    "whyItMatters": null,
+    "problem": "Understanding loan distribution, applicant profiles and financial risk across multiple dashboard views.",
+    "whyItMatters": "Bringing these views together can make patterns in loan data easier to explore. This is a learning project, not evidence of lending outcomes.",
     "whatIBuilt": "A practice Power BI dashboard with loan overview, applicant demographics, and financial risk views; documented transformations, YoY/YTD measures, validation, and interactive visuals.",
     "categories": [
       "Data Analytics"
@@ -165,7 +165,105 @@
       "demo": null
     },
     "thumbnail": null,
-    "technicalSections": [],
+    "technicalSections": [
+      {
+        "id": "problem-formulation",
+        "title": "Problem formulation",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "The README frames the analysis around customer behavior, loan distribution and financial risk patterns.",
+            "provenance": "https://github.com/guptasakshi06/loan-default-analysis-powerbi/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "dataset",
+        "title": "Dataset",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "Excel / CSV is listed as an input format. Dataset origin, collection period, licensing and sample size have not been supplied.",
+            "provenance": "https://github.com/guptasakshi06/loan-default-analysis-powerbi/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "preprocessing",
+        "title": "Preprocessing",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "Power Query transformations and data validation are documented. The exact transformation steps and validation records are not supplied.",
+            "provenance": "https://github.com/guptasakshi06/loan-default-analysis-powerbi/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "eda",
+        "title": "Exploratory data analysis",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "Documented views explore loan purpose, employment, age groups, credit score categories, marital status, mortgage, dependents and education.",
+            "provenance": "https://github.com/guptasakshi06/loan-default-analysis-powerbi/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "implementation",
+        "title": "Implementation",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "Power BI reports use DAX measures, YoY and YTD calculations, slicers, a decomposition tree and a Sankey visual. The owner-supplied resume separately lists SQL Server; its role is not detailed in the README.",
+            "provenance": "https://github.com/guptasakshi06/loan-default-analysis-powerbi/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "evaluation-metrics",
+        "title": "Evaluation metrics",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "The README lists default rate, year-over-year loan/default change and year-to-date analysis. These are dashboard measures, not predictive-model accuracy. Values and complete formulas are not supplied.",
+            "provenance": "https://github.com/guptasakshi06/loan-default-analysis-powerbi/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "results",
+        "title": "Results",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "Three dashboard views are documented: Loan Overview, Applicant Demographics & Financial Profile, and Financial Risk Metrics. No numerical findings or independently reproduced outcomes are supplied.",
+            "provenance": "https://github.com/guptasakshi06/loan-default-analysis-powerbi/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "limitations",
+        "title": "Limitations",
+        "blocks": [
+          {
+            "type": "callout",
+            "title": "Evidence boundary",
+            "text": "README explicitly identifies this as a practice/learning project.\n\nResume additionally lists SQL Server; retain separate source attribution.\n\nNo dataset provenance, externally verified numeric results or public live demo provided.\n\nFinancial-risk visuals are analytical project outputs, not investment advice or evidence of real operational impact.",
+            "provenance": "Reviewed README and owner-supplied resume; documentation review only",
+            "sample": false
+          }
+        ]
+      }
+    ],
     "evidence": {
       "level": "README reviewed; code execution and result reproduction not performed",
       "sources": [
@@ -357,8 +455,8 @@
     "slug": "metron-data-optimizer",
     "title": "Metron — Data Optimizer",
     "summary": "Compares ways to store analytical data for a stated workload, using measured local tests and data-integrity checks to explain a recommendation.",
-    "problem": null,
-    "whyItMatters": null,
+    "problem": "Choosing among ways to store analytical data for a stated workload while preserving the data and making tradeoffs visible.",
+    "whyItMatters": "Storage choices can affect query behavior and cost. The local MVP is designed to explain tested options and unknowns; modeled savings are not customer savings.",
     "whatIBuilt": "A local MVP comparing analytical data representations with integrity checks, bounded Docker benchmarks, cost assumptions, recommendations, asynchronous jobs, a dashboard, and portable reports.",
     "categories": [
       "Data Science"
@@ -405,7 +503,105 @@
       "demo": null
     },
     "thumbnail": null,
-    "technicalSections": [],
+    "technicalSections": [
+      {
+        "id": "problem-formulation",
+        "title": "Problem formulation",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "Compare analytical dataset representations for a stated workload and recommend a tested feasible option with supporting evidence and explicit unknowns.",
+            "provenance": "https://github.com/guptasakshi06/Metron/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "dataset",
+        "title": "Dataset",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "The current README supports CSV, NDJSON and Parquet input. No owner dataset provenance is supplied. The resume describes an earlier advisor with a 1,000-row synthetic demo; that is a separate version, not a current real-world dataset claim.",
+            "provenance": "https://github.com/guptasakshi06/Metron/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "preprocessing",
+        "title": "Preprocessing",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "The README describes file validation, local metadata profiling and lossless conversion. Exact typed integrity checks preserve duplicate counts and distinguish feasibility from performance.",
+            "provenance": "https://github.com/guptasakshi06/Metron/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "algorithms-models",
+        "title": "Algorithms / models",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "Candidate enumeration, workload-guided layouts and ranking are documented. This is an optimization and comparison workflow; no trained predictive model or accuracy claim is established.",
+            "provenance": "https://github.com/guptasakshi06/Metron/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "implementation",
+        "title": "Implementation",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "The current local MVP documents Docker-isolated benchmarks, asynchronous assessment jobs, a dashboard and portable reports. Current README tools and the earlier resume Streamlit/YAML stack remain separately attributed.",
+            "provenance": "https://github.com/guptasakshi06/Metron/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "evaluation-metrics",
+        "title": "Evaluation metrics",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "The README distinguishes integrity checks, measured local load/query timings, physical bytes and modeled costs. Synthetic or user-supplied price assumptions must stay labeled. These tests do not establish cloud latency or concurrency.",
+            "provenance": "https://github.com/guptasakshi06/Metron/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "results",
+        "title": "Results",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "The README reports a local MVP. Portfolio review did not execute its code, reproduce timings or verify production/customer outcomes. No speedup or savings figure is claimed here.",
+            "provenance": "https://github.com/guptasakshi06/Metron/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "limitations",
+        "title": "Limitations",
+        "blocks": [
+          {
+            "type": "callout",
+            "title": "Evidence boundary",
+            "text": "README describes a local MVP, not a production release or customer validation.\n\nPrices and savings must retain synthetic/user-supplied/modeled labels.\n\nNo independently verified speedup, cloud latency, customer savings or public deployment.\n\nResume describes an earlier Streamlit/YAML storage-advisor version; do not blend it with current README as one verified stack.",
+            "provenance": "Reviewed README and owner-supplied resume; documentation review only",
+            "sample": false
+          }
+        ]
+      }
+    ],
     "evidence": {
       "level": "README reviewed; code execution and result reproduction not performed",
       "sources": [
@@ -436,8 +632,8 @@
     "slug": "credresolve-collections-dashboard",
     "title": "CredResolve — Collections Intelligence Dashboard",
     "summary": "Brings collection performance, data-quality issues, recovery funnels and channel comparisons into one dashboard.",
-    "problem": null,
-    "whyItMatters": null,
+    "problem": "Understanding collections performance while identifying data-quality issues that could distort reported recovery.",
+    "whyItMatters": "Teams need clear metric definitions and reliable records to compare channels and investigate recovery. The dashboard presents scenarios, not proven business gains.",
     "whatIBuilt": "A dashboard exploring recovery performance, data-quality issues, recovery funnels, channel comparisons, and investment scenarios. Filters and validated dataset/API connections are future work in the README.",
     "categories": [
       "Data Analytics"
@@ -472,7 +668,117 @@
       "demo": null
     },
     "thumbnail": null,
-    "technicalSections": [],
+    "technicalSections": [
+      {
+        "id": "problem-formulation",
+        "title": "Problem formulation",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "Bring recovery performance, data reliability, channel comparisons and investment scenarios into one dashboard for investigation.",
+            "provenance": "https://github.com/guptasakshi06/CredResolveeeee/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "dataset",
+        "title": "Dataset",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "Dataset provenance and data lineage are not supplied. Connecting a validated analytics dataset or backend API is listed as future work.",
+            "provenance": "https://github.com/guptasakshi06/CredResolveeeee/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "preprocessing",
+        "title": "Preprocessing",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "The README proposes checking missing/inconsistent records, duplicate payments, timezone issues and attribution conflicts. This is a described analytical approach; executed cleaning steps are not established.",
+            "provenance": "https://github.com/guptasakshi06/CredResolveeeee/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "eda",
+        "title": "Exploratory data analysis",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "The dashboard documents a recovery funnel: Targeted → Contacted → Right Party Contact → Promise to Pay → PTP Kept → Paid. Channel comparisons are described; no verified conversion or performance values are supplied.",
+            "provenance": "https://github.com/guptasakshi06/CredResolveeeee/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "implementation",
+        "title": "Implementation",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "The README explicitly lists HTML, CSS and JavaScript for the web dashboard. Python and SQL come separately from the owner-supplied resume. Reporting-period, channel and segment filters are future improvements, not working features claimed here.",
+            "provenance": "https://github.com/guptasakshi06/CredResolveeeee/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "evaluation-metrics",
+        "title": "Evaluation metrics",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "Recovery rate, promise-to-pay kept rate, recovery per agent-hour, cost per rupee recovered and ROI scenarios are described. Exact formulas and denominators need documentation; scenario expectations are not observed gains.",
+            "provenance": "https://github.com/guptasakshi06/CredResolveeeee/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "results",
+        "title": "Results",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "The README describes dashboard views and screenshot references. No reproduced recovery increase, ROI improvement, client deployment or public demo has been supplied.",
+            "provenance": "https://github.com/guptasakshi06/CredResolveeeee/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "future-improvements",
+        "title": "Future improvements",
+        "blocks": [
+          {
+            "type": "text",
+            "text": "README proposals include period/channel/segment filters, a validated dataset/API connection, KPI formulas and lineage, automated quality checks, controlled experiments and exportable reports.",
+            "provenance": "https://github.com/guptasakshi06/CredResolveeeee/blob/main/README.md — reviewed snapshot, 2026-11-03",
+            "sample": false
+          }
+        ]
+      },
+      {
+        "id": "limitations",
+        "title": "Limitations",
+        "blocks": [
+          {
+            "type": "callout",
+            "title": "Evidence boundary",
+            "text": "README describes Python/SQL analytical workflow as desired methodology only indirectly; resume separately lists Python and SQL.\n\nMetric formulas, denominators and data lineage need further documentation.\n\nPeriod/channel/segment filters and a validated dataset/backend are listed as future improvements.\n\nDashboard screenshots are examples of the interface, not evidence of actual business gains.\n\nNo verified recovery increase, ROI improvement, client deployment or live public demo.",
+            "provenance": "Reviewed README and owner-supplied resume; documentation review only",
+            "sample": false
+          }
+        ]
+      }
+    ],
     "evidence": {
       "level": "README reviewed; code execution and result reproduction not performed",
       "sources": [

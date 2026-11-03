@@ -11,7 +11,7 @@ export interface SkillCatalog { groups: { id: string; name: string }[]; items: S
 export type NotebookBlock =
   | { type: 'text'; text: string; provenance: string; sample: boolean }
   | { type: 'code'; language: string; code: string; provenance: string; sample: boolean }
-  | { type: 'table'; columns: string[]; rows: string[][]; provenance: string; sample: boolean }
+  | { type: 'table'; caption: string; columns: string[]; rows: string[][]; provenance: string; sample: boolean }
   | { type: 'chart'; experimentId: string; provenance: string; sample: boolean }
   | { type: 'callout'; title: string; text: string; provenance: string; sample: boolean }
 export interface Project {
@@ -33,7 +33,12 @@ export interface Experiment {
   data: { label: string; values: number[] }[]
 }
 export interface Experiments { actual: Experiment[]; illustrative: Experiment[]; emptyMessage: string }
+export interface NotebookContent {
+  topics: { id: string; title: string; pending: string }[]
+  example: { title: string; description: string; blocks: NotebookBlock[] }
+}
 export interface PortfolioContent {
+  notebook: NotebookContent
   home: {
     hero: { exploreLabel: string; resumeLabel: string }
     highlights: { selected: string; selectedDescription: string; interests: string; education: string }

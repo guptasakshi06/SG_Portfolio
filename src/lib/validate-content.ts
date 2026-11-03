@@ -1,4 +1,4 @@
-import type { PortfolioContent } from '../content/types'
+import type { NotebookBlock, PortfolioContent } from '../content/types'
 import { emailHref, isSafeAssetPath, isSafeExternalUrl, resumeHref } from './links'
 
 export const projectCategories = ['Data Science', 'Machine Learning', 'Deep Learning', 'Data Analytics', 'NLP', 'Computer Vision']
@@ -21,6 +21,35 @@ export function validateContent(content: PortfolioContent): string[] {
       if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.id)) errors.push(`${label}: invalid ID ${item.id}`)
     })
   }
+  const notebookBlocks = (blocks: NotebookBlock[], label: string) => {
+    blocks.forEach(block => {
+      required(block.provenance, `${label} block provenance`)
+      if (typeof block.sample !== 'boolean') errors.push(`${label}: missing boolean sample marker`)
+      switch (block.type) {
+        case 'text': required(block.text, `${label} text`); break
+        case 'callout': required(block.title, `${label} callout title`); required(block.text, `${label} callout text`); break
+        case 'code': required(block.code, `${label} code`); required(block.language, `${label} code language`); break
+        case 'table':
+          required(block.caption, `${label} table caption`)
+          if (!block.columns.length || !block.rows.length || block.rows.some(row => row.length !== block.columns.length)) errors.push(`${label}: inconsistent table columns/rows`)
+          block.columns.forEach(column => required(column, `${label} column heading`))
+          break
+        case 'chart':
+          if (![...content.experiments.actual, ...content.experiments.illustrative].some(entry => entry.id === block.experimentId && entry.sample === block.sample)) errors.push(`${label}: unknown chart or mismatched sample marker`)
+          break
+        default: errors.push(`${label}: unsupported notebook block`)
+      }
+    })
+  }
+  identities(content.notebook.topics, 'notebook topics')
+  content.notebook.topics.forEach(topic => {
+    required(topic.title, 'notebook topic title')
+    required(topic.pending, 'notebook topic pending text')
+  })
+  required(content.notebook.example.title, 'notebook example title')
+  required(content.notebook.example.description, 'notebook example description')
+  if (!content.notebook.example.blocks.length || content.notebook.example.blocks.some(block => !block.sample)) errors.push('notebook example: every block must be marked illustrative')
+  notebookBlocks(content.notebook.example.blocks, 'notebook example')
   const { profile, projects, skills } = content
   for (const key of ['name', 'role', 'intro', 'tagline', 'description'] as const) required(profile[key], `profile.${key}`)
   required(profile.availability.label, 'profile.availability.label')
@@ -78,10 +107,7 @@ export function validateContent(content: PortfolioContent): string[] {
     identities(project.technicalSections, `${project.slug} technical sections`)
     project.technicalSections.forEach(section => {
       required(section.title, `${project.slug} section title`)
-      section.blocks.forEach(block => {
-        required(block.provenance, `${project.slug} block provenance`)
-        if (block.type === 'chart' && ![...content.experiments.actual, ...content.experiments.illustrative].some(entry => entry.id === block.experimentId && entry.sample === block.sample)) errors.push(`${project.slug}: unknown chart or mismatched sample marker`)
-      })
+      notebookBlocks(section.blocks, project.slug)
     })
   })
   identities(content.achievements, 'achievements')
